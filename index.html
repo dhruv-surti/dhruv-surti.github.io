@@ -84,12 +84,16 @@ nav {
 .hero-content { flex: 1; }
 .hero-name {
   font-family: var(--font-main); font-size: 2.2rem; font-weight: 700;
-  color: var(--primary); line-height: 1.1; margin-bottom: 0.3rem;
+  color: var(--primary); line-height: 1.1; margin-bottom: 0.4rem;
   letter-spacing: -0.02em;
 }
+.hero-headline {
+  font-size: 1.1rem; font-weight: 600; color: var(--primary); 
+  margin-bottom: 0.4rem; line-height: 1.3;
+}
 .hero-role {
-  font-size: 0.88rem; font-weight: 600; letter-spacing: 0.08em;
-  text-transform: uppercase; color: var(--accent); margin-bottom: 0.5rem;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.05em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 0.6rem;
 }
 .hero-location {
   font-size: 0.8rem; color: var(--text-muted); font-weight: 500;
@@ -98,8 +102,30 @@ nav {
 .hero-location svg { width: 12px; height: 12px; flex-shrink: 0; }
 .hero-bio {
   font-size: 0.9rem; line-height: 1.7; color: var(--text-mid);
-  font-weight: 400; margin-bottom: 1.4rem; max-width: 540px;
+  font-weight: 400; margin-bottom: 1.4rem; max-width: 600px;
 }
+.hero-bio p { margin-bottom: 0.85rem; }
+.hero-bio p:last-child { margin-bottom: 0; }
+
+.hero-highlights {
+  margin: 1.25rem 0; padding: 1.2rem; background: var(--bg-card);
+  border: 1px solid var(--primary-25); border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+}
+.hero-highlights-title {
+  color: var(--primary); font-size: 0.75rem; font-weight: 700; 
+  text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.75rem;
+}
+.hero-highlights ul { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 0.6rem; }
+.hero-highlights li { font-size: 0.85rem; padding-left: 1.2rem; position: relative; line-height: 1.6; }
+.hero-highlights li::before { content: '•'; position: absolute; left: 0; color: var(--accent); font-weight: bold; font-size: 1.1rem; top: -2px; }
+
+.hero-goal {
+  padding: 0.85rem 1.2rem; background: var(--accent-dim); 
+  border-left: 3px solid var(--accent); border-radius: 0 var(--radius-sm) var(--radius-sm) 0; 
+  color: var(--primary); font-size: 0.85rem; margin-bottom: 1.5rem; max-width: 600px; line-height: 1.6;
+}
+
 .hero-chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.4rem; }
 .hero-chip {
   font-size: 0.72rem; font-weight: 500; letter-spacing: 0.02em;
@@ -161,7 +187,6 @@ nav {
   background: var(--bg-card); border: 1px solid var(--primary-25);
   border-radius: var(--radius); padding: 1.75rem;
   box-shadow: var(--shadow); transition: border-color 0.18s, box-shadow 0.18s;
-  cursor: pointer;
 }
 .project-card:hover { border-color: var(--primary-60); box-shadow: var(--shadow-md); }
 .project-card-header {
@@ -178,11 +203,6 @@ nav {
   color: var(--primary); line-height: 1.3; margin-bottom: 0.25rem;
 }
 .project-context { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; }
-.project-expand-icon {
-  font-size: 0.9rem; color: var(--text-muted); transition: transform 0.3s;
-  flex-shrink: 0; margin-top: 0.12rem; line-height: 1;
-}
-.project-expand-icon.open { transform: rotate(180deg); }
 .project-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.9rem; }
 .project-tag {
   font-size: 0.7rem; font-weight: 500; letter-spacing: 0.02em;
@@ -208,18 +228,50 @@ nav {
 }
 
 /* evidence */
-.project-evidence { display: none; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--primary-25); }
-.project-evidence.open { display: block; }
+.project-evidence { margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--primary-25); }
 .evidence-heading {
   font-size: 0.65rem; font-weight: 600; letter-spacing: 0.1em;
   text-transform: uppercase; color: var(--text-muted); margin-bottom: 0.85rem;
 }
 .evidence-img-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; }
 .evidence-img-grid.three { grid-template-columns: repeat(3, 1fr); }
-.ev-img { border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--primary-25); background: var(--bg-card-2); }
+.ev-img { 
+  border-radius: var(--radius-sm); overflow: hidden; border: 1px solid var(--primary-25); 
+  background: var(--bg-card-2); position: relative; cursor: pointer; 
+}
 .ev-img img { width: 100%; display: block; object-fit: cover; aspect-ratio: 16/9; object-position: top; transition: transform 0.35s; }
 .ev-img:hover img { transform: scale(1.04); }
+
+/* Zoom overlay effect */
+.ev-img::after {
+  content: 'Click to zoom'; position: absolute; inset: 0; 
+  background: rgba(15, 23, 42, 0.6); color: white; display: flex; 
+  align-items: center; justify-content: center; font-size: 0.8rem; 
+  font-weight: 600; opacity: 0; transition: opacity 0.3s;
+}
+.ev-img:hover::after { opacity: 1; }
+
 .ev-caption { font-size: 0.7rem; font-weight: 500; color: var(--text-muted); padding: 0.4rem 0.6rem; }
+
+/* Lightbox Modal */
+.lightbox {
+  position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+  background: rgba(15, 23, 42, 0.95); z-index: 1000;
+  display: flex; align-items: center; justify-content: center;
+  opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
+  padding: 2rem;
+}
+.lightbox.active { opacity: 1; pointer-events: auto; }
+.lightbox img { 
+  max-width: 100%; max-height: 100%; border-radius: var(--radius); 
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5); transform: scale(0.95); 
+  transition: transform 0.3s ease; 
+}
+.lightbox.active img { transform: scale(1); }
+.lightbox-close { 
+  position: absolute; top: 20px; right: 30px; color: white; 
+  font-size: 2rem; cursor: pointer; font-weight: 300; 
+}
 
 /* ── EXPERIENCE ── */
 .exp-list { display: flex; flex-direction: column; gap: 1.25rem; }
@@ -376,28 +428,33 @@ footer p { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; lette
     <img src="profile.jpg" alt="Dhruv Surti" class="hero-photo">
     <div class="hero-content">
       <h1 class="hero-name">Dhruv Surti</h1>
-      <div class="hero-role"> FINAL YEAR DATA SCIENCE MAJOR </div>
+      <div class="hero-headline">Turning Data into Decisions using AI-Augmented Analysis</div>
+      <div class="hero-role">Final Year Data Science Major | Deakin University | Graduating June 2026</div>
+      
       <div class="hero-location">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 13-8 13s-8-7-8-13a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
         Melbourne, Australia
       </div>
-      <p class="hero-bio">
-  I am a final-year Bachelor of Computer Science student at Deakin University, specializing in Data Science. I am driven by the challenge of transforming complex, raw data into clear, actionable strategies that help businesses grow.
 
-Currently, I serve as the Data Science Team Lead for the FireFusion capstone project. In this role, I manage the end-to-end data engineering stream, architecting automated ETL pipelines that process over 500,000 records from BOM and NASA APIs. By optimizing our PostgreSQL databases, I successfully reduced query response times by 40%, providing a reliable foundation for machine learning predictions.
+      <div class="hero-bio">
+        <p>I am a final-year Bachelor of Computer Science student at Deakin University, specializing in Data Science. I am driven by the challenge of transforming complex, raw data into clear, actionable strategies that help businesses grow.</p>
+        <p>Currently, I serve as the <strong>Data Science Team Lead</strong> for the <strong>FireFusion</strong> capstone project. In this role, I manage the end-to-end data engineering stream, architecting automated ETL pipelines that process over 500,000 records from BOM and NASA APIs. By optimizing our PostgreSQL databases, I successfully reduced query response times by 40%, providing a reliable foundation for machine learning predictions.</p>
+        <p>My work focuses on the intersection of technical rigor and business value. I use <strong>AI-Augmented Analysis</strong> to drive efficiency, employing advanced prompt engineering and automated workflows to speed up data cleaning and insight generation.</p>
+        
+        <div class="hero-highlights">
+          <div class="hero-highlights-title">Industry Project Highlights</div>
+          <ul>
+            <li><strong>Energy Analytics:</strong> Developed a 3-phase pipeline for 10,000 Australian households to surface pricing opportunities in the energy sector.</li>
+            <li><strong>Retail Performance:</strong> Built the Coles Sales Performance Dashboard in Power BI, analyzing revenue trends across all Australian states.</li>
+            <li><strong>Supply Chain Logic:</strong> Created complex DAX measures to identify operational bottlenecks and improve inventory turnover.</li>
+          </ul>
+        </div>
+      </div>
 
-My work focuses on the intersection of technical rigor and business value. I use AI-Augmented Analysis to drive efficiency, employing advanced prompt engineering and automated workflows to speed up data cleaning and insight generation.
+      <div class="hero-goal">
+        <strong>Current Goal:</strong> I am actively seeking entry-level <strong>Data Analyst</strong> and <strong>Business Analyst</strong> roles in Melbourne starting June 2026. I am open to full-time, part-time, and internship opportunities.
+      </div>
 
-Industry Project Highlights
-
-Energy Analytics: Developed a 3-phase pipeline for 10,000 Australian households to surface pricing opportunities in the energy sector.
-
-Retail Performance: Built the Coles Sales Performance Dashboard in Power BI, analyzing revenue trends across all Australian states.
-
-Supply Chain Logic: Created complex DAX measures to identify operational bottlenecks and improve inventory turnover.
-
-Current Goal: I am actively seeking entry-level Data Analyst and Business Analyst roles in Melbourne starting June 2026. I am open to full-time, part-time, and internship opportunities.
-</p>
       <div class="hero-chips">
         <span class="hero-chip">SQL</span>
         <span class="hero-chip">Python</span>
@@ -500,14 +557,13 @@ Current Goal: I am actively seeking entry-level Data Analyst and Business Analys
     <div class="section-title">Projects</div>
     <div class="projects-list">
 
-      <div class="project-card" onclick="toggleProject('p1')">
+      <div class="project-card">
         <div class="project-card-header">
           <div class="project-num">01</div>
           <div class="project-title-wrap">
             <div class="project-title">Residential Energy Analytics &amp; Margin Assurance</div>
             <div class="project-context">Personal Portfolio Project &nbsp;·&nbsp; Australian Energy Sector</div>
           </div>
-          <div class="project-expand-icon" id="p1-icon">&#8964;</div>
         </div>
         <div class="project-tags">
           <span class="project-tag">SQL (MySQL)</span>
@@ -521,7 +577,7 @@ Current Goal: I am actively seeking entry-level Data Analyst and Business Analys
           <div class="metric-item"><span class="metric-val">150</span><span class="metric-label">Anomalies resolved</span></div>
           <div class="metric-item"><span class="metric-val">~15%</span><span class="metric-label">Error prevented</span></div>
         </div>
-        <div class="project-evidence" id="p1-evidence">
+        <div class="project-evidence">
           <div class="evidence-heading">Project Evidence</div>
           <div class="evidence-img-grid three">
             <div class="ev-img"><img src="final_dashboard.png" alt="Tableau Dashboard"><div class="ev-caption">Tableau Executive Dashboard</div></div>
@@ -557,15 +613,13 @@ Current Goal: I am actively seeking entry-level Data Analyst and Business Analys
         </div>
       </div>
 
-      <!-- PROJECT 03 — NEW: COLES SALES DASHBOARD -->
-      <div class="project-card" onclick="toggleProject('p3')">
+      <div class="project-card">
         <div class="project-card-header">
           <div class="project-num">03</div>
           <div class="project-title-wrap">
             <div class="project-title">Coles Sales Performance Dashboard</div>
             <div class="project-context">Personal Portfolio Project &nbsp;·&nbsp; Australian Retail Sector</div>
           </div>
-          <div class="project-expand-icon" id="p3-icon">&#8964;</div>
         </div>
         <div class="project-tags">
           <span class="project-tag">Power BI</span>
@@ -580,7 +634,7 @@ Current Goal: I am actively seeking entry-level Data Analyst and Business Analys
           <div class="metric-item"><span class="metric-val">$2M</span><span class="metric-label">Avg Revenue/Staff</span></div>
           <div class="metric-item"><span class="metric-val">$33M</span><span class="metric-label">Avg Revenue/Store</span></div>
         </div>
-        <div class="project-evidence" id="p3-evidence">
+        <div class="project-evidence">
           <div class="evidence-heading">Project Evidence</div>
           <div class="evidence-img-grid" style="grid-template-columns: 1fr;">
             <div class="ev-img"><img src="coles_dashboard.png" alt="Coles Power BI Sales Dashboard"><div class="ev-caption">Power BI Sales Dashboard — Coles Australia</div></div>
@@ -771,19 +825,34 @@ Current Goal: I am actively seeking entry-level Data Analyst and Business Analys
   <p>Dhruv Surti &nbsp;·&nbsp; Data Analyst &nbsp;·&nbsp; Melbourne, Victoria &nbsp;·&nbsp; Graduating June 2026</p>
 </footer>
 
+<div class="lightbox" id="imageLightbox" onclick="closeLightbox()">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightboxImg" src="" alt="Zoomed Evidence">
+</div>
+
 <script>
+// Reveal animations
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.06 });
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-function toggleProject(id) {
-  const panel = document.getElementById(id + '-evidence');
-  const icon = document.getElementById(id + '-icon');
-  const isOpen = panel.classList.contains('open');
-  panel.classList.toggle('open', !isOpen);
-  if (icon) icon.classList.toggle('open', !isOpen);
+// Lightbox logic
+function openLightbox(src) {
+  const lightbox = document.getElementById('imageLightbox');
+  const img = document.getElementById('lightboxImg');
+  img.src = src;
+  lightbox.classList.add('active');
 }
+
+function closeLightbox() {
+  document.getElementById('imageLightbox').classList.remove('active');
+}
+
+// Attach click events to all evidence images
+document.querySelectorAll('.ev-img img').forEach(img => {
+  img.parentElement.onclick = () => openLightbox(img.src);
+});
 </script>
 </body>
 </html>
