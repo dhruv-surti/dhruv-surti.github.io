@@ -3,22 +3,54 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhruv Surti Portfolio</title>
+<title>Dhruv Surti | Data & Systems Engineer | Melbourne</title>
+<meta name="description" content="Portfolio of Dhruv Surti, Data & Systems Engineer in Melbourne, Australia. Experienced in Python, SQL, PostgreSQL, Snowflake, dbt, Power BI, Tableau, and Cloud Operations. Full Australian Working Rights (Subclass 485).">
+<meta name="keywords" content="Dhruv Surti, Data Engineer Melbourne, Analytics Engineer, Data Analyst, Systems Administrator, Python, SQL, PostgreSQL, PostGIS, Snowflake, dbt, Power BI, Tableau, AWS, Deakin University">
+<meta property="og:title" content="Dhruv Surti | Data & Systems Engineer | Melbourne">
+<meta property="og:description" content="Data Engineering, BI Analytics & Cloud Systems Portfolio. B.CompSc (Data Science) with Distinction, Deakin University.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://dhruv-surti.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Dhruv Surti",
+  "jobTitle": "Data & Systems Engineer",
+  "url": "https://dhruv-surti.github.io/",
+  "email": "mailto:youhavereacheddhruv@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Melbourne",
+    "addressRegion": "VIC",
+    "addressCountry": "AU"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Deakin University"
+  },
+  "sameAs": [
+    "https://github.com/dhruv-surti",
+    "https://www.linkedin.com/in/dhruv-surti-73b782390/"
+  ],
+  "knowsAbout": ["Python", "SQL", "PostgreSQL", "PostGIS", "Snowflake", "dbt", "ETL Pipelines", "Power BI", "Tableau", "AWS", "Systems Administration", "Datto", "Git", "GitHub", "GitLab"]
+}
+</script>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
   --stone: #EAE6DC;
+  --stone-light: #F3F0E8;
   --soil: #24201A;
   --soil-2: #2C2620;
   --ink: #22201B;
-  --ink-70: rgba(34, 32, 27, 0.72);
-  --ink-45: rgba(34, 32, 27, 0.48);
+  --ink-70: rgba(34, 32, 27, 0.74);
+  --ink-45: rgba(34, 32, 27, 0.52);
   --ink-15: rgba(34, 32, 27, 0.14);
-  --stone-70: rgba(234, 230, 220, 0.72);
-  --stone-45: rgba(234, 230, 220, 0.48);
+  --stone-70: rgba(234, 230, 220, 0.78);
+  --stone-45: rgba(234, 230, 220, 0.52);
   --rust: #A8462A;
   --rust-deep: #7C331E;
   --moss: #5C6B45;
@@ -26,7 +58,7 @@
   --line-on-soil: rgba(234, 230, 220, 0.16);
   --display: 'Spectral', Georgia, serif;
   --body: 'Work Sans', system-ui, sans-serif;
-  --r: 3px;
+  --r: 4px;
 }
 
 html { scroll-behavior: smooth; }
@@ -38,100 +70,167 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.wrap { max-width: 920px; margin: 0 auto; padding: 0 2rem; }
+.wrap { max-width: 940px; margin: 0 auto; padding: 0 2rem; }
 a { color: inherit; }
 
+/* Navigation */
 nav {
   position: sticky; top: 0; z-index: 100;
-  background: rgba(234, 230, 220, 0.9);
+  background: rgba(234, 230, 220, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
 }
 .nav-inner {
-  max-width: 920px; margin: 0 auto; padding: 0 2rem;
-  height: 58px; display: flex; align-items: center; justify-content: space-between;
+  max-width: 940px; margin: 0 auto; padding: 0 2rem;
+  height: 60px; display: flex; align-items: center; justify-content: space-between;
 }
-.nav-mark { font-family: var(--display); font-size: 1.1rem; font-weight: 600; text-decoration: none; color: var(--ink); }
-.nav-links { display: flex; gap: 1.6rem; list-style: none; }
-.nav-links a { font-size: 0.86rem; text-decoration: none; color: var(--ink-70); transition: color 0.15s; }
+.nav-mark { font-family: var(--display); font-size: 1.15rem; font-weight: 600; text-decoration: none; color: var(--ink); }
+.nav-links { display: flex; gap: 1.5rem; list-style: none; align-items: center; }
+.nav-links a { font-size: 0.86rem; text-decoration: none; color: var(--ink-70); transition: color 0.15s; font-weight: 500; }
 .nav-links a:hover { color: var(--rust-deep); }
 
-.hero { padding: 5rem 0 4rem; }
-.hero-eyebrow { font-size: 0.9rem; color: var(--rust-deep); font-weight: 500; margin-bottom: 1.1rem; }
-.hero-grid { display: grid; grid-template-columns: 1.55fr 1fr; gap: 3rem; align-items: end; }
-.hero-name { font-family: var(--display); font-weight: 600; font-size: clamp(2.6rem, 6vw, 3.7rem); line-height: 1.05; letter-spacing: -0.01em; }
+/* Hero */
+.hero { padding: 4.5rem 0 3.8rem; }
+.status-bar {
+  display: inline-flex; align-items: center; gap: 0.55rem;
+  font-size: 0.78rem; font-weight: 500; color: var(--ink-70);
+  background: var(--stone-light); border: 1px solid var(--line);
+  padding: 0.35rem 0.85rem; border-radius: 99px; margin-bottom: 1.25rem;
+}
+.status-dot { width: 7px; height: 7px; background: var(--moss); border-radius: 50%; display: inline-block; }
+.hero-eyebrow { font-size: 0.92rem; color: var(--rust-deep); font-weight: 600; margin-bottom: 0.85rem; letter-spacing: 0.01em; }
+.hero-grid { display: grid; grid-template-columns: 1.6fr 1fr; gap: 3rem; align-items: center; }
+.hero-name { font-family: var(--display); font-weight: 600; font-size: clamp(2.4rem, 5.5vw, 3.45rem); line-height: 1.07; letter-spacing: -0.01em; }
 .hero-name em { font-style: italic; color: var(--rust-deep); font-weight: 500; }
-.hero-lede { font-size: 1.06rem; color: var(--ink-70); margin-top: 1.3rem; max-width: 46ch; }
-.hero-photo-wrap { border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; aspect-ratio: 4/5; }
+.hero-lede { font-size: 1.02rem; color: var(--ink-70); margin-top: 1.2rem; max-width: 52ch; }
+.hero-roles {
+  margin-top: 1rem; font-size: 0.84rem; color: var(--ink-45);
+  display: flex; flex-wrap: wrap; gap: 0.45rem; align-items: center;
+}
+.hero-roles strong { color: var(--ink-70); font-weight: 600; }
+.hero-photo-wrap { border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; aspect-ratio: 4/5; background: var(--ink-15); }
 .hero-photo-wrap img { width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block; }
 
-.hero-facts { margin-top: 2.75rem; padding-top: 1.6rem; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
-.hf-label { font-size: 0.72rem; color: var(--ink-45); margin-bottom: 0.3rem; }
-.hf-val { font-family: var(--display); font-size: 1.15rem; font-weight: 500; }
+.hero-facts {
+  margin-top: 2.75rem; padding-top: 1.6rem; border-top: 1px solid var(--line);
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+}
+.hf-label { font-size: 0.74rem; color: var(--ink-45); margin-bottom: 0.25rem; font-weight: 500; }
+.hf-val { font-family: var(--display); font-size: 1.25rem; font-weight: 600; color: var(--ink); }
 
-.hero-actions { display: flex; gap: 0.75rem; margin-top: 2.1rem; flex-wrap: wrap; }
-.btn { display: inline-flex; align-items: center; gap: 0.5rem; font-size: 0.88rem; font-weight: 500; text-decoration: none; padding: 0.65rem 1.3rem; border-radius: var(--r); border: 1px solid; transition: all 0.15s; }
+.hero-actions { display: flex; gap: 0.7rem; margin-top: 1.9rem; flex-wrap: wrap; }
+.btn {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 0.86rem; font-weight: 500; text-decoration: none;
+  padding: 0.62rem 1.2rem; border-radius: var(--r); border: 1px solid; transition: all 0.15s;
+}
 .btn-fill { background: var(--rust); color: var(--stone); border-color: var(--rust); }
 .btn-fill:hover { background: var(--rust-deep); border-color: var(--rust-deep); }
 .btn-line { background: transparent; color: var(--ink); border-color: var(--ink-15); }
-.btn-line:hover { border-color: var(--ink); }
+.btn-line:hover { border-color: var(--ink); background: var(--stone-light); }
 
+/* Sections */
 .band { padding: 4rem 0; border-top: 1px solid var(--line); }
 .band-dark { background: var(--soil); color: var(--stone); border-top: none; }
 .band-dark .wrap { color: var(--stone); }
-.sec-head { margin-bottom: 2.2rem; }
-.sec-title { font-family: var(--display); font-size: 1.7rem; font-weight: 600; }
+.sec-head { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem; margin-bottom: 2.2rem; }
+.sec-title { font-family: var(--display); font-size: 1.75rem; font-weight: 600; }
+.sec-sub { font-size: 0.88rem; color: var(--ink-45); }
+.band-dark .sec-sub { color: var(--stone-45); }
 
-.skill-tier { margin-bottom: 2.3rem; }
-.skill-tier:last-child { margin-bottom: 0; }
-.st-title { font-size: 0.82rem; font-weight: 600; color: var(--stone-70); margin-bottom: 0.9rem; }
-.skill-items { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.skill-pill { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.85rem; padding: 0.4rem 0.85rem 0.4rem 0.65rem; border-radius: 99px; border: 1px solid var(--line-on-soil); color: var(--stone-70); }
-.skill-pill img { width: 15px; height: 15px; display: block; }
-.skill-tier.building .skill-pill { border-color: rgba(168, 70, 42, 0.35); color: rgba(234,230,220,0.6); }
+/* Skills Grid */
+.skills-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
+.skill-tier {
+  background: var(--soil-2); border: 1px solid var(--line-on-soil);
+  padding: 1.4rem 1.5rem; border-radius: var(--r);
+}
+.st-title { font-size: 0.84rem; font-weight: 600; color: var(--stone); margin-bottom: 0.95rem; letter-spacing: 0.01em; }
+.skill-items { display: flex; flex-wrap: wrap; gap: 0.48rem; }
+.skill-pill {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  font-size: 0.82rem; padding: 0.36rem 0.8rem 0.36rem 0.65rem;
+  border-radius: 99px; border: 1px solid var(--line-on-soil); color: var(--stone-70);
+}
+.skill-pill img { width: 14px; height: 14px; display: block; }
 
+@media (max-width: 720px) {
+  .skills-grid { grid-template-columns: 1fr; gap: 1.2rem; }
+}
+
+/* Filter Bar for Projects */
+.filter-bar { display: flex; gap: 0.45rem; flex-wrap: wrap; }
+.filter-btn {
+  background: transparent; border: 1px solid var(--line); color: var(--ink-70);
+  font-family: var(--body); font-size: 0.78rem; font-weight: 500;
+  padding: 0.35rem 0.8rem; border-radius: 99px; cursor: pointer; transition: all 0.15s;
+}
+.filter-btn:hover, .filter-btn.active {
+  background: var(--rust); color: var(--stone); border-color: var(--rust);
+}
+
+/* Projects */
 .projects { display: flex; flex-direction: column; }
-.project { display: grid; grid-template-columns: 190px 1fr; gap: 2.2rem; padding: 2.2rem 0; border-top: 1px solid var(--line); }
+.project {
+  display: grid; grid-template-columns: 200px 1fr; gap: 2.2rem;
+  padding: 2.2rem 0; border-top: 1px solid var(--line);
+}
 .projects .project:first-child { border-top: none; padding-top: 0; }
-.p-thumb { border-radius: var(--r); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 4/3; background: var(--ink-15); }
+.project.hidden { display: none; }
+.p-thumb {
+  border-radius: var(--r); overflow: hidden; border: 1px solid var(--line);
+  aspect-ratio: 4/3; background: var(--stone-light);
+  display: flex; align-items: center; justify-content: center;
+}
 .p-thumb img { width: 100%; height: 100%; object-fit: cover; display: block; }
-.p-tag { font-size: 0.78rem; color: var(--rust-deep); font-weight: 500; margin-bottom: 0.5rem; }
-.p-title { font-family: var(--display); font-size: 1.4rem; font-weight: 600; margin-bottom: 0.7rem; }
+.p-badge-box {
+  padding: 1rem; text-align: center; font-family: var(--display);
+  color: var(--rust-deep); font-weight: 600; font-size: 0.95rem; line-height: 1.3;
+}
+.p-tag { font-size: 0.78rem; color: var(--rust-deep); font-weight: 600; margin-bottom: 0.4rem; }
+.p-title { font-family: var(--display); font-size: 1.4rem; font-weight: 600; margin-bottom: 0.6rem; }
 .p-title a { text-decoration: none; }
 .p-title a:hover { color: var(--rust-deep); }
-.p-desc { font-size: 0.95rem; color: var(--ink-70); max-width: 62ch; margin-bottom: 1.1rem; }
-.p-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.1rem; }
-.p-stack span { font-size: 0.75rem; color: var(--ink-45); border: 1px solid var(--line); padding: 0.2rem 0.6rem; border-radius: 99px; }
-.p-metrics { display: flex; gap: 1.8rem; margin-bottom: 1rem; }
-.pm-val { font-family: var(--display); font-size: 1.15rem; font-weight: 600; display: block; }
+.p-desc { font-size: 0.93rem; color: var(--ink-70); max-width: 64ch; margin-bottom: 1rem; }
+.p-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1rem; }
+.p-stack span {
+  font-size: 0.74rem; color: var(--ink-70); background: var(--stone-light);
+  border: 1px solid var(--line); padding: 0.18rem 0.6rem; border-radius: 99px; font-weight: 500;
+}
+.p-metrics { display: flex; gap: 1.8rem; margin-bottom: 0.95rem; flex-wrap: wrap; }
+.pm-val { font-family: var(--display); font-size: 1.15rem; font-weight: 600; display: block; color: var(--ink); }
 .pm-label { font-size: 0.68rem; color: var(--ink-45); }
-.p-link { font-size: 0.85rem; font-weight: 600; color: var(--rust-deep); text-decoration: none; }
+.p-link { font-size: 0.84rem; font-weight: 600; color: var(--rust-deep); text-decoration: none; }
 .p-link:hover { text-decoration: underline; }
 
 @media (max-width: 700px) {
-  .project { grid-template-columns: 1fr; }
+  .project { grid-template-columns: 1fr; gap: 1.2rem; }
   .p-thumb { aspect-ratio: 16/9; }
 }
 
+/* Experience */
 .exp-row { display: grid; grid-template-columns: 190px 1fr; gap: 2.2rem; padding: 1.9rem 0; border-top: 1px solid var(--line); }
 .exp-row:first-child { border-top: none; padding-top: 0; }
-.exp-period { font-size: 0.82rem; color: var(--ink-45); }
-.exp-role { font-family: var(--display); font-size: 1.2rem; font-weight: 600; }
-.exp-org { font-size: 0.85rem; color: var(--rust-deep); font-weight: 500; margin: 0.15rem 0 0.9rem; }
-.exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.exp-period { font-size: 0.82rem; color: var(--ink-45); font-weight: 500; }
+.exp-loc { font-size: 0.75rem; color: var(--ink-45); margin-top: 0.2rem; }
+.exp-role { font-family: var(--display); font-size: 1.22rem; font-weight: 600; }
+.exp-org { font-size: 0.86rem; color: var(--rust-deep); font-weight: 600; margin: 0.15rem 0 0.85rem; }
+.exp-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.48rem; }
 .exp-bullets li { font-size: 0.9rem; color: var(--ink-70); padding-left: 1.1rem; position: relative; }
-.exp-bullets li::before { content: ''; position: absolute; left: 0; top: 0.55em; width: 5px; height: 5px; background: var(--moss); border-radius: 50%; }
+.exp-bullets li::before { content: ''; position: absolute; left: 0; top: 0.58em; width: 5px; height: 5px; background: var(--moss); border-radius: 50%; }
 
 @media (max-width: 700px) { .exp-row { grid-template-columns: 1fr; gap: 0.4rem; } }
 
-.cred-grid { display: grid; grid-template-columns: 1fr 1.3fr; gap: 2.5rem; }
-.edu-uni { font-family: var(--display); font-size: 1.25rem; font-weight: 600; }
-.edu-degree { font-size: 0.92rem; color: var(--ink-70); margin: 0.35rem 0 0.15rem; }
-.edu-major { font-size: 0.84rem; color: var(--rust-deep); font-weight: 500; }
-.edu-period { font-size: 0.78rem; color: var(--ink-45); margin-top: 0.9rem; }
+/* Credentials */
+.cred-grid { display: grid; grid-template-columns: 1fr 1.35fr; gap: 2.5rem; }
+.edu-card { background: var(--stone-light); border: 1px solid var(--line); padding: 1.5rem; border-radius: var(--r); }
+.edu-uni { font-family: var(--display); font-size: 1.28rem; font-weight: 600; }
+.edu-degree { font-size: 0.94rem; color: var(--ink); font-weight: 500; margin: 0.3rem 0 0.15rem; }
+.edu-major { font-size: 0.85rem; color: var(--rust-deep); font-weight: 600; }
+.edu-period { font-size: 0.8rem; color: var(--ink-45); margin-top: 0.75rem; }
+.edu-highlights { margin-top: 1rem; padding-top: 0.9rem; border-top: 1px solid var(--line); list-style: none; display: flex; flex-direction: column; gap: 0.4rem; font-size: 0.84rem; color: var(--ink-70); }
 
 .cert-list { display: flex; flex-direction: column; }
-.cert { display: flex; justify-content: space-between; gap: 1rem; padding: 0.85rem 0; border-top: 1px solid var(--line); }
+.cert { display: flex; justify-content: space-between; gap: 1rem; padding: 0.8rem 0; border-top: 1px solid var(--line); }
 .cert:first-child { border-top: none; padding-top: 0; }
 .cert-name { font-size: 0.9rem; font-weight: 600; }
 .cert-issuer { font-size: 0.78rem; color: var(--ink-45); margin-top: 0.1rem; }
@@ -139,25 +238,28 @@ nav {
 
 @media (max-width: 700px) { .cred-grid { grid-template-columns: 1fr; } }
 
-.aside-note { display: flex; gap: 1.3rem; align-items: flex-start; padding-top: 0.5rem; }
+/* Aside Note */
+.aside-note { display: flex; gap: 1.3rem; align-items: flex-start; padding-top: 0.2rem; }
 .aside-mark { font-family: var(--display); font-size: 1.8rem; font-weight: 600; color: var(--rust-deep); flex-shrink: 0; }
-.aside-title { font-weight: 600; margin-bottom: 0.3rem; }
-.aside-note p { font-size: 0.9rem; color: var(--ink-70); max-width: 60ch; }
+.aside-title { font-weight: 600; margin-bottom: 0.25rem; }
+.aside-note p { font-size: 0.9rem; color: var(--ink-70); max-width: 65ch; }
 
+/* Contact */
 .contact-inner { display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 2rem; }
-.contact-heading { font-family: var(--display); font-size: clamp(1.9rem, 4vw, 2.6rem); font-weight: 600; max-width: 14ch; line-height: 1.15; }
-.contact-links { display: flex; flex-direction: column; gap: 0.6rem; align-items: flex-end; }
-.contact-links a { font-size: 0.95rem; text-decoration: none; color: var(--stone-70); }
-.contact-links a:hover { color: var(--stone); }
+.contact-heading { font-family: var(--display); font-size: clamp(1.9rem, 4vw, 2.5rem); font-weight: 600; max-width: 16ch; line-height: 1.15; }
+.contact-sub { font-size: 0.9rem; color: var(--stone-70); margin-top: 0.65rem; max-width: 44ch; }
+.contact-links { display: flex; flex-direction: column; gap: 0.55rem; align-items: flex-end; }
+.contact-links a { font-size: 0.94rem; text-decoration: none; color: var(--stone-70); border-bottom: 1px solid transparent; transition: all 0.15s; }
+.contact-links a:hover { color: var(--stone); border-bottom-color: var(--stone); }
 
-footer { padding: 1.8rem 0; text-align: center; }
-footer p { font-size: 0.76rem; color: var(--ink-45); }
+footer { padding: 1.8rem 0; text-align: center; border-top: 1px solid var(--line); }
+footer p { font-size: 0.78rem; color: var(--ink-45); }
 
 @media (max-width: 700px) {
   .wrap { padding: 0 1.25rem; }
   .nav-inner { padding: 0 1.25rem; }
-  .nav-links a:not(:last-child) { display: none; }
-  .hero { padding: 3.2rem 0 2.5rem; }
+  .nav-links li:not(:last-child) { display: none; }
+  .hero { padding: 3rem 0 2.5rem; }
   .hero-grid { grid-template-columns: 1fr; gap: 1.5rem; }
   .hero-photo-wrap { max-width: 160px; aspect-ratio: 1; }
   .hero-facts { grid-template-columns: 1fr 1fr; }
@@ -184,14 +286,22 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
 
 <div class="wrap">
   <header class="hero">
-    <div class="hero-eyebrow">Data engineer based in Melbourne</div>
+    <div class="status-bar">
+      <span class="status-dot"></span>
+      <span>Melbourne, VIC &bull; Full Australian Working Rights (Subclass 485) &bull; Available Immediately</span>
+    </div>
+    <div class="hero-eyebrow">Data &amp; Systems Engineer</div>
     <div class="hero-grid">
       <div>
-        <h1 class="hero-name">I build the <em>pipelines</em><br>behind good decisions.</h1>
-        <p class="hero-lede">Computer Science graduate from Deakin University, majoring in Data Science. I write ETL pipelines, design database schemas, and set up the tests and documentation that make a pipeline something people can actually rely on.</p>
+        <h1 class="hero-name">I build the <em>pipelines</em> and systems behind good decisions.</h1>
+        <p class="hero-lede">Computer Science graduate (Data Science major, Distinction) from Deakin University and AI &amp; Data Administrator at Natural Velocity. I engineer idempotent ETL pipelines, spatial-temporal PostgreSQL schemas, BI dashboards, and reliable cloud systems that teams can depend on.</p>
+        <div class="hero-roles">
+          <strong>Target Roles:</strong> Data / Analytics Engineer &bull; Data &amp; BI Analyst &bull; Cloud &amp; Systems Support
+        </div>
         <div class="hero-actions">
-          <a href="#projects" class="btn btn-fill">See the work</a>
-          <a href="https://www.linkedin.com/in/dhruv-surti-73b782390/" target="_blank" class="btn btn-line">LinkedIn</a>
+          <a href="#projects" class="btn btn-fill">View Projects</a>
+          <a href="https://github.com/dhruv-surti" target="_blank" rel="noopener" class="btn btn-line">GitHub</a>
+          <a href="https://www.linkedin.com/in/dhruv-surti-73b782390/" target="_blank" rel="noopener" class="btn btn-line">LinkedIn</a>
           <a href="mailto:youhavereacheddhruv@gmail.com" class="btn btn-line">Email</a>
         </div>
       </div>
@@ -201,10 +311,10 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
     </div>
 
     <div class="hero-facts">
-      <div><div class="hf-label">Records piped</div><div class="hf-val">500K+</div></div>
-      <div><div class="hf-label">Query time cut</div><div class="hf-val">~40%</div></div>
-      <div><div class="hf-label">Projects shipped</div><div class="hf-val">5</div></div>
-      <div><div class="hf-label">Degree</div><div class="hf-val">Distinction</div></div>
+      <div><div class="hf-label">Records Piped &amp; Validated</div><div class="hf-val">700K+</div></div>
+      <div><div class="hf-label">Spatial Query Latency Cut</div><div class="hf-val">~40%</div></div>
+      <div><div class="hf-label">End-to-End Projects</div><div class="hf-val">6 Shipped</div></div>
+      <div><div class="hf-label">B.CompSc (Data Science)</div><div class="hf-val">Distinction</div></div>
     </div>
   </header>
 </div>
@@ -212,41 +322,67 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
 <section class="band band-dark" id="skills">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title" style="color: var(--stone)">Skills</h2>
+      <h2 class="sec-title" style="color: var(--stone)">Technical Competencies</h2>
+      <span class="sec-sub">Production tools across data engineering, BI analytics, and cloud administration</span>
     </div>
 
-    <div class="skill-tier">
-      <div class="st-title">What I've built with and can debug on my own</div>
-      <div class="skill-items">
-        <span class="skill-pill">SQL</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/python/EAE6DC" alt="">Python</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/postgresql/EAE6DC" alt="">PostgreSQL</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/dbt/EAE6DC" alt="">dbt</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/git/EAE6DC" alt="">Git</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/github/EAE6DC" alt="">GitHub</span>
-        <span class="skill-pill">ETL / ELT pipeline design</span>
-        <span class="skill-pill">REST API ingestion</span>
-        <span class="skill-pill">Data testing & validation</span>
-        <span class="skill-pill">Star schema modelling</span>
+    <div class="skills-grid">
+      <div class="skill-tier">
+        <div class="st-title">Data Engineering &amp; Warehousing</div>
+        <div class="skill-items">
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/python/EAE6DC" alt="">Python</span>
+          <span class="skill-pill">Advanced SQL</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/postgresql/EAE6DC" alt="">PostgreSQL &amp; PostGIS</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/snowflake/EAE6DC" alt="">Snowflake</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/dbt/EAE6DC" alt="">dbt</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/supabase/EAE6DC" alt="">Supabase</span>
+          <span class="skill-pill">Idempotent ETL / ELT</span>
+          <span class="skill-pill">REST API Ingestion</span>
+          <span class="skill-pill">Dimensional &amp; Hub-Spoke Schemas</span>
+          <span class="skill-pill">Data Quality Testing</span>
+        </div>
       </div>
-    </div>
 
-    <div class="skill-tier building">
-      <div class="st-title">Used on real projects, still building depth</div>
-      <div class="skill-items">
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/pandas/EAE6DC" alt="">pandas</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/numpy/EAE6DC" alt="">NumPy</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/powerbi/EAE6DC" alt="">Power BI</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/tableau/EAE6DC" alt="">Tableau</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/amazonaws/EAE6DC" alt="">AWS</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/supabase/EAE6DC" alt="">Supabase</span>
-        <span class="skill-pill">PostGIS</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/streamlit/EAE6DC" alt="">Streamlit</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/plotly/EAE6DC" alt="">Plotly</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/scikitlearn/EAE6DC" alt="">scikit-learn</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/huggingface/EAE6DC" alt="">Hugging Face</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/apacheairflow/EAE6DC" alt="">Airflow</span>
-        <span class="skill-pill"><img src="https://cdn.simpleicons.org/microsoftazure/EAE6DC" alt="">Azure</span>
+      <div class="skill-tier">
+        <div class="st-title">BI, Analytics &amp; Data Science</div>
+        <div class="skill-items">
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/powerbi/EAE6DC" alt="">Power BI (DAX, Power Query)</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/tableau/EAE6DC" alt="">Tableau</span>
+          <span class="skill-pill">Excel Financial Modelling</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/pandas/EAE6DC" alt="">pandas</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/numpy/EAE6DC" alt="">NumPy</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/streamlit/EAE6DC" alt="">Streamlit</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/plotly/EAE6DC" alt="">Plotly</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/scikitlearn/EAE6DC" alt="">scikit-learn</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/huggingface/EAE6DC" alt="">Hugging Face &amp; PyTorch</span>
+        </div>
+      </div>
+
+      <div class="skill-tier">
+        <div class="st-title">Cloud, DevOps &amp; Systems Operations</div>
+        <div class="skill-items">
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/amazonaws/EAE6DC" alt="">AWS (S3, EC2, RDS, IAM)</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/microsoftazure/EAE6DC" alt="">Azure</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/git/EAE6DC" alt="">Git</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/github/EAE6DC" alt="">GitHub (PR Governance)</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/gitlab/EAE6DC" alt="">GitLab Kanban</span>
+          <span class="skill-pill">Datto RMM &amp; Monitoring</span>
+          <span class="skill-pill">YAML &amp; JSON Configs</span>
+          <span class="skill-pill"><img src="https://cdn.simpleicons.org/apacheairflow/EAE6DC" alt="">Airflow</span>
+        </div>
+      </div>
+
+      <div class="skill-tier">
+        <div class="st-title">Governance, Support &amp; Collaboration</div>
+        <div class="skill-items">
+          <span class="skill-pill">Role-Based Access Control (RBAC)</span>
+          <span class="skill-pill">Zero-Secrets Hygiene (.env)</span>
+          <span class="skill-pill">Data Lineage &amp; Contracts</span>
+          <span class="skill-pill">HubSpot Service Desk</span>
+          <span class="skill-pill">Jira &amp; Confluence</span>
+          <span class="skill-pill">Technical Runbooks &amp; SOPs</span>
+          <span class="skill-pill">Claude Code Workflows</span>
+        </div>
       </div>
     </div>
   </div>
@@ -255,94 +391,124 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
 <section class="band" id="projects">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title">Projects</h2>
+      <div>
+        <h2 class="sec-title">Featured Projects</h2>
+        <span class="sec-sub">Filter by domain to inspect pipelines, BI dashboards, and production systems</span>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Project category filter">
+        <button class="filter-btn active" data-filter="all">All (6)</button>
+        <button class="filter-btn" data-filter="data-eng">Data Engineering</button>
+        <button class="filter-btn" data-filter="analytics">BI &amp; Analytics</button>
+        <button class="filter-btn" data-filter="systems-ai">Systems &amp; AI</button>
+      </div>
     </div>
 
     <div class="projects">
 
-      <article class="project">
+      <article class="project" data-category="data-eng">
         <div class="p-thumb"><img src="https://opengraph.githubassets.com/1/dhruv-surti/clinical-data-pipeline" alt="Clinical Trials ETL Pipeline"></div>
         <div>
-          <div class="p-tag">ETL pipeline, public health data</div>
-          <h3 class="p-title"><a href="https://github.com/dhruv-surti/clinical-data-pipeline" target="_blank">Clinical Trials ETL Pipeline</a></h3>
-          <p class="p-desc">Pulls live trial data from the ClinicalTrials.gov API, cleans and flattens it, and loads it into PostgreSQL using upserts so it's safe to re-run. Built dbt models on top for staging and aggregation, with automated tests checking for nulls, duplicates, and unexpected values, plus generated documentation.</p>
+          <div class="p-tag">Data Engineering &bull; Public Health API &amp; dbt</div>
+          <h3 class="p-title"><a href="https://github.com/dhruv-surti/clinical-data-pipeline" target="_blank" rel="noopener">Clinical Trials Idempotent ETL Pipeline</a></h3>
+          <p class="p-desc">Extracts live diabetes clinical trial records from the ClinicalTrials.gov REST API (v2), normalises deeply nested JSON with defensive missing-field handling, and loads PostgreSQL using transactional upserts (ON CONFLICT DO UPDATE) for safe, duplicate-free re-runs. Includes modular dbt staging/mart models and automated schema quality tests.</p>
           <div class="p-stack">
-            <span>Python</span><span>PostgreSQL</span><span>dbt</span><span>psycopg2</span><span>REST API</span>
+            <span>Python</span><span>PostgreSQL</span><span>dbt</span><span>psycopg2</span><span>REST API v2</span><span>.env Security</span>
           </div>
           <div class="p-metrics">
-            <div><span class="pm-val">Idempotent</span><span class="pm-label">safe re-runs</span></div>
-            <div><span class="pm-val">4</span><span class="pm-label">automated dbt tests</span></div>
+            <div><span class="pm-val">Idempotent</span><span class="pm-label">ON CONFLICT upserts</span></div>
+            <div><span class="pm-val">4 Suites</span><span class="pm-label">automated dbt tests</span></div>
+            <div><span class="pm-val">0 Crashes</span><span class="pm-label">defensive JSON parsing</span></div>
           </div>
-          <a href="https://github.com/dhruv-surti/clinical-data-pipeline" target="_blank" class="p-link">View repository</a>
+          <a href="https://github.com/dhruv-surti/clinical-data-pipeline" target="_blank" rel="noopener" class="p-link">View repository &rarr;</a>
         </div>
       </article>
 
-      <article class="project">
-        <div class="p-thumb"><img src="https://opengraph.githubassets.com/1/dhruv-surti/NVIDIA-Brev-Code-Portal" alt="Instant Credential Portal"></div>
+      <article class="project" data-category="data-eng systems-ai">
+        <div class="p-thumb">
+          <div class="p-badge-box">FireFusion<br>Spatial-Temporal<br>Data Platform<br>(PostGIS &amp; Python)</div>
+        </div>
         <div>
-          <div class="p-tag">Live event system</div>
-          <h3 class="p-title"><a href="https://github.com/dhruv-surti/NVIDIA-Brev-Code-Portal" target="_blank">Instant Credential Portal</a></h3>
-          <p class="p-desc">Built for a live NVIDIA-affiliated developer workshop with 40+ attendees. People scanned a QR code and got their assigned compute access code straight away, no login. Switched from a claim-based allocation model to pre-assigned lookups partway through development to remove race-condition risk, then supported it on-site during check-in.</p>
+          <div class="p-tag">Data Platform Architecture &bull; Victorian Emergency Risk</div>
+          <h3 class="p-title"><a href="https://github.com/dhruv-surti" target="_blank" rel="noopener">FireFusion Bushfire Forecasting Data Platform</a></h3>
+          <p class="p-desc">Led a 17-person data engineering stream to architect a Hub-and-Spoke spatial-temporal database in PostgreSQL/PostGIS (Supabase). Built 3 automated Python ETL pipelines aligning 500,000+ historical fire, weather, vegetation, and terrain records from Bureau of Meteorology and NASA APIs onto a unified Victorian grid with reusable GridSnapper tooling.</p>
           <div class="p-stack">
-            <span>Google Apps Script</span><span>Google Sheets</span><span>HTML/CSS</span><span>Vanilla JS</span>
+            <span>Python</span><span>PostgreSQL / PostGIS</span><span>Supabase</span><span>Spatial ETL</span><span>GitHub Branch Protection</span><span>SQL Views</span>
           </div>
           <div class="p-metrics">
-            <div><span class="pm-val">40+</span><span class="pm-label">attendees served</span></div>
-            <div><span class="pm-val">0</span><span class="pm-label">failed lookups</span></div>
+            <div><span class="pm-val">500K+</span><span class="pm-label">API records unified</span></div>
+            <div><span class="pm-val">~40%</span><span class="pm-label">query latency reduction</span></div>
+            <div><span class="pm-val">78.6K</span><span class="pm-label">MVP rows validated (0 dropped)</span></div>
           </div>
-          <a href="https://github.com/dhruv-surti/NVIDIA-Brev-Code-Portal" target="_blank" class="p-link">View repository</a>
+          <a href="https://github.com/dhruv-surti" target="_blank" rel="noopener" class="p-link">View GitHub profile &rarr;</a>
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-category="analytics data-eng">
         <div class="p-thumb"><img src="final_dashboard.png" alt="Residential Energy Analytics dashboard"></div>
         <div>
-          <div class="p-tag">Australian energy sector</div>
-          <h3 class="p-title"><a href="https://github.com/dhruv-surti/Residential-Energy-Analytics-Margin-Assurance" target="_blank">Residential Energy Analytics & Margin Assurance</a></h3>
-          <p class="p-desc">Simulated energy consumption and revenue across 10,000 Australian households. Built the pipeline in three stages: SQL for data engineering, Excel for financial modelling, and Tableau for the executive dashboard, comparing pricing across EV, Solar, and Standard plans.</p>
+          <div class="p-tag">SQL Data Engineering &amp; BI &bull; Australian Energy Sector</div>
+          <h3 class="p-title"><a href="https://github.com/dhruv-surti/Residential-Energy-Analytics-Margin-Assurance" target="_blank" rel="noopener">Residential Energy Analytics &amp; Margin Assurance</a></h3>
+          <p class="p-desc">Simulated energy consumption and tariff margins across 10,000 Australian households. Engineered a three-stage workflow: MySQL for data cleaning and anomaly resolution, Excel for financial margin modelling, and Tableau for executive tariff comparison across EV, Solar, and Standard plans.</p>
           <div class="p-stack">
-            <span>SQL (MySQL)</span><span>Excel</span><span>Tableau</span>
+            <span>SQL (MySQL)</span><span>Excel Financial Modelling</span><span>Tableau</span><span>Data Auditing</span>
           </div>
           <div class="p-metrics">
-            <div><span class="pm-val">10,000</span><span class="pm-label">households</span></div>
+            <div><span class="pm-val">10,000</span><span class="pm-label">households modelled</span></div>
             <div><span class="pm-val">$218K</span><span class="pm-label">revenue analysed</span></div>
-            <div><span class="pm-val">150</span><span class="pm-label">anomalies resolved</span></div>
+            <div><span class="pm-val">150</span><span class="pm-label">data anomalies resolved</span></div>
           </div>
-          <a href="https://github.com/dhruv-surti/Residential-Energy-Analytics-Margin-Assurance" target="_blank" class="p-link">View repository</a>
+          <a href="https://github.com/dhruv-surti/Residential-Energy-Analytics-Margin-Assurance" target="_blank" rel="noopener" class="p-link">View repository &rarr;</a>
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-category="analytics">
         <div class="p-thumb"><img src="coles_dashboard.png" alt="Coles Sales Performance dashboard"></div>
         <div>
-          <div class="p-tag">Australian retail sector</div>
-          <h3 class="p-title"><a href="https://github.com/dhruv-surti/coles-sales-dashboard" target="_blank">Coles Sales Performance Dashboard</a></h3>
-          <p class="p-desc">Power BI dashboard analysing store-level gross sales, revenue per staff member, and forecast-vs-actual performance across six Australian states over two quarters, so store managers can quickly spot which locations are underperforming.</p>
+          <div class="p-tag">Business Intelligence &bull; Australian Retail Sector</div>
+          <h3 class="p-title"><a href="https://github.com/dhruv-surti/coles-sales-dashboard" target="_blank" rel="noopener">Coles Sales Performance Dashboard</a></h3>
+          <p class="p-desc">Interactive Power BI decision dashboard analysing store-level gross sales, revenue per team member, and forecast-versus-actual variance across six Australian states over two quarters, enabling regional managers to isolate underperforming locations rapidly.</p>
           <div class="p-stack">
-            <span>Power BI</span><span>DAX</span><span>Power Query</span>
+            <span>Power BI</span><span>DAX</span><span>Power Query</span><span>Star Schema</span>
           </div>
           <div class="p-metrics">
-            <div><span class="pm-val">$28,577M</span><span class="pm-label">gross sales</span></div>
-            <div><span class="pm-val">6</span><span class="pm-label">states tracked</span></div>
+            <div><span class="pm-val">$28,577M</span><span class="pm-label">gross sales tracked</span></div>
+            <div><span class="pm-val">6 States</span><span class="pm-label">multi-quarter variance</span></div>
           </div>
-          <a href="https://github.com/dhruv-surti/coles-sales-dashboard" target="_blank" class="p-link">View repository</a>
+          <a href="https://github.com/dhruv-surti/coles-sales-dashboard" target="_blank" rel="noopener" class="p-link">View repository &rarr;</a>
         </div>
       </article>
 
-      <article class="project">
+      <article class="project" data-category="systems-ai">
+        <div class="p-thumb"><img src="https://opengraph.githubassets.com/1/dhruv-surti/NVIDIA-Brev-Code-Portal" alt="Instant Credential Portal"></div>
+        <div>
+          <div class="p-tag">Live Event Systems &amp; Support</div>
+          <h3 class="p-title"><a href="https://github.com/dhruv-surti/NVIDIA-Brev-Code-Portal" target="_blank" rel="noopener">Instant Credential Portal (NVIDIA Workshop)</a></h3>
+          <p class="p-desc">Built and supported a live QR credential distribution web portal for an NVIDIA-affiliated developer workshop with 40+ attendees. Re-architected allocation from dynamic claiming to deterministic pre-assigned lookups to eliminate concurrency race conditions during check-in.</p>
+          <div class="p-stack">
+            <span>Google Apps Script</span><span>Google Sheets Backend</span><span>HTML/CSS</span><span>Vanilla JS</span>
+          </div>
+          <div class="p-metrics">
+            <div><span class="pm-val">40+</span><span class="pm-label">attendees served live</span></div>
+            <div><span class="pm-val">0</span><span class="pm-label">failed lookups or downtime</span></div>
+          </div>
+          <a href="https://github.com/dhruv-surti/NVIDIA-Brev-Code-Portal" target="_blank" rel="noopener" class="p-link">View repository &rarr;</a>
+        </div>
+      </article>
+
+      <article class="project" data-category="systems-ai">
         <div class="p-thumb"><img src="https://opengraph.githubassets.com/1/dhruv-surti/bushfire-tweet-domain-shift-nlp" alt="Bushfire Tweet Classification research paper"></div>
         <div>
-          <div class="p-tag">Research paper, NLP</div>
-          <h3 class="p-title"><a href="https://github.com/dhruv-surti/bushfire-tweet-domain-shift-nlp" target="_blank">Domain Shift in Bushfire Tweet Classification</a></h3>
-          <p class="p-desc">Compared six models for classifying actionable versus noise tweets during Australian bushfire emergencies. The fine-tuned RoBERTa model I proposed beat every baseline, including a 1.3B-parameter LLM tested zero-shot, showing that model size alone doesn't fix a domain mismatch. Written in ACM sigconf format, graded High Distinction.</p>
+          <div class="p-tag">Applied NLP Research &bull; Emergency Informatics</div>
+          <h3 class="p-title"><a href="https://github.com/dhruv-surti/bushfire-tweet-domain-shift-nlp" target="_blank" rel="noopener">Domain Shift in Bushfire Tweet Classification</a></h3>
+          <p class="p-desc">Benchmarked six model families classifying actionable emergency requests versus noise during Australian bushfires. Demonstrated that a domain-tuned RoBERTa architecture outperformed a zero-shot 1.3B-parameter LLM. Authored in ACM sigconf format and awarded High Distinction.</p>
           <div class="p-stack">
             <span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>RoBERTa</span>
           </div>
           <div class="p-metrics">
             <div><span class="pm-val">0.886</span><span class="pm-label">best F1 score</span></div>
-            <div><span class="pm-val">HD</span><span class="pm-label">final grade</span></div>
+            <div><span class="pm-val">High Distinction</span><span class="pm-label">ACM paper grade</span></div>
           </div>
-          <a href="https://github.com/dhruv-surti/bushfire-tweet-domain-shift-nlp" target="_blank" class="p-link">View repository</a>
+          <a href="https://github.com/dhruv-surti/bushfire-tweet-domain-shift-nlp" target="_blank" rel="noopener" class="p-link">View repository &rarr;</a>
         </div>
       </article>
 
@@ -353,59 +519,73 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
 <section class="band" id="experience">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title">Experience</h2>
+      <h2 class="sec-title">Professional Experience</h2>
+      <span class="sec-sub">Commercial systems administration, data engineering leadership, and analytics delivery</span>
     </div>
 
     <div class="exp-list">
 
       <div class="exp-row">
-        <div><div class="exp-period">May 2026 — Present</div></div>
         <div>
-          <div class="exp-role">AI & Data Administrator</div>
-          <div class="exp-org">Natural Velocity, Melbourne</div>
+          <div class="exp-period">May 2026 - Present</div>
+          <div class="exp-loc">Docklands, Melbourne</div>
+        </div>
+        <div>
+          <div class="exp-role">AI &amp; Data Systems Administrator</div>
+          <div class="exp-org">Natural Velocity Pty Ltd</div>
           <ul class="exp-bullets">
-            <li>Supporting infrastructure setup and deployment for an AI Experience Centre, AI Innovation Centre and AI Podcast Studio</li>
-            <li>Collaborating across security, infrastructure and cloud teams on hybrid networking environments and systems optimisation</li>
-            <li>Maintaining system documentation, architecture diagrams and risk assessment reports</li>
+            <li>Administer hybrid cloud systems and local network infrastructure, maintaining platform configurations and supporting the rollout of the AI Experience Centre, AI Innovation Centre, and AI Podcast Studio.</li>
+            <li>Manage multi-tenant IT and infrastructure support for internal operations and external corporate clients (The District Docklands) via HubSpot Help Desk and checklist-driven GitLab Kanban boards.</li>
+            <li>Monitor system health and pipeline reliability using Datto, enforcing strict zero-secrets security hygiene across issue trackers and configuration repositories.</li>
+            <li>Write Python scripts and SQL queries to clean, validate, and prepare operational datasets while authoring architecture diagrams, risk assessments, and SOP runbooks.</li>
           </ul>
         </div>
       </div>
 
       <div class="exp-row">
-        <div><div class="exp-period">Mar 2026 — Jun 2026</div></div>
         <div>
-          <div class="exp-role">Data Science Team Lead, FireFusion Capstone</div>
+          <div class="exp-period">Mar 2026 - Jun 2026</div>
+          <div class="exp-loc">Melbourne, VIC</div>
+        </div>
+        <div>
+          <div class="exp-role">Data Science &amp; Engineering Team Lead (FireFusion Capstone)</div>
           <div class="exp-org">InnovAIte, Deakin University</div>
           <ul class="exp-bullets">
-            <li>Architected 3 automated ETL pipelines processing 500,000+ records from Bureau of Meteorology and NASA APIs</li>
-            <li>Designed a PostgreSQL/PostGIS spatial-temporal database in Supabase, cutting query response times by ~40%</li>
-            <li>Coordinated Data Engineering, AI and Frontend streams to deliver a single source of truth for ML predictions</li>
-            <li>Set engineering standards and governance for a 17-person team, built to outlast the project</li>
+            <li>Directed a 17-person data engineering stream across collection, cleaning, database, and testing sub-teams to deliver a production-ready Victorian bushfire risk data layer.</li>
+            <li>Architected 3 automated Python ETL pipelines processing 500,000+ records from Bureau of Meteorology and NASA APIs into a Hub-and-Spoke PostgreSQL/PostGIS schema in Supabase, cutting query response times by ~40%.</li>
+            <li>Authored CONTRIBUTING.md engineering governance enforcing GitHub branch protection, a mandatory 3-approval PR review gate, and coordinate data lineage tracking.</li>
+            <li>Mentored 8+ junior team members and defined SQL views and data contracts to unblock downstream AI modelling and frontend dashboard teams.</li>
           </ul>
         </div>
       </div>
 
       <div class="exp-row">
-        <div><div class="exp-period">Nov 2025 — Feb 2026</div></div>
         <div>
-          <div class="exp-role">AI & Data Science Intern</div>
-          <div class="exp-org">Natural Velocity, Melbourne</div>
+          <div class="exp-period">Nov 2025 - Feb 2026</div>
+          <div class="exp-loc">Melbourne, VIC</div>
+        </div>
+        <div>
+          <div class="exp-role">AI &amp; Data Science Intern</div>
+          <div class="exp-org">Natural Velocity Pty Ltd</div>
           <ul class="exp-bullets">
-            <li>Built 2 production dashboards in Streamlit (Python, pandas, Plotly) analysing 300 learning sessions across 5 activity types</li>
-            <li>Surfaced patterns like flow zones, engagement-difficulty mismatches, and mentor load to support operations</li>
-            <li>Delivered a React-based AI voice interface (Vapi Web SDK) and a computer vision prototype</li>
+            <li>Built 2 production analytics dashboards in Streamlit (Python, pandas, Plotly) analysing 300+ learning sessions across 5 activity types to surface engagement mismatches and mentor load.</li>
+            <li>Developed Python ingestion and validation scripts to extract, clean, and structure REST API and flat-file (JSON, CSV) datasets into relational tables.</li>
+            <li>Delivered a React-based AI voice interface using the Vapi Web SDK and collaborated via Git branching, pull requests, and peer code reviews.</li>
           </ul>
         </div>
       </div>
 
       <div class="exp-row">
-        <div><div class="exp-period">Jul 2025 — Oct 2025</div></div>
         <div>
-          <div class="exp-role">Data Engineer, AAIE Capstone</div>
+          <div class="exp-period">Jul 2025 - Oct 2025</div>
+          <div class="exp-loc">Melbourne, VIC</div>
+        </div>
+        <div>
+          <div class="exp-role">Data Engineer (AAIE Capstone)</div>
           <div class="exp-org">InnovAIte, Deakin University</div>
           <ul class="exp-bullets">
-            <li>Built Python pipelines processing 200,000+ records with automated validation, reaching 98% data completeness</li>
-            <li>Set up AWS workflows across S3, EC2 and RDS, cutting manual data transfer time by ~60%</li>
+            <li>Engineered automated Python ETL and schema validation pipelines processing 200,000+ records, achieving 98% data completeness.</li>
+            <li>Configured cloud storage and compute workflows across AWS S3, EC2, and RDS, reducing manual data transfer overhead by ~60%.</li>
           </ul>
         </div>
       </div>
@@ -417,40 +597,49 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
 <section class="band" id="credentials">
   <div class="wrap">
     <div class="sec-head">
-      <h2 class="sec-title">Credentials</h2>
+      <h2 class="sec-title">Education &amp; Credentials</h2>
     </div>
 
     <div class="cred-grid">
-      <div>
+      <div class="edu-card">
         <div class="edu-uni">Deakin University</div>
         <div class="edu-degree">Bachelor of Computer Science</div>
-        <div class="edu-major">Major: Data Science, graduated with Distinction</div>
-        <div class="edu-period">Feb 2022 — Jun 2026, Melbourne</div>
+        <div class="edu-major">Major in Data Science &bull; Graduated with Distinction</div>
+        <div class="edu-period">Conferred Sep 2026 &bull; Melbourne, Victoria</div>
+        <ul class="edu-highlights">
+          <li>&bull; <strong>Academic Service:</strong> Peer Tutor for Database Systems &amp; Python Programming</li>
+          <li>&bull; <strong>Key Coursework:</strong> Advanced Algorithms, Data Wrangling, Database Systems, Software Architecture, Enterprise Security &amp; Governance</li>
+          <li>&bull; <strong>Work Rights:</strong> Temporary Graduate Visa (Subclass 485) with full unrestricted working rights</li>
+        </ul>
       </div>
 
       <div class="cert-list">
         <div class="cert">
+          <div><div class="cert-name">Data Engineering Professional Certificate</div><div class="cert-issuer">Snowflake (In Progress - Oct 2026)</div></div>
+          <div class="cert-year">2026</div>
+        </div>
+        <div class="cert">
           <div><div class="cert-name">Data Engineering Foundations</div><div class="cert-issuer">LinkedIn Learning</div></div>
-          <div class="cert-year">2026</div>
+          <div class="cert-year">Jul 2026</div>
         </div>
         <div class="cert">
-          <div><div class="cert-name">The Non-Technical Skills of Effective Data Scientists</div><div class="cert-issuer">LinkedIn Learning</div></div>
-          <div class="cert-year">2026</div>
+          <div><div class="cert-name">Claude Code 101 &amp; AI Workflows</div><div class="cert-issuer">Anthropic</div></div>
+          <div class="cert-year">Jul 2026</div>
         </div>
         <div class="cert">
-          <div><div class="cert-name">Quantium Data Analytics Job Simulation</div><div class="cert-issuer">Quantium, Forage</div></div>
-          <div class="cert-year">2026</div>
+          <div><div class="cert-name">Quantium Data Analytics Job Simulation</div><div class="cert-issuer">Quantium (Forage)</div></div>
+          <div class="cert-year">Apr 2026</div>
         </div>
         <div class="cert">
-          <div><div class="cert-name">Data Analytics Job Simulation</div><div class="cert-issuer">Deloitte Australia, Forage</div></div>
-          <div class="cert-year">2025</div>
+          <div><div class="cert-name">Deloitte Australia Data Analytics Job Simulation</div><div class="cert-issuer">Deloitte Australia (Forage)</div></div>
+          <div class="cert-year">Oct 2025</div>
         </div>
         <div class="cert">
-          <div><div class="cert-name">Introduction to Data Science Job Simulation</div><div class="cert-issuer">Commonwealth Bank, Forage</div></div>
-          <div class="cert-year">2025</div>
+          <div><div class="cert-name">Introduction to Data Science Job Simulation</div><div class="cert-issuer">Commonwealth Bank (Forage)</div></div>
+          <div class="cert-year">Oct 2025</div>
         </div>
         <div class="cert">
-          <div><div class="cert-name">Python, Data Cleaning & Visualisation</div><div class="cert-issuer">Kaggle, 5 courses</div></div>
+          <div><div class="cert-name">Python, Data Cleaning &amp; Visualisation (5 Courses)</div><div class="cert-issuer">Kaggle</div></div>
           <div class="cert-year">2024</div>
         </div>
       </div>
@@ -463,8 +652,8 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
     <div class="aside-note">
       <div class="aside-mark">🏏</div>
       <div>
-        <div class="aside-title">National-level cricketer</div>
-        <p>Represented Deakin University at the Australian University Cricket Championships as a middle-order batsman.</p>
+        <div class="aside-title">National-Level University Cricketer</div>
+        <p>Represented Deakin University at the Australian University Nationals Cricket Championships as a middle-order batsman, balancing competitive team sport with Distinction-level computer science studies.</p>
       </div>
     </div>
   </div>
@@ -473,18 +662,43 @@ footer p { font-size: 0.76rem; color: var(--ink-45); }
 <section class="band band-dark" id="contact">
   <div class="wrap">
     <div class="contact-inner">
-      <div class="contact-heading">Let's build something with data.</div>
+      <div>
+        <div class="contact-heading">Let's build reliable data systems.</div>
+        <p class="contact-sub">Available for Junior Data / Analytics Engineer, BI &amp; Data Analyst, and Cloud / Systems Support roles across Melbourne (Hybrid or On-site).</p>
+      </div>
       <div class="contact-links">
         <a href="mailto:youhavereacheddhruv@gmail.com">youhavereacheddhruv@gmail.com</a>
-        <a href="https://www.linkedin.com/in/dhruv-surti-73b782390/" target="_blank">linkedin.com/in/dhruv-surti</a>
+        <a href="tel:+61433953912">+61 433 953 912</a>
+        <a href="https://www.linkedin.com/in/dhruv-surti-73b782390/" target="_blank" rel="noopener">linkedin.com/in/dhruv-surti-73b782390</a>
+        <a href="https://github.com/dhruv-surti" target="_blank" rel="noopener">github.com/dhruv-surti</a>
       </div>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Dhruv Surti, Melbourne, Victoria</p>
+  <p>Dhruv Surti &bull; Melbourne, Victoria, Australia &bull; Full Working Rights (Subclass 485)</p>
 </footer>
+
+<script>
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const projects = document.querySelectorAll('.project');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterButtons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const filter = btn.getAttribute('data-filter');
+      projects.forEach(proj => {
+        if (filter === 'all' || proj.getAttribute('data-category').includes(filter)) {
+          proj.classList.remove('hidden');
+        } else {
+          proj.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
 
 </body>
 </html>
