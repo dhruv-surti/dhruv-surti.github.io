@@ -1,26 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhruv Surti | Data & Systems Engineer | Melbourne</title>
-<meta name="description" content="Portfolio of Dhruv Surti, Data & Systems Engineer in Melbourne, Australia. Experienced in Python, SQL, PostgreSQL, Snowflake, dbt, Power BI, Tableau, and Cloud Operations. Full Australian Working Rights (Subclass 485).">
-<meta name="keywords" content="Dhruv Surti, Data Engineer Melbourne, Analytics Engineer, Data Analyst, Systems Administrator, Python, SQL, PostgreSQL, PostGIS, Snowflake, dbt, Power BI, Tableau, AWS, Deakin University">
-<meta property="og:title" content="Dhruv Surti | Data & Systems Engineer | Melbourne">
-<meta property="og:description" content="Data Engineering, BI Analytics & Cloud Systems Portfolio. B.CompSc (Data Science) with Distinction, Deakin University.">
+<title>Dhruv Surti | AI, Data and Systems Engineer | Melbourne</title>
+<meta name="description" content="Portfolio and CV of Dhruv Surti, AI and Data Systems Engineer in Melbourne, VIC. Bachelor of Computer Science (Data Science) graduate from Deakin University with a High Distinction final-year average.">
+<meta name="keywords" content="Dhruv Surti, AI and Data Systems Engineer, Data Engineer Melbourne, Python, SQL, PostgreSQL, Supabase, dbt, Power BI, Tableau, RoBERTa, Deakin University, Natural Velocity">
+<meta property="og:title" content="Dhruv Surti | AI, Data and Systems Engineer">
+<meta property="og:description" content="Bachelor of Computer Science (Data Science) graduate from Deakin University. AI and Data Systems Engineer at Natural Velocity in Melbourne.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dhruv-surti.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=IBM+Plex+Mono:wght@400;500;600&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Dhruv Surti",
-  "jobTitle": "Data & Systems Engineer",
-  "url": "https://dhruv-surti.github.io/",
+  "jobTitle": "AI and Data Systems Engineer",
   "email": "mailto:youhavereacheddhruv@gmail.com",
+  "telephone": "+61433953912",
   "address": {
     "@type": "PostalAddress",
     "addressLocality": "Melbourne",
@@ -32,976 +32,1824 @@
     "name": "Deakin University"
   },
   "sameAs": [
-    "https://github.com/dhruv-surti",
-    "https://www.linkedin.com/in/dhruv-surti-73b782390/"
-  ],
-  "knowsAbout": ["Python", "SQL", "PostgreSQL", "PostGIS", "Snowflake", "dbt", "ETL Pipelines", "Power BI", "Tableau", "AWS", "Systems Administration", "Datto", "Git", "GitHub", "GitLab"]
+    "https://linkedin.com/in/dhruvsurti",
+    "https://github.com/dhruvsurti"
+  ]
 }
 </script>
 <style>
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-:root[data-theme="dark"] {
-  --bg: #090D16;
-  --bg-subtle: #0F1623;
-  --surface: #131C2E;
-  --surface-hover: #18243A;
-  --surface-glass: rgba(19, 28, 46, 0.78);
-  --text: #F8FAFC;
-  --text-secondary: #94A3B8;
-  --text-muted: #64748B;
-  --accent: #38BDF8;
-  --accent-strong: #0284C7;
-  --accent-glow: rgba(56, 189, 248, 0.14);
-  --indigo: #818CF8;
-  --emerald: #10B981;
-  --emerald-bg: rgba(16, 185, 129, 0.12);
-  --border: rgba(148, 163, 184, 0.14);
-  --border-strong: rgba(56, 189, 248, 0.38);
-  --shadow: 0 12px 32px -8px rgba(0, 0, 0, 0.5);
-  --icon-hex: 38BDF8;
-}
-
-:root[data-theme="light"] {
-  --bg: #F8FAFC;
-  --bg-subtle: #F1F5F9;
-  --surface: #FFFFFF;
-  --surface-hover: #F8FAFC;
-  --surface-glass: rgba(255, 255, 255, 0.85);
-  --text: #0F172A;
-  --text-secondary: #475569;
-  --text-muted: #64748B;
-  --accent: #0284C7;
-  --accent-strong: #0369A1;
-  --accent-glow: rgba(2, 132, 199, 0.08);
-  --indigo: #4F46E5;
-  --emerald: #059669;
-  --emerald-bg: rgba(5, 150, 105, 0.1);
-  --border: rgba(15, 23, 42, 0.1);
-  --border-strong: rgba(2, 132, 199, 0.4);
-  --shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.07);
-  --icon-hex: 0284C7;
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 :root {
-  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
-  --radius-sm: 8px;
-  --radius-md: 14px;
-  --radius-lg: 20px;
+  --bg-page: #F7F8FA;
+  --bg-card: #FFFFFF;
+  --bg-subtle: #F1F4F9;
+  --bg-hover: #EBF0F7;
+
+  --ink-primary: #0F172A;
+  --ink-secondary: #334155;
+  --ink-muted: #64748B;
+
+  --accent-blue: #0F4C81;
+  --accent-blue-light: #EBF3FA;
+  --accent-teal: #0D7A5F;
+  --accent-teal-light: #E6F4F0;
+
+  --border-light: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --border-focus: #0F4C81;
+
+  --font-heading: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Public Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+
+  --shadow-card: 0 1px 3px rgba(15, 23, 42, 0.05), 0 1px 2px rgba(15, 23, 42, 0.03);
+  --shadow-elevated: 0 10px 25px -5px rgba(15, 23, 42, 0.07), 0 4px 10px -3px rgba(15, 23, 42, 0.04);
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-body);
-  background-color: var(--bg);
-  background-image: 
-    radial-gradient(at 15% 5%, var(--accent-glow) 0px, transparent 45%),
-    radial-gradient(at 85% 25%, rgba(129, 140, 248, 0.08) 0px, transparent 50%);
-  color: var(--text);
-  line-height: 1.65;
+  color: var(--ink-primary);
+  background-color: var(--bg-page);
+  background-image:
+    linear-gradient(to right, rgba(203, 213, 225, 0.28) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.28) 1px, transparent 1px),
+    linear-gradient(180deg, #FFFFFF 0%, #F7F8FA 420px);
+  background-size: 40px 40px, 40px 40px, 100% 100%;
+  line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-.container { max-width: 1120px; margin: 0 auto; padding: 0 1.5rem; }
-a { color: inherit; text-decoration: none; }
+.container {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
 
-/* Sticky Glass Navbar */
-nav {
-  position: sticky; top: 0; z-index: 100;
-  background: var(--surface-glass);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-bottom: 1px solid var(--border);
+a {
+  color: inherit;
+  text-decoration: none;
 }
-.nav-inner {
-  max-width: 1120px; margin: 0 auto; padding: 0 1.5rem;
-  height: 68px; display: flex; align-items: center; justify-content: space-between;
-}
-.brand {
-  display: flex; align-items: center; gap: 0.65rem;
-  font-family: var(--font-display); font-weight: 800; font-size: 1.15rem; letter-spacing: -0.02em;
-}
-.brand-badge {
-  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
-  padding: 0.2rem 0.55rem; border-radius: 6px;
-  background: var(--accent-glow); color: var(--accent); border: 1px solid var(--border-strong);
-}
-.nav-right { display: flex; align-items: center; gap: 1.5rem; }
-.nav-links { display: flex; gap: 1.5rem; list-style: none; }
-.nav-links a {
-  font-size: 0.88rem; font-weight: 500; color: var(--text-secondary);
-  transition: color 0.15s;
-}
-.nav-links a:hover { color: var(--accent); }
-.theme-btn {
-  background: var(--surface); border: 1px solid var(--border); color: var(--text);
-  width: 38px; height: 38px; border-radius: var(--radius-sm);
-  display: inline-flex; align-items: center; justify-content: center;
-  cursor: pointer; transition: all 0.15s; font-size: 1rem;
-}
-.theme-btn:hover { border-color: var(--accent); color: var(--accent); }
 
-/* Hero Section */
-.hero { padding: 4.5rem 0 3.5rem; }
-.hero-grid {
-  display: grid; grid-template-columns: 1.45fr 0.85fr; gap: 3.5rem; align-items: center;
+/* Top Navigation Bar */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border-light);
 }
-.status-pill {
-  display: inline-flex; align-items: center; gap: 0.55rem;
-  font-family: var(--font-mono); font-size: 0.76rem; font-weight: 500;
-  color: var(--emerald); background: var(--emerald-bg);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  padding: 0.38rem 0.9rem; border-radius: 99px; margin-bottom: 1.25rem;
-}
-.pulse-dot {
-  width: 8px; height: 8px; border-radius: 50%; background: var(--emerald);
-  box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
-  animation: pulse 2s infinite;
-}
-@keyframes pulse {
-  0% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.6); }
-  70% { box-shadow: 0 0 0 8px rgba(16, 185, 129, 0); }
-  100% { box-shadow: 0 0 0 0 rgba(16, 185, 129, 0); }
-}
-.hero-title {
-  font-family: var(--font-display); font-weight: 800;
-  font-size: clamp(2.3rem, 4.8vw, 3.5rem); line-height: 1.1; letter-spacing: -0.03em;
-  margin-bottom: 1.2rem;
-}
-.gradient-text {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--indigo) 100%);
-  -webkit-background-clip: text; -webkit-text-fill-color: transparent;
-}
-.hero-lead {
-  font-size: 1.05rem; color: var(--text-secondary); max-width: 58ch; margin-bottom: 1.4rem;
-}
-.role-tracks {
-  display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.8rem;
-}
-.track-tag {
-  font-family: var(--font-mono); font-size: 0.75rem; font-weight: 500;
-  background: var(--surface); color: var(--text-secondary);
-  border: 1px solid var(--border); padding: 0.32rem 0.75rem; border-radius: 6px;
-}
-.track-tag strong { color: var(--accent); }
 
-.hero-cta { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+.topbar-inner {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-block {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand-name {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: -0.02em;
+  color: var(--ink-primary);
+}
+
+.brand-divider {
+  width: 1px;
+  height: 16px;
+  background: var(--border-strong);
+}
+
+.brand-location {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-menu a {
+  font-size: 0.86rem;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  transition: color 0.15s ease;
+}
+
+.nav-menu a:hover {
+  color: var(--accent-blue);
+}
+
+.nav-btn {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  background: var(--accent-blue);
+  color: #FFFFFF !important;
+  border-radius: var(--radius-xs);
+  transition: background 0.15s ease;
+}
+
+.nav-btn:hover {
+  background: #09355C;
+}
+
+/* Executive Dossier Header */
+.dossier-header {
+  padding: 2.75rem 0 2.25rem;
+}
+
+.dossier-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-strong);
+  border-top: 4px solid var(--accent-blue);
+  border-radius: var(--radius-md);
+  padding: 2.25rem;
+  box-shadow: var(--shadow-card);
+}
+
+.identity-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.identity-main {
+  display: flex;
+  align-items: center;
+  gap: 1.35rem;
+}
+
+/* Compact, Sharp Profile Avatar (84px) */
+.avatar-frame {
+  width: 84px;
+  height: 84px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--border-strong);
+  background: var(--accent-blue-light);
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 15%;
+  display: block;
+}
+
+.avatar-initials {
+  display: none;
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+}
+
+.title-group h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(1.75rem, 3vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--ink-primary);
+  line-height: 1.15;
+}
+
+.role-subtitle {
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-top: 0.25rem;
+}
+
+.edu-quick {
+  font-size: 0.88rem;
+  color: var(--ink-secondary);
+  margin-top: 0.25rem;
+}
+
+.status-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  background: var(--accent-teal-light);
+  border: 1px solid rgba(13, 122, 95, 0.25);
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-xs);
+  white-space: nowrap;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent-teal);
+}
+
+/* Contact & Action Bar */
+.contact-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.contact-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--ink-secondary);
+}
+
+.contact-items a:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+.contact-label {
+  color: var(--ink-muted);
+  font-weight: 500;
+  margin-right: 0.3rem;
+}
+
+.action-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .btn {
-  display: inline-flex; align-items: center; gap: 0.5rem;
-  font-size: 0.88rem; font-weight: 600; padding: 0.7rem 1.35rem;
-  border-radius: var(--radius-sm); border: 1px solid transparent;
-  cursor: pointer; transition: all 0.18s ease; font-family: var(--font-body);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.5rem 0.95rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-card);
+  color: var(--ink-primary);
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
+
+.btn:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+  background: var(--bg-subtle);
+}
+
 .btn-primary {
-  background: var(--accent); color: #090D16; border-color: var(--accent);
+  background: var(--accent-blue);
+  color: #FFFFFF;
+  border-color: var(--accent-blue);
 }
+
 .btn-primary:hover {
-  background: var(--accent-strong); color: #FFFFFF; border-color: var(--accent-strong);
-  transform: translateY(-1px);
-}
-.btn-secondary {
-  background: var(--surface); color: var(--text); border-color: var(--border);
-}
-.btn-secondary:hover {
-  border-color: var(--accent); color: var(--accent); transform: translateY(-1px);
+  background: #09355C;
+  border-color: #09355C;
+  color: #FFFFFF;
 }
 
-/* Profile Card */
-.hero-visual { position: relative; }
-.profile-frame {
-  position: relative; border-radius: var(--radius-lg); overflow: hidden;
-  border: 1px solid var(--border-strong); background: var(--surface);
-  box-shadow: var(--shadow); aspect-ratio: 4/4.6; max-width: 340px; margin-left: auto;
+/* Recruiter Executive Brief Grid */
+.brief-section {
+  padding-top: 1.5rem;
 }
-.profile-frame img {
-  width: 100%; height: 100%; object-fit: cover; object-position: center 15%; display: block;
-}
-.profile-overlay-card {
-  position: absolute; bottom: 12px; left: 12px; right: 12px;
-  background: var(--surface-glass); backdrop-filter: blur(12px);
-  border: 1px solid var(--border); border-radius: var(--radius-sm);
-  padding: 0.75rem 1rem; display: flex; justify-content: space-between; align-items: center;
-}
-.poc-title { font-size: 0.82rem; font-weight: 700; color: var(--text); }
-.poc-sub { font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent); }
 
-/* Bento Metrics Bar */
-.metrics-bento {
-  margin-top: 3rem; display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+.brief-heading {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--ink-muted);
+  margin-bottom: 0.9rem;
 }
-.metric-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.25rem 1.4rem;
-  transition: transform 0.2s, border-color 0.2s;
+
+.brief-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
 }
-.metric-card:hover { border-color: var(--border-strong); transform: translateY(-2px); }
-.mc-val {
-  font-family: var(--font-display); font-size: 1.75rem; font-weight: 800;
-  color: var(--accent); line-height: 1.1; margin-bottom: 0.3rem;
+
+.brief-col {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.15rem;
 }
-.mc-label { font-size: 0.82rem; font-weight: 600; color: var(--text); }
-.mc-detail { font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-muted); margin-top: 0.2rem; }
+
+.brief-col-title {
+  font-family: var(--font-heading);
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--accent-blue);
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.brief-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.brief-list li {
+  font-size: 0.83rem;
+  color: var(--ink-secondary);
+  padding-left: 0.85rem;
+  position: relative;
+}
+
+.brief-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.52rem;
+  width: 4px;
+  height: 4px;
+  background: var(--accent-blue);
+}
+
+/* Key Metrics Strip */
+.kpi-strip {
+  margin-top: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.kpi-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--accent-blue);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.2rem;
+  box-shadow: var(--shadow-card);
+}
+
+.kpi-value {
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  line-height: 1.15;
+}
+
+.kpi-label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ink-secondary);
+  margin-top: 0.2rem;
+}
+
+.kpi-note {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  margin-top: 0.15rem;
+}
 
 /* Section Layout */
-section { padding: 4.5rem 0; border-top: 1px solid var(--border); }
+section {
+  padding: 2.75rem 0;
+  border-top: 1px solid var(--border-light);
+}
+
 .sec-header {
-  display: flex; justify-content: space-between; align-items: flex-end;
-  flex-wrap: wrap; gap: 1rem; margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
 }
-.sec-eyebrow {
-  font-family: var(--font-mono); font-size: 0.76rem; font-weight: 600;
-  color: var(--accent); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 0.35rem;
+
+.sec-tag {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-blue);
+  margin-bottom: 0.2rem;
 }
+
 .sec-title {
-  font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.1rem);
-  font-weight: 800; letter-spacing: -0.02em;
-}
-.sec-desc { font-size: 0.92rem; color: var(--text-secondary); max-width: 52ch; }
-
-/* Skills Bento Grid */
-.skills-bento { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.25rem; }
-.skill-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.6rem;
-  transition: border-color 0.2s;
-}
-.skill-card:hover { border-color: var(--border-strong); }
-.sc-head {
-  display: flex; align-items: center; justify-content: space-between;
-  margin-bottom: 1.1rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--border);
-}
-.sc-title { font-family: var(--font-display); font-size: 1.05rem; font-weight: 700; }
-.sc-badge {
-  font-family: var(--font-mono); font-size: 0.7rem; color: var(--accent);
-  background: var(--accent-glow); padding: 0.2rem 0.55rem; border-radius: 4px;
-}
-.skill-pills { display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.s-pill {
-  display: inline-flex; align-items: center; gap: 0.45rem;
-  font-size: 0.82rem; font-weight: 500; color: var(--text-secondary);
-  background: var(--bg-subtle); border: 1px solid var(--border);
-  padding: 0.4rem 0.8rem; border-radius: var(--radius-sm);
-  transition: all 0.15s;
-}
-.s-pill:hover { color: var(--text); border-color: var(--accent); background: var(--accent-glow); }
-.s-pill img { width: 15px; height: 15px; display: block; }
-
-/* Filter Tabs */
-.filter-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; }
-.tab-btn {
-  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 500;
-  background: var(--surface); color: var(--text-secondary);
-  border: 1px solid var(--border); padding: 0.45rem 0.95rem;
-  border-radius: var(--radius-sm); cursor: pointer; transition: all 0.15s;
-}
-.tab-btn:hover, .tab-btn.active {
-  background: var(--accent); color: #090D16; border-color: var(--accent); font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 1.45rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--ink-primary);
 }
 
-/* Projects 2-Column Bento Grid */
+.sec-subtitle {
+  font-size: 0.88rem;
+  color: var(--ink-muted);
+}
+
+/* Structured Two-Column Experience Layout */
+.record-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.record-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-card);
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  transition: border-color 0.15s ease;
+}
+
+.record-card:hover {
+  border-color: var(--border-strong);
+}
+
+.record-meta {
+  border-right: 1px solid var(--border-light);
+  padding-right: 1.5rem;
+}
+
+.record-period {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  background: var(--accent-blue-light);
+  display: inline-block;
+  padding: 0.22rem 0.6rem;
+  border-radius: var(--radius-xs);
+  margin-bottom: 0.65rem;
+}
+
+.record-org {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.record-loc {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  margin-top: 0.15rem;
+}
+
+.record-badge {
+  margin-top: 0.75rem;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  background: var(--accent-teal-light);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+}
+
+.record-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-bottom: 0.75rem;
+}
+
+.bullet-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.48rem;
+}
+
+.bullet-list.two-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.55rem 1.5rem;
+}
+
+.bullet-list li {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 5px;
+  height: 5px;
+  background: var(--accent-blue);
+}
+
+/* Portfolio Projects Showcase */
+.filter-group {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.4rem 0.85rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-strong);
+  background: var(--bg-card);
+  color: var(--ink-secondary);
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--accent-blue);
+  color: #FFFFFF;
+  border-color: var(--accent-blue);
+}
+
 .projects-grid {
-  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.6rem;
-}
-.project-card {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); overflow: hidden;
-  display: flex; flex-direction: column;
-  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
-}
-.project-card:hover {
-  transform: translateY(-4px); border-color: var(--border-strong); box-shadow: var(--shadow);
-}
-.project-card.hidden { display: none; }
-
-.pc-thumb {
-  position: relative; aspect-ratio: 16/9.5; background: var(--bg-subtle);
-  border-bottom: 1px solid var(--border); overflow: hidden; cursor: zoom-in;
-}
-.pc-thumb img {
-  width: 100%; height: 100%; object-fit: cover; display: block;
-  transition: transform 0.35s ease;
-}
-.project-card:hover .pc-thumb img { transform: scale(1.03); }
-.zoom-hint {
-  position: absolute; bottom: 8px; right: 8px;
-  background: rgba(9, 13, 22, 0.78); color: #F8FAFC;
-  font-family: var(--font-mono); font-size: 0.68rem;
-  padding: 0.2rem 0.55rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.15);
-  pointer-events: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
 }
 
-.pc-body { padding: 1.5rem; display: flex; flex-direction: column; flex: 1; }
-.pc-cat {
-  font-family: var(--font-mono); font-size: 0.72rem; font-weight: 600;
-  color: var(--accent); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.4rem;
-}
-.pc-title {
-  font-family: var(--font-display); font-size: 1.25rem; font-weight: 700;
-  margin-bottom: 0.65rem; line-height: 1.25;
-}
-.pc-title a:hover { color: var(--accent); }
-.pc-desc {
-  font-size: 0.9rem; color: var(--text-secondary); margin-bottom: 1.2rem; flex: 1;
-}
-.pc-metrics {
-  display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.6rem;
-  background: var(--bg-subtle); border: 1px solid var(--border);
-  border-radius: var(--radius-sm); padding: 0.75rem; margin-bottom: 1.1rem;
-}
-.pcm-item { text-align: center; }
-.pcm-val { font-family: var(--font-mono); font-size: 0.9rem; font-weight: 700; color: var(--text); display: block; }
-.pcm-lbl { font-size: 0.68rem; color: var(--text-muted); }
-
-.pc-footer {
-  display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; flex-wrap: wrap;
-}
-.pc-stack { display: flex; flex-wrap: wrap; gap: 0.35rem; }
-.pc-stack span {
-  font-family: var(--font-mono); font-size: 0.7rem; color: var(--text-secondary);
-  background: var(--bg-subtle); border: 1px solid var(--border);
-  padding: 0.18rem 0.55rem; border-radius: 4px;
-}
-.pc-link {
-  font-family: var(--font-mono); font-size: 0.78rem; font-weight: 600;
-  color: var(--accent); white-space: nowrap;
-}
-.pc-link:hover { text-decoration: underline; }
-
-/* Experience Timeline */
-.timeline { position: relative; padding-left: 2rem; border-left: 2px solid var(--border); display: flex; flex-direction: column; gap: 2rem; }
-.tl-item {
-  position: relative; background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.6rem; transition: border-color 0.2s;
-}
-.tl-item:hover { border-color: var(--border-strong); }
-.tl-dot {
-  position: absolute; left: -2.42rem; top: 1.75rem;
-  width: 14px; height: 14px; border-radius: 50%;
-  background: var(--accent); border: 3px solid var(--bg);
-}
-.tl-header {
-  display: flex; justify-content: space-between; align-items: flex-start;
-  flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.85rem;
-}
-.tl-role { font-family: var(--font-display); font-size: 1.18rem; font-weight: 700; }
-.tl-org { font-size: 0.9rem; font-weight: 600; color: var(--accent); margin-top: 0.15rem; }
-.tl-meta {
-  font-family: var(--font-mono); font-size: 0.76rem; color: var(--text-secondary);
-  background: var(--bg-subtle); border: 1px solid var(--border);
-  padding: 0.25rem 0.65rem; border-radius: 6px;
-}
-.tl-bullets { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
-.tl-bullets li {
-  font-size: 0.9rem; color: var(--text-secondary); padding-left: 1.2rem; position: relative;
-}
-.tl-bullets li::before {
-  content: '▹'; position: absolute; left: 0; color: var(--accent); font-weight: bold;
+.proj-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
 }
 
-/* Credentials & Education */
-.cred-bento { display: grid; grid-template-columns: 1fr 1.25fr; gap: 1.5rem; }
-.edu-box, .cert-box {
-  background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.75rem;
-}
-.edu-badge {
-  display: inline-block; font-family: var(--font-mono); font-size: 0.72rem;
-  color: var(--emerald); background: var(--emerald-bg);
-  border: 1px solid rgba(16, 185, 129, 0.3); padding: 0.2rem 0.6rem;
-  border-radius: 4px; margin-bottom: 0.85rem;
-}
-.edu-uni { font-family: var(--font-display); font-size: 1.35rem; font-weight: 800; }
-.edu-deg { font-size: 1rem; font-weight: 600; color: var(--accent); margin: 0.25rem 0; }
-.edu-time { font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted); margin-bottom: 1.2rem; }
-.edu-list { list-style: none; display: flex; flex-direction: column; gap: 0.55rem; border-top: 1px solid var(--border); padding-top: 1rem; }
-.edu-list li { font-size: 0.88rem; color: var(--text-secondary); }
-.edu-list strong { color: var(--text); }
-
-.cert-row {
-  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
-  padding: 0.75rem 0; border-bottom: 1px solid var(--border);
-}
-.cert-row:first-child { padding-top: 0; }
-.cert-row:last-child { border-bottom: none; padding-bottom: 0; }
-.cr-name { font-size: 0.9rem; font-weight: 600; color: var(--text); }
-.cr-org { font-size: 0.78rem; color: var(--text-muted); }
-.cr-date {
-  font-family: var(--font-mono); font-size: 0.74rem; font-weight: 600;
-  color: var(--accent); white-space: nowrap;
+.proj-card.wide {
+  grid-column: 1 / -1;
 }
 
-/* Cricket Callout */
-.callout-banner {
-  margin-top: 1.5rem; background: var(--surface); border: 1px solid var(--border);
-  border-radius: var(--radius-md); padding: 1.4rem 1.75rem;
-  display: flex; align-items: center; gap: 1.25rem;
+.proj-card.hidden {
+  display: none;
 }
-.cb-icon { font-size: 2rem; flex-shrink: 0; }
-.cb-title { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-bottom: 0.2rem; }
-.cb-text { font-size: 0.88rem; color: var(--text-secondary); }
 
-/* Contact Section */
-.contact-card {
-  background: linear-gradient(135deg, var(--surface) 0%, var(--bg-subtle) 100%);
-  border: 1px solid var(--border-strong); border-radius: var(--radius-lg);
-  padding: 2.75rem; display: flex; justify-content: space-between;
-  align-items: center; flex-wrap: wrap; gap: 2rem;
+.proj-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.45rem;
 }
-.cc-title { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 800; margin-bottom: 0.5rem; }
-.cc-sub { font-size: 0.95rem; color: var(--text-secondary); max-width: 48ch; }
-.cc-actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
 
+.proj-category {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+}
+
+.proj-year {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-muted);
+  background: var(--bg-subtle);
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-xs);
+}
+
+.proj-title {
+  font-family: var(--font-heading);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-bottom: 0.75rem;
+}
+
+.proj-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.75rem;
+  margin: 0.9rem 0;
+}
+
+.ps-item {
+  text-align: center;
+}
+
+.ps-val {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+  display: block;
+}
+
+.ps-lbl {
+  font-size: 0.68rem;
+  color: var(--ink-muted);
+}
+
+/* Interactive Tabbed Evidence Viewer */
+.evidence-panel {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: var(--bg-subtle);
+}
+
+.evidence-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.55rem 0.85rem;
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.evidence-title {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--ink-muted);
+  text-transform: uppercase;
+}
+
+.evidence-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.ev-tab {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.25rem 0.6rem;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border-light);
+  background: var(--bg-subtle);
+  color: var(--ink-secondary);
+  cursor: pointer;
+}
+
+.ev-tab.active,
+.ev-tab:hover {
+  background: var(--accent-blue);
+  color: #FFFFFF;
+  border-color: var(--accent-blue);
+}
+
+.evidence-stage {
+  position: relative;
+  aspect-ratio: 16 / 8.5;
+  max-height: 360px;
+  width: 100%;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.evidence-stage.compact {
+  aspect-ratio: 16 / 9;
+  max-height: 230px;
+}
+
+.evidence-stage img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.evidence-caption {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--ink-secondary);
+  padding: 0.45rem 0.85rem;
+  background: var(--bg-card);
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.proj-footer {
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.stack-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.stack-pill {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--accent-blue);
+  background: var(--accent-blue-light);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+}
+
+.gh-link {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+}
+
+.gh-link:hover {
+  text-decoration: underline;
+}
+
+/* Technical Skills Table Matrix */
+.skills-table {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  overflow: hidden;
+}
+
+.skill-row {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.skill-row:last-child {
+  border-bottom: none;
+}
+
+.skill-domain {
+  background: var(--bg-subtle);
+  padding: 1rem 1.25rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  border-right: 1px solid var(--border-light);
+  display: flex;
+  align-items: center;
+}
+
+.skill-tags {
+  padding: 0.9rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.s-tag {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--ink-secondary);
+  background: var(--bg-page);
+  border: 1px solid var(--border-strong);
+  padding: 0.28rem 0.68rem;
+  border-radius: var(--radius-xs);
+}
+
+/* Education & Verified Certifications */
+.edu-cert-split {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 1.25rem;
+}
+
+.box-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.65rem;
+  box-shadow: var(--shadow-card);
+}
+
+.box-kicker {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  background: var(--accent-teal-light);
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+  margin-bottom: 0.75rem;
+}
+
+.box-title {
+  font-family: var(--font-heading);
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.box-sub {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-top: 0.15rem;
+}
+
+.box-period {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--ink-muted);
+  margin: 0.3rem 0 1rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cert-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cert-table tr {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.cert-table tr:last-child {
+  border-bottom: none;
+}
+
+.cert-table td {
+  padding: 0.65rem 0;
+  vertical-align: top;
+}
+
+.ct-name {
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: var(--ink-primary);
+}
+
+.ct-id {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--ink-muted);
+  margin-top: 0.1rem;
+}
+
+.ct-date {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  text-align: right;
+  white-space: nowrap;
+  padding-left: 0.75rem;
+}
+
+/* Extracurricular Strip */
+.extra-strip {
+  margin-top: 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-left: 3px solid var(--accent-teal);
+  border-radius: var(--radius-sm);
+  padding: 1rem 1.35rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  box-shadow: var(--shadow-card);
+}
+
+.extra-text {
+  font-size: 0.88rem;
+  color: var(--ink-secondary);
+}
+
+.extra-text strong {
+  color: var(--ink-primary);
+}
+
+/* References Grid */
+.ref-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+}
+
+.ref-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.35rem 1.5rem;
+  box-shadow: var(--shadow-card);
+}
+
+.ref-person {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.ref-title {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  margin-top: 0.2rem;
+}
+
+.ref-org {
+  font-size: 0.82rem;
+  color: var(--ink-secondary);
+  margin-top: 0.1rem;
+}
+
+.ref-email {
+  margin-top: 0.8rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border-light);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--ink-muted);
+}
+
+.ref-email a:hover {
+  color: var(--accent-blue);
+  text-decoration: underline;
+}
+
+/* Footer */
 footer {
-  padding: 2rem 0; text-align: center; border-top: 1px solid var(--border);
-  font-family: var(--font-mono); font-size: 0.78rem; color: var(--text-muted);
+  margin-top: 2rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border-strong);
+  background: var(--bg-card);
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--ink-muted);
 }
 
-/* Fullscreen Lightbox Modal */
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+/* Lightbox Modal */
 .lightbox {
-  position: fixed; inset: 0; z-index: 999;
-  background: rgba(9, 13, 22, 0.92); backdrop-filter: blur(8px);
-  display: none; align-items: center; justify-content: center; padding: 2rem;
-}
-.lightbox.open { display: flex; }
-.lightbox img {
-  max-width: 92vw; max-height: 86vh; border-radius: var(--radius-md);
-  border: 1px solid var(--border-strong); box-shadow: 0 25px 50px -12px rgba(0,0,0,0.8);
-}
-.lb-close {
-  position: absolute; top: 20px; right: 28px;
-  background: var(--surface); color: var(--text); border: 1px solid var(--border);
-  padding: 0.5rem 1rem; border-radius: var(--radius-sm); font-family: var(--font-mono);
-  cursor: pointer; font-size: 0.85rem;
+  position: fixed;
+  inset: 0;
+  z-index: 999;
+  background: rgba(15, 23, 42, 0.88);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
 }
 
-@media (max-width: 860px) {
-  .hero-grid, .skills-bento, .projects-grid, .cred-bento { grid-template-columns: 1fr; }
-  .profile-frame { max-width: 240px; margin: 0; }
-  .metrics-bento { grid-template-columns: repeat(2, 1fr); }
-  .nav-links { display: none; }
+.lightbox.open {
+  display: flex;
+}
+
+.lightbox img {
+  max-width: 92vw;
+  max-height: 86vh;
+  background: #FFFFFF;
+  padding: 0.35rem;
+  border-radius: var(--radius-xs);
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 28px;
+  background: #FFFFFF;
+  color: var(--ink-primary);
+  border: 1px solid var(--border-strong);
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-xs);
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Print Style for HR PDF Saving */
+@media print {
+  .topbar, .filter-group, .action-buttons, .evidence-tabs {
+    display: none !important;
+  }
+  body {
+    background: #FFFFFF;
+  }
+  section {
+    padding: 1.5rem 0;
+  }
+}
+
+@media (max-width: 900px) {
+  .brief-grid,
+  .kpi-strip,
+  .projects-grid,
+  .edu-cert-split,
+  .ref-grid,
+  .bullet-list.two-col {
+    grid-template-columns: 1fr;
+  }
+  .record-card {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .record-meta {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+    padding-right: 0;
+    padding-bottom: 0.85rem;
+  }
+  .skill-row {
+    grid-template-columns: 1fr;
+  }
+  .skill-domain {
+    border-right: none;
+    border-bottom: 1px solid var(--border-light);
+  }
+  .nav-menu {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .identity-row {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .identity-main {
+    flex-direction: row;
+    align-items: center;
+  }
+  .avatar-frame {
+    width: 68px;
+    height: 68px;
+  }
+  .dossier-card {
+    padding: 1.35rem;
+  }
 }
 </style>
 </head>
 <body>
 
-<nav>
-  <div class="nav-inner">
-    <a href="#" class="brand">
-      <span>Dhruv Surti</span>
-      <span class="brand-badge">DATA // SYS</span>
-    </a>
-    <div class="nav-right">
-      <ul class="nav-links">
-        <li><a href="#skills">Stack</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#credentials">Credentials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button class="theme-btn" id="themeToggle" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">☀️</button>
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand-block">
+      <a href="#" class="brand-name">Dhruv Surti</a>
+      <span class="brand-divider"></span>
+      <span class="brand-location">Melbourne, VIC</span>
     </div>
+    <ul class="nav-menu">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research &amp; Capstone</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education &amp; Licenses</a></li>
+      <li><a href="#references">References</a></li>
+      <li><a href="mailto:youhavereacheddhruv@gmail.com" class="nav-btn">Contact</a></li>
+    </ul>
   </div>
-</nav>
+</header>
 
 <main class="container">
-  <!-- HERO -->
-  <header class="hero">
-    <div class="hero-grid">
-      <div>
-        <div class="status-pill">
-          <span class="pulse-dot"></span>
-          <span>Melbourne, VIC &bull; Full Working Rights (Subclass 485) &bull; Available Now</span>
+
+  <!-- EXECUTIVE CANDIDATE DOSSIER HEADER -->
+  <div class="dossier-header">
+    <div class="dossier-card">
+      <div class="identity-row">
+        <div class="identity-main">
+          <div class="avatar-frame">
+            <img src="profile.jpg" alt="Dhruv Surti" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+            <span class="avatar-initials">DS</span>
+          </div>
+          <div class="title-group">
+            <h1>Dhruv Surti</h1>
+            <div class="role-subtitle">AI and Data Systems Engineer | Data Engineering &amp; Business Intelligence</div>
+            <div class="edu-quick">Bachelor of Computer Science (Major in Data Science), Deakin University (High Distinction Final-Year Average)</div>
+          </div>
         </div>
-        <h1 class="hero-title">
-          Engineering reliable <span class="gradient-text">data pipelines, BI analytics</span> &amp; cloud systems.
-        </h1>
-        <p class="hero-lead">
-          Computer Science graduate (Data Science Major, Distinction) from Deakin University and AI &amp; Data Systems Administrator at Natural Velocity. I build idempotent Python/SQL ETL pipelines, spatial-temporal PostgreSQL databases, and executive Power BI/Tableau dashboards backed by production monitoring.
-        </p>
-        <div class="role-tracks">
-          <span class="track-tag"><strong>01</strong> Data / Analytics Engineer</span>
-          <span class="track-tag"><strong>02</strong> Data &amp; BI Analyst</span>
-          <span class="track-tag"><strong>03</strong> Cloud &amp; Systems Support</span>
-        </div>
-        <div class="hero-cta">
-          <a href="#projects" class="btn btn-primary">Explore Projects &darr;</a>
-          <a href="https://github.com/dhruv-surti" target="_blank" rel="noopener" class="btn btn-secondary">GitHub Profile</a>
-          <a href="https://www.linkedin.com/in/dhruv-surti-73b782390/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-          <button class="btn btn-secondary" id="copyEmailBtn" data-email="youhavereacheddhruv@gmail.com">Copy Email</button>
+        <div class="status-tag">
+          <span class="status-dot"></span>
+          <span>Melbourne, VIC | Available for Roles</span>
         </div>
       </div>
 
-      <div class="hero-visual">
-        <div class="profile-frame">
-          <img src="profile.jpg" alt="Dhruv Surti">
-          <div class="profile-overlay-card">
-            <div>
-              <div class="poc-title">Dhruv Surti</div>
-              <div class="poc-sub">B.CompSc (Distinction) &bull; Deakin</div>
-            </div>
-            <span class="brand-badge">MEL, AU</span>
+      <div class="contact-strip">
+        <div class="contact-items">
+          <span><span class="contact-label">EMAIL:</span><a href="mailto:youhavereacheddhruv@gmail.com">youhavereacheddhruv@gmail.com</a></span>
+          <span><span class="contact-label">PHONE:</span><a href="tel:0433953912">0433 953 912</a></span>
+          <span><span class="contact-label">LINKEDIN:</span><a href="https://linkedin.com/in/dhruvsurti" target="_blank" rel="noopener">linkedin.com/in/dhruvsurti</a></span>
+          <span><span class="contact-label">GITHUB:</span><a href="https://github.com/dhruvsurti" target="_blank" rel="noopener">github.com/dhruvsurti</a></span>
+        </div>
+        <div class="action-buttons">
+          <button class="btn" id="copyEmailBtn" data-copy="youhavereacheddhruv@gmail.com">Copy Email</button>
+          <button class="btn" id="copyPhoneBtn" data-copy="0433 953 912">Copy Phone</button>
+          <button class="btn btn-primary" onclick="window.print()">Print / Save CV</button>
+        </div>
+      </div>
+
+      <!-- Smartly Grouped Summary for Recruiters -->
+      <div class="brief-section">
+        <div class="brief-heading">Candidate Executive Summary</div>
+        <div class="brief-grid">
+          <div class="brief-col">
+            <div class="brief-col-title">Academic &amp; Research Standing</div>
+            <ul class="brief-list">
+              <li>Bachelor of Computer Science graduate from Deakin University majoring in Data Science</li>
+              <li>Achieved a High Distinction average across all final-year university subjects</li>
+              <li>Wrote NLP research paper benchmarking RoBERTa models for bushfire misinformation tweets</li>
+            </ul>
+          </div>
+          <div class="brief-col">
+            <div class="brief-col-title">AI Systems &amp; IT Operations</div>
+            <ul class="brief-list">
+              <li>Part-time AI and Data Systems Engineer at Natural Velocity managing local NVIDIA Spark LLM servers</li>
+              <li>Managing corporate IT support for The District Docklands via HubSpot Help Desk</li>
+            </ul>
+          </div>
+          <div class="brief-col">
+            <div class="brief-col-title">Data Engineering &amp; BI Delivery</div>
+            <ul class="brief-list">
+              <li>Led a 17-member data engineering team for a Victorian bushfire forecasting project at Deakin</li>
+              <li>Designed the Supabase database schema and wrote a unified Python pipeline for bushfire data</li>
+              <li>Developed a Python and PostgreSQL pipeline on GitHub to process live clinical trial data</li>
+              <li>Created Power BI and Tableau dashboards on GitHub analysing retail sales and household energy</li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="metrics-bento">
-      <div class="metric-card">
-        <div class="mc-val">700K+</div>
-        <div class="mc-label">Records Piped &amp; Validated</div>
-        <div class="mc-detail">BOM, NASA &amp; Clinical APIs</div>
+    <!-- Quantified Key Outcomes Strip -->
+    <div class="kpi-strip">
+      <div class="kpi-card">
+        <div class="kpi-value">High Distinction</div>
+        <div class="kpi-label">Final-Year Subject Average</div>
+        <div class="kpi-note">Deakin University (2023 to 2026)</div>
       </div>
-      <div class="metric-card">
-        <div class="mc-val">~40%</div>
-        <div class="mc-label">Query Latency Reduction</div>
-        <div class="mc-detail">PostgreSQL / PostGIS Indexing</div>
+      <div class="kpi-card">
+        <div class="kpi-value">17-Member Team</div>
+        <div class="kpi-label">Data Engineering Stream Lead</div>
+        <div class="kpi-note">78,691 Records Aligned Across 60 Cells</div>
       </div>
-      <div class="metric-card">
-        <div class="mc-val">98%+</div>
-        <div class="mc-label">Pipeline Data Completeness</div>
-        <div class="mc-detail">Idempotent Upserts &amp; dbt Tests</div>
+      <div class="kpi-card">
+        <div class="kpi-value">0.886 F1 Score</div>
+        <div class="kpi-label">Fine-Tuned RoBERTa Model</div>
+        <div class="kpi-note">Beat 6 Model Families &amp; 1.3B LLM</div>
       </div>
-      <div class="metric-card">
-        <div class="mc-val">6 Shipped</div>
-        <div class="mc-label">Production &amp; Capstone Systems</div>
-        <div class="mc-detail">ETL, BI, Event Apps &amp; NLP</div>
+      <div class="kpi-card">
+        <div class="kpi-value">$28.5M &amp; 10K</div>
+        <div class="kpi-label">Retail &amp; Utility Data Modelled</div>
+        <div class="kpi-note">Power BI, Tableau, SQL &amp; dbt</div>
       </div>
     </div>
-  </header>
+  </div>
 
-  <!-- TECHNICAL STACK -->
-  <section id="skills">
+  <!-- RELEVANT EXPERIENCE -->
+  <section id="experience">
     <div class="sec-header">
       <div>
-        <div class="sec-eyebrow">// Technical Stack</div>
-        <h2 class="sec-title">Core Competencies</h2>
+        <div class="sec-tag">Commercial Track Record</div>
+        <h2 class="sec-title">Relevant Experience</h2>
       </div>
-      <p class="sec-desc">Organized by functional domain so hiring teams can verify production readiness at a glance.</p>
+      <div class="sec-subtitle">Production AI infrastructure, local LLM dataset engineering, and SLA-driven corporate IT operations.</div>
     </div>
 
-    <div class="skills-bento">
-      <div class="skill-card">
-        <div class="sc-head">
-          <span class="sc-title">Data Engineering &amp; Warehousing</span>
-          <span class="sc-badge">Core Track</span>
+    <div class="record-stack">
+      <article class="record-card">
+        <div class="record-meta">
+          <span class="record-period">May 2026 to Present</span>
+          <div class="record-org">Natural Velocity</div>
+          <div class="record-loc">Docklands, Melbourne VIC</div>
+          <span class="record-badge">Part-Time Role</span>
         </div>
-        <div class="skill-pills">
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/python/38BDF8" alt="">Python</span>
-          <span class="s-pill">Advanced SQL</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/postgresql/38BDF8" alt="">PostgreSQL &amp; PostGIS</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/snowflake/38BDF8" alt="">Snowflake</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/dbt/38BDF8" alt="">dbt</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/supabase/38BDF8" alt="">Supabase</span>
-          <span class="s-pill">Idempotent ETL / ELT</span>
-          <span class="s-pill">REST API Ingestion</span>
-          <span class="s-pill">Star &amp; Hub-Spoke Schemas</span>
-          <span class="s-pill">Data Quality Testing</span>
+        <div class="record-content">
+          <h3>AI and Data Systems Engineer (Part-Time)</h3>
+          <ul class="bullet-list">
+            <li>Prepare and feed domain datasets into the internal LLM running locally on NVIDIA Spark servers</li>
+            <li>Maintain local server infrastructure and administer cloud platforms for internal and client systems</li>
+            <li>Manage corporate IT support for The District Docklands via HubSpot Help Desk</li>
+            <li>Resolve hardware, network, and cloud issues for client stakeholders within strict contract SLAs</li>
+          </ul>
         </div>
-      </div>
+      </article>
 
-      <div class="skill-card">
-        <div class="sc-head">
-          <span class="sc-title">BI, Financial Modelling &amp; Analytics</span>
-          <span class="sc-badge">Analytics Track</span>
+      <article class="record-card">
+        <div class="record-meta">
+          <span class="record-period">Nov 2025 to Feb 2026</span>
+          <div class="record-org">Natural Velocity</div>
+          <div class="record-loc">Docklands, Melbourne VIC</div>
+          <span class="record-badge">Internship</span>
         </div>
-        <div class="skill-pills">
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/powerbi/38BDF8" alt="">Power BI (DAX, Power Query)</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/tableau/38BDF8" alt="">Tableau</span>
-          <span class="s-pill">Excel Financial Modelling</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/pandas/38BDF8" alt="">pandas</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/numpy/38BDF8" alt="">NumPy</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/streamlit/38BDF8" alt="">Streamlit</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/plotly/38BDF8" alt="">Plotly</span>
-          <span class="s-pill">KPI &amp; Variance Reporting</span>
+        <div class="record-content">
+          <h3>AI and Data Science Intern</h3>
+          <ul class="bullet-list">
+            <li>Built 2 Streamlit dashboards in Python, pandas, and Plotly tracking 300+ student sessions</li>
+            <li>Analysed student attendance and mentor workloads to optimise staff rostering</li>
+            <li>Developed a React frontend using the Vapi Web SDK to automate AI voice interactions</li>
+            <li>Tested a Python computer vision model to process live camera feeds in real time</li>
+          </ul>
         </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="sc-head">
-          <span class="sc-title">Cloud, DevOps &amp; Systems Operations</span>
-          <span class="sc-badge">Platform Track</span>
-        </div>
-        <div class="skill-pills">
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/amazonaws/38BDF8" alt="">AWS (S3, EC2, RDS, IAM)</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/microsoftazure/38BDF8" alt="">Azure</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/git/38BDF8" alt="">Git</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/github/38BDF8" alt="">GitHub (Branch Protection)</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/gitlab/38BDF8" alt="">GitLab Kanban</span>
-          <span class="s-pill">Datto RMM &amp; Monitoring</span>
-          <span class="s-pill">YAML &amp; JSON Configs</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/apacheairflow/38BDF8" alt="">Airflow</span>
-        </div>
-      </div>
-
-      <div class="skill-card">
-        <div class="sc-head">
-          <span class="sc-title">AI, Governance &amp; Enterprise Support</span>
-          <span class="sc-badge">Operations</span>
-        </div>
-        <div class="skill-pills">
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/pytorch/38BDF8" alt="">PyTorch</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/huggingface/38BDF8" alt="">Hugging Face (RoBERTa)</span>
-          <span class="s-pill"><img src="https://cdn.simpleicons.org/scikitlearn/38BDF8" alt="">scikit-learn</span>
-          <span class="s-pill">RBAC &amp; Zero-Secrets (.env)</span>
-          <span class="s-pill">HubSpot Service Desk</span>
-          <span class="s-pill">Jira &amp; Confluence SOPs</span>
-          <span class="s-pill">Claude Code Workflows</span>
-        </div>
-      </div>
+      </article>
     </div>
   </section>
 
-  <!-- PROJECTS -->
+  <!-- RESEARCH AND CAPSTONE EXPERIENCE -->
+  <section id="research">
+    <div class="sec-header">
+      <div>
+        <div class="sec-tag">Project Leadership &amp; Applied ML</div>
+        <h2 class="sec-title">Research and Capstone Experience</h2>
+      </div>
+      <div class="sec-subtitle">Spatial-temporal data engineering leadership and ACM-formatted NLP benchmarking at Deakin University.</div>
+    </div>
+
+    <div class="record-stack">
+      <article class="record-card">
+        <div class="record-meta">
+          <span class="record-period">Mar 2026 to May 2026</span>
+          <div class="record-org">InnovAIte, Deakin University</div>
+          <div class="record-loc">Melbourne, VIC</div>
+          <span class="record-badge">Grade: High Distinction</span>
+        </div>
+        <div class="record-content">
+          <h3>Data Engineering Stream Lead: FireFusion Bushfire Forecasting Platform</h3>
+          <ul class="bullet-list two-col">
+            <li>Directed a 17-member data engineering team building a bushfire forecasting platform for Victoria</li>
+            <li>Designed a Hub-and-Spoke spatial-temporal database schema in Supabase across 60 grid cells</li>
+            <li>Coded a unified Python ETL pipeline aligning 78,691 fire, weather, and vegetation records</li>
+            <li>Programmed the reusable GridSnapper Python utility for coordinate alignment across all sub-teams</li>
+            <li>Implemented automated validation checks testing nulls, primary and foreign keys, and Victoria bounds</li>
+            <li>Established the data lineage framework to preserve raw coordinates for life-safety auditing</li>
+            <li>Authored CONTRIBUTING.md and enforced a 3-approval GitHub PR workflow across the repository</li>
+            <li>Mentored 8+ junior members 1-on-1 on schema mapping, API integration, and SQL views</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="record-card">
+        <div class="record-meta">
+          <span class="record-period">Jun 2026</span>
+          <div class="record-org">Deakin University</div>
+          <div class="record-loc">Melbourne, VIC</div>
+          <span class="record-badge">Grade: High Distinction</span>
+        </div>
+        <div class="record-content">
+          <h3>Research Paper: Domain Shift in Bushfire Tweet Classification</h3>
+          <ul class="bullet-list">
+            <li>Conducted a literature review on emergency misinformation and domain shift during bushfires</li>
+            <li>Benchmarked 6 machine learning model families to classify actionable bushfire tweets versus noise</li>
+            <li>Fine-tuned a RoBERTa transformer model in Python using PyTorch and Hugging Face libraries</li>
+            <li>Outperformed all baseline models, including a 1.3B-parameter zero-shot LLM, with a 0.886 F1 score</li>
+            <li>Authored an ACM-formatted research paper and achieved a High Distinction grade</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PROJECTS -->
   <section id="projects">
     <div class="sec-header">
       <div>
-        <div class="sec-eyebrow">// Portfolio Showcase</div>
-        <h2 class="sec-title">Featured Engineering &amp; Analytics Work</h2>
+        <div class="sec-tag">Verified Technical Work</div>
+        <h2 class="sec-title">Portfolio Projects</h2>
       </div>
-      <div class="filter-tabs" role="group" aria-label="Filter projects">
-        <button class="tab-btn active" data-filter="all">All (6)</button>
-        <button class="tab-btn" data-filter="data-eng">Data Engineering</button>
-        <button class="tab-btn" data-filter="analytics">BI &amp; Analytics</button>
-        <button class="tab-btn" data-filter="systems-ai">Systems &amp; AI</button>
+      <div class="filter-group" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+        <button class="filter-btn" data-filter="de">Data Engineering &amp; Web</button>
+        <button class="filter-btn" data-filter="bi">Business Intelligence &amp; SQL</button>
       </div>
     </div>
 
     <div class="projects-grid">
 
-      <!-- 1. Residential Energy Analytics (uses local final_dashboard.png) -->
-      <article class="project-card" data-category="analytics data-eng" data-repo="Residential-Energy-Analytics-Margin-Assurance" data-keywords="final_dashboard,energy,dashboard,tableau">
-        <div class="pc-thumb" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="final_dashboard.png" alt="Residential Energy Analytics Dashboard">
-          <span class="zoom-hint">Click to enlarge</span>
+      <!-- Project 1: Residential Energy Analytics with Smart Interactive Tabbed Viewer -->
+      <article class="proj-card wide" data-category="bi de">
+        <div class="proj-top">
+          <span class="proj-category">MySQL | Excel Financial Model | Tableau BI</span>
+          <span class="proj-year">2026</span>
         </div>
-        <div class="pc-body">
-          <div class="pc-cat">SQL Data Engineering &amp; Tableau BI</div>
-          <h3 class="pc-title"><a href="https://github.com/dhruv-surti/Residential-Energy-Analytics-Margin-Assurance" target="_blank" rel="noopener">Residential Energy Analytics &amp; Margin Assurance</a></h3>
-          <p class="pc-desc">Simulated energy consumption and tariff margins across 10,000 Australian households. Built a 3-stage pipeline: MySQL for data engineering and anomaly resolution, Excel for financial margin modelling, and Tableau for executive tariff comparison across EV, Solar, and Standard plans.</p>
-          <div class="pc-metrics">
-            <div class="pcm-item"><span class="pcm-val">10,000</span><span class="pcm-lbl">Households</span></div>
-            <div class="pcm-item"><span class="pcm-val">$218K</span><span class="pcm-lbl">Revenue Analysed</span></div>
-            <div class="pcm-item"><span class="pcm-val">150</span><span class="pcm-lbl">Anomalies Fixed</span></div>
+        <h3 class="proj-title">Residential Energy Analytics &amp; Margin Assurance</h3>
+        <ul class="bullet-list">
+          <li>Modelled grid power consumption and $218K in billings for 10,000 Australian households in MySQL</li>
+          <li>Remediated 150 data quality errors via SQL and built an Excel financial model evaluating tariff margins</li>
+          <li>Published a Tableau dashboard comparing profit margins across EV charging, Solar, and Standard utility plans</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">10,000</span><span class="ps-lbl">Australian Households</span></div>
+          <div class="ps-item"><span class="ps-val">$218K</span><span class="ps-lbl">Billings Evaluated</span></div>
+          <div class="ps-item"><span class="ps-val">150</span><span class="ps-lbl">SQL Quality Fixes</span></div>
+        </div>
+
+        <!-- Smart Interactive Evidence Switcher (keeps page clean while showing all 6 proof images) -->
+        <div class="evidence-panel">
+          <div class="evidence-header">
+            <span class="evidence-title">Interactive Evidence Explorer (Select view below)</span>
+            <div class="evidence-tabs">
+              <button class="ev-tab active" data-img="final_dashboard.jpg" data-fallback="final_dashboard.png" data-cap="Tableau Executive Dashboard: Energy Commercial Performance">1. Full Dashboard</button>
+              <button class="ev-tab" data-img="distribution_state.jpg" data-fallback="distribution_state.png" data-cap="Geographic Revenue Distribution Across Australian States ($218,498 Total)">2. State Map</button>
+              <button class="ev-tab" data-img="plan_by_state.png" data-fallback="plan_by_state.png" data-cap="Customer Tariff Plan Mix by State (EV Premium, Green Gas, Solar, Standard)">3. Plan Mix</button>
+              <button class="ev-tab" data-img="product_segment.png" data-fallback="product_segment.png" data-cap="Total Revenue Comparison by Product Segment">4. Product Segment</button>
+              <button class="ev-tab" data-img="avg_revenue_per_user.png" data-fallback="avg_revenue_per_user.png" data-cap="Average Revenue Per User (ARPU) Matrix by State and Plan">5. ARPU Matrix</button>
+              <button class="ev-tab" data-img="pivot_table.png" data-fallback="pivot_table.png" data-cap="Excel Financial Model: Revenue and Cleaned kWh Usage Pivot Tables">6. Excel Model</button>
+            </div>
           </div>
-          <div class="pc-footer">
-            <div class="pc-stack"><span>SQL (MySQL)</span><span>Excel</span><span>Tableau</span></div>
-            <a href="https://github.com/dhruv-surti/Residential-Energy-Analytics-Margin-Assurance" target="_blank" rel="noopener" class="pc-link">View Repo &rarr;</a>
+          <div class="evidence-stage" onclick="openLightbox(document.getElementById('energyMainImg').src)">
+            <img id="energyMainImg" src="final_dashboard.jpg" onerror="this.onerror=null;this.src='final_dashboard.png';" alt="Residential Energy Analytics Preview">
           </div>
+          <div class="evidence-caption">
+            <span id="energyMainCap">Tableau Executive Dashboard: Energy Commercial Performance</span>
+            <span>Click image to inspect full screen</span>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">MySQL</span>
+            <span class="stack-pill">SQL Remediation</span>
+            <span class="stack-pill">Excel Financial Modelling</span>
+            <span class="stack-pill">Tableau</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
         </div>
       </article>
 
-      <!-- 2. Coles Sales Dashboard (uses local coles_dashboard.png) -->
-      <article class="project-card" data-category="analytics" data-repo="coles-sales-dashboard" data-keywords="coles_dashboard,coles,sales,powerbi">
-        <div class="pc-thumb" onclick="openLightbox(this.querySelector('img').src)">
-          <img src="coles_dashboard.png" alt="Coles Sales Performance Dashboard">
-          <span class="zoom-hint">Click to enlarge</span>
+      <!-- Project 2: Coles Sales Performance Dashboard -->
+      <article class="proj-card" data-category="bi">
+        <div class="proj-top">
+          <span class="proj-category">Power BI | Star Schema | DAX</span>
+          <span class="proj-year">2026</span>
         </div>
-        <div class="pc-body">
-          <div class="pc-cat">Retail Business Intelligence &bull; Power BI</div>
-          <h3 class="pc-title"><a href="https://github.com/dhruv-surti/coles-sales-dashboard" target="_blank" rel="noopener">Coles Sales Performance Dashboard</a></h3>
-          <p class="pc-desc">Interactive Power BI dashboard analysing store-level gross sales, revenue per team member, and forecast-versus-actual performance across six Australian states over two quarters so regional managers can isolate underperforming locations immediately.</p>
-          <div class="pc-metrics">
-            <div class="pcm-item"><span class="pcm-val">$28,577M</span><span class="pcm-lbl">Gross Sales</span></div>
-            <div class="pcm-item"><span class="pcm-val">6 States</span><span class="pcm-lbl">National Scope</span></div>
-            <div class="pcm-item"><span class="pcm-val">2 Qtrs</span><span class="pcm-lbl">Variance Model</span></div>
+        <h3 class="proj-title">Coles Sales Performance Dashboard</h3>
+        <ul class="bullet-list">
+          <li>Architected a Star Schema dimensional model using Power Query and DAX across 6 Australian states</li>
+          <li>Built an interactive Power BI report analysing $28.5M in aggregate retail revenue over two quarters</li>
+          <li>Visualised team productivity metrics alongside target variance analytics to identify underperforming locations</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">$28.5M</span><span class="ps-lbl">Retail Revenue</span></div>
+          <div class="ps-item"><span class="ps-val">6 States</span><span class="ps-lbl">Star Schema</span></div>
+          <div class="ps-item"><span class="ps-val">2 Quarters</span><span class="ps-lbl">Variance Analytics</span></div>
+        </div>
+
+        <div class="evidence-panel">
+          <div class="evidence-stage compact" onclick="openLightbox(this.querySelector('img').src)">
+            <img src="coles_dashboard.png" alt="Coles Sales Performance Power BI Dashboard">
           </div>
-          <div class="pc-footer">
-            <div class="pc-stack"><span>Power BI</span><span>DAX</span><span>Power Query</span></div>
-            <a href="https://github.com/dhruv-surti/coles-sales-dashboard" target="_blank" rel="noopener" class="pc-link">View Repo &rarr;</a>
+          <div class="evidence-caption">
+            <span>Power BI Report: Coles Sales Dashboard</span>
+            <span>Click to zoom</span>
           </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">Power BI</span>
+            <span class="stack-pill">DAX</span>
+            <span class="stack-pill">Power Query</span>
+            <span class="stack-pill">Star Schema</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
         </div>
       </article>
 
-      <!-- 3. Clinical Trials ETL Pipeline -->
-      <article class="project-card" data-category="data-eng" data-repo="clinical-data-pipeline" data-keywords="clinical,trial,etl,pipeline,dbt">
-        <div class="pc-thumb" onclick="openLightbox(this.querySelector('img').src)">
-          <img id="img-clinical" src="https://opengraph.githubassets.com/1/dhruv-surti/clinical-data-pipeline" alt="Clinical Trials ETL Pipeline">
-          <span class="zoom-hint">Click to enlarge</span>
+      <!-- Project 3: Clinical Trials Idempotent ETL Pipeline -->
+      <article class="proj-card" data-category="de">
+        <div class="proj-top">
+          <span class="proj-category">Python | PostgreSQL | dbt</span>
+          <span class="proj-year">2026</span>
         </div>
-        <div class="pc-body">
-          <div class="pc-cat">Idempotent ETL Pipeline &bull; Python, PostgreSQL &amp; dbt</div>
-          <h3 class="pc-title"><a href="https://github.com/dhruv-surti/clinical-data-pipeline" target="_blank" rel="noopener">Clinical Trials Idempotent ETL Pipeline</a></h3>
-          <p class="pc-desc">Extracts live clinical trial data from the ClinicalTrials.gov REST API (v2), flattens nested JSON with defensive missing-field handling, and loads PostgreSQL using upserts (ON CONFLICT DO UPDATE) for safe re-runs. Includes dbt staging/mart models and automated quality tests.</p>
-          <div class="pc-metrics">
-            <div class="pcm-item"><span class="pcm-val">Idempotent</span><span class="pcm-lbl">Safe Re-runs</span></div>
-            <div class="pcm-item"><span class="pcm-val">4 Suites</span><span class="pcm-lbl">dbt Auto Tests</span></div>
-            <div class="pcm-item"><span class="pcm-val">REST v2</span><span class="pcm-lbl">Live Ingestion</span></div>
+        <h3 class="proj-title">Clinical Trials Idempotent ETL Pipeline</h3>
+        <ul class="bullet-list">
+          <li>Engineered Python data ingestion for live clinical trial JSON feeds using ClinicalTrials.gov REST APIs</li>
+          <li>Populated PostgreSQL tables using transactional upsert logic (ON CONFLICT DO UPDATE) for safe pipeline re-runs</li>
+          <li>Constructed dbt staging and mart models with 4 automated test suites for continuous data validation</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">REST API</span><span class="ps-lbl">Live JSON Ingestion</span></div>
+          <div class="ps-item"><span class="ps-val">Idempotent</span><span class="ps-lbl">PostgreSQL Upserts</span></div>
+          <div class="ps-item"><span class="ps-val">4 Suites</span><span class="ps-lbl">dbt Validation Tests</span></div>
+        </div>
+
+        <div class="evidence-panel">
+          <div class="evidence-stage compact" onclick="openLightbox(this.querySelector('img').src)">
+            <img src="cleaned_dataset.jpg" alt="Validated Dataset Output">
           </div>
-          <div class="pc-footer">
-            <div class="pc-stack"><span>Python</span><span>PostgreSQL</span><span>dbt</span><span>psycopg2</span></div>
-            <a href="https://github.com/dhruv-surti/clinical-data-pipeline" target="_blank" rel="noopener" class="pc-link">View Repo &rarr;</a>
+          <div class="evidence-caption">
+            <span>Structured &amp; Validated Data Pipeline Output</span>
+            <span>Click to zoom</span>
           </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">dbt</span>
+            <span class="stack-pill">REST APIs</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
         </div>
       </article>
 
-      <!-- 4. FireFusion Capstone -->
-      <article class="project-card" data-category="data-eng systems-ai" data-repo="FireFusion" data-keywords="firefusion,fire,capstone,spatial,postgis,pipeline">
-        <div class="pc-thumb" onclick="openLightbox(this.querySelector('img').src)">
-          <img id="img-firefusion" src="" alt="FireFusion Spatial-Temporal Data Platform">
-          <span class="zoom-hint">Click to enlarge</span>
+      <!-- Project 4: Instant Credential Portal -->
+      <article class="proj-card wide" data-category="de">
+        <div class="proj-top">
+          <span class="proj-category">Google Apps Script | JavaScript | Event Systems</span>
+          <span class="proj-year">2026</span>
         </div>
-        <div class="pc-body">
-          <div class="pc-cat">Spatial Data Platform &bull; Victorian Bushfire Risk</div>
-          <h3 class="pc-title"><a href="https://github.com/dhruv-surti" target="_blank" rel="noopener">FireFusion Bushfire Forecasting Data Platform</a></h3>
-          <p class="pc-desc">Led a 17-person data engineering stream to architect 3 automated Python ETL pipelines processing 500,000+ records from Bureau of Meteorology and NASA APIs into a Hub-and-Spoke PostgreSQL/PostGIS database in Supabase with reusable GridSnapper tooling.</p>
-          <div class="pc-metrics">
-            <div class="pcm-item"><span class="pcm-val">500K+</span><span class="pcm-lbl">API Records</span></div>
-            <div class="pcm-item"><span class="pcm-val">~40%</span><span class="pcm-lbl">Faster Queries</span></div>
-            <div class="pcm-item"><span class="pcm-val">17-Person</span><span class="pcm-lbl">Stream Lead</span></div>
-          </div>
-          <div class="pc-footer">
-            <div class="pc-stack"><span>Python</span><span>PostGIS</span><span>Supabase</span><span>Git Governance</span></div>
-            <a href="https://github.com/dhruv-surti" target="_blank" rel="noopener" class="pc-link">View GitHub &rarr;</a>
-          </div>
-        </div>
-      </article>
+        <h3 class="proj-title">Instant Credential Portal (NVIDIA Developer Workshop)</h3>
+        <ul class="bullet-list">
+          <li>Deployed a web application using Google Apps Script, JavaScript, and Google Sheets for 40+ attendees</li>
+          <li>Replaced dynamic claims with pre-assigned QR code lookups to eliminate race conditions and downtime</li>
+        </ul>
 
-      <!-- 5. Instant Credential Portal -->
-      <article class="project-card" data-category="systems-ai" data-repo="NVIDIA-Brev-Code-Portal" data-keywords="nvidia,brev,portal,credential,qr">
-        <div class="pc-thumb" onclick="openLightbox(this.querySelector('img').src)">
-          <img id="img-nvidia" src="https://opengraph.githubassets.com/1/dhruv-surti/NVIDIA-Brev-Code-Portal" alt="Instant Credential Portal">
-          <span class="zoom-hint">Click to enlarge</span>
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">40+ Attendees</span><span class="ps-lbl">Live Workshop Scale</span></div>
+          <div class="ps-item"><span class="ps-val">Zero</span><span class="ps-lbl">Race Conditions</span></div>
+          <div class="ps-item"><span class="ps-val">100%</span><span class="ps-lbl">System Availability</span></div>
         </div>
-        <div class="pc-body">
-          <div class="pc-cat">Live Event Systems &amp; Concurrency Design</div>
-          <h3 class="pc-title"><a href="https://github.com/dhruv-surti/NVIDIA-Brev-Code-Portal" target="_blank" rel="noopener">Instant Credential Portal (NVIDIA Workshop)</a></h3>
-          <p class="pc-desc">Built for a live NVIDIA-affiliated developer workshop with 40+ attendees. Attendees scanned a QR code to receive pre-assigned compute access codes immediately. Re-engineered allocation from dynamic claims to deterministic lookups to eliminate race conditions.</p>
-          <div class="pc-metrics">
-            <div class="pcm-item"><span class="pcm-val">40+</span><span class="pcm-lbl">Live Attendees</span></div>
-            <div class="pcm-item"><span class="pcm-val">0</span><span class="pcm-lbl">Failed Lookups</span></div>
-            <div class="pcm-item"><span class="pcm-val">100%</span><span class="pcm-lbl">Event Uptime</span></div>
-          </div>
-          <div class="pc-footer">
-            <div class="pc-stack"><span>Apps Script</span><span>JavaScript</span><span>HTML/CSS</span></div>
-            <a href="https://github.com/dhruv-surti/NVIDIA-Brev-Code-Portal" target="_blank" rel="noopener" class="pc-link">View Repo &rarr;</a>
-          </div>
-        </div>
-      </article>
 
-      <!-- 6. Bushfire Tweet NLP Research -->
-      <article class="project-card" data-category="systems-ai" data-repo="bushfire-tweet-domain-shift-nlp" data-keywords="bushfire,tweet,nlp,roberta,domain">
-        <div class="pc-thumb" onclick="openLightbox(this.querySelector('img').src)">
-          <img id="img-nlp" src="https://opengraph.githubassets.com/1/dhruv-surti/bushfire-tweet-domain-shift-nlp" alt="Domain Shift in Bushfire Tweet Classification">
-          <span class="zoom-hint">Click to enlarge</span>
-        </div>
-        <div class="pc-body">
-          <div class="pc-cat">Applied NLP Research &bull; ACM sigconf Paper</div>
-          <h3 class="pc-title"><a href="https://github.com/dhruv-surti/bushfire-tweet-domain-shift-nlp" target="_blank" rel="noopener">Domain Shift in Bushfire Tweet Classification</a></h3>
-          <p class="pc-desc">Compared six model families for classifying actionable versus noise tweets during Australian bushfire emergencies. Proposed fine-tuned RoBERTa model outperformed all baselines including a 1.3B-parameter zero-shot LLM.</p>
-          <div class="pc-metrics">
-            <div class="pcm-item"><span class="pcm-val">0.886</span><span class="pcm-lbl">Best F1 Score</span></div>
-            <div class="pcm-item"><span class="pcm-val">6 Models</span><span class="pcm-lbl">Benchmarked</span></div>
-            <div class="pcm-item"><span class="pcm-val">HD</span><span class="pcm-lbl">Final Grade</span></div>
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">Google Apps Script</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">Google Sheets</span>
+            <span class="stack-pill">QR Code Lookup</span>
           </div>
-          <div class="pc-footer">
-            <div class="pc-stack"><span>Python</span><span>PyTorch</span><span>Hugging Face</span><span>RoBERTa</span></div>
-            <a href="https://github.com/dhruv-surti/bushfire-tweet-domain-shift-nlp" target="_blank" rel="noopener" class="pc-link">View Repo &rarr;</a>
-          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
         </div>
       </article>
 
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
-  <section id="experience">
+  <!-- PROFESSIONAL SKILLS AND LICENSES -->
+  <section id="skills">
     <div class="sec-header">
       <div>
-        <div class="sec-eyebrow">// Career History</div>
-        <h2 class="sec-title">Professional &amp; Leadership Experience</h2>
+        <div class="sec-tag">Technical Matrix</div>
+        <h2 class="sec-title">Professional Skills</h2>
       </div>
-      <p class="sec-desc">Commercial systems administration in Melbourne combined with large-stream data engineering leadership.</p>
+      <div class="sec-subtitle">Categorised for rapid technical screening across Data Engineering, BI, AI/ML, and Systems Operations.</div>
     </div>
 
-    <div class="timeline">
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div class="tl-header">
-          <div>
-            <div class="tl-role">AI &amp; Data Systems Administrator</div>
-            <div class="tl-org">Natural Velocity Pty Ltd &bull; Docklands, Melbourne</div>
-          </div>
-          <span class="tl-meta">May 2026 - Present</span>
+    <div class="skills-table">
+      <div class="skill-row">
+        <div class="skill-domain">Python &amp; Machine Learning</div>
+        <div class="skill-tags">
+          <span class="s-tag">Python</span>
+          <span class="s-tag">pandas</span>
+          <span class="s-tag">PySpark</span>
+          <span class="s-tag">NumPy</span>
+          <span class="s-tag">PyTorch</span>
+          <span class="s-tag">Hugging Face</span>
+          <span class="s-tag">Plotly</span>
+          <span class="s-tag">Streamlit</span>
+          <span class="s-tag">ETL, Data Analysis &amp; ML</span>
         </div>
-        <ul class="tl-bullets">
-          <li>Supporting infrastructure setup, hybrid networking, and platform configurations (YAML/JSON) for the AI Experience Centre, AI Innovation Centre, and AI Podcast Studio.</li>
-          <li>Managing multi-tenant IT support for internal operations and external corporate clients (The District Docklands) via HubSpot Help Desk and checklist-driven GitLab Kanban boards.</li>
-          <li>Monitoring pipeline and endpoint health using Datto while enforcing strict zero-secrets security hygiene across issue trackers and repositories.</li>
-          <li>Writing Python scripts and SQL queries to clean and validate operational datasets, and maintaining system architecture diagrams, risk assessments, and Confluence SOPs.</li>
-        </ul>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div class="tl-header">
-          <div>
-            <div class="tl-role">Data Science Team Lead, FireFusion Capstone</div>
-            <div class="tl-org">InnovAIte, Deakin University &bull; Melbourne</div>
-          </div>
-          <span class="tl-meta">Mar 2026 - Jun 2026</span>
+      <div class="skill-row">
+        <div class="skill-domain">SQL &amp; Warehousing</div>
+        <div class="skill-tags">
+          <span class="s-tag">PostgreSQL</span>
+          <span class="s-tag">MySQL</span>
+          <span class="s-tag">Supabase</span>
+          <span class="s-tag">Snowflake</span>
+          <span class="s-tag">Schema Design</span>
+          <span class="s-tag">Transactional Upserts</span>
+          <span class="s-tag">Data Cleaning</span>
         </div>
-        <ul class="tl-bullets">
-          <li>Architected 3 automated Python ETL pipelines processing 500,000+ records from Bureau of Meteorology and NASA APIs with zero dropped records.</li>
-          <li>Designed a Hub-and-Spoke PostgreSQL/PostGIS spatial-temporal database in Supabase, cutting spatial query response times by ~40%.</li>
-          <li>Coordinated Data Engineering, AI, and Frontend streams via SQL views and data contracts to deliver a unified source of truth for ML predictions.</li>
-          <li>Established engineering governance (CONTRIBUTING.md, GitHub branch protection, and mandatory 3-approval PR reviews) and mentored 8+ junior members across a 17-person team.</li>
-        </ul>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div class="tl-header">
-          <div>
-            <div class="tl-role">AI &amp; Data Science Intern</div>
-            <div class="tl-org">Natural Velocity Pty Ltd &bull; Melbourne</div>
-          </div>
-          <span class="tl-meta">Nov 2025 - Feb 2026</span>
+      <div class="skill-row">
+        <div class="skill-domain">Data Analytics &amp; BI</div>
+        <div class="skill-tags">
+          <span class="s-tag">Power BI (DAX, Power Query)</span>
+          <span class="s-tag">Tableau</span>
+          <span class="s-tag">Excel Financial Modelling</span>
+          <span class="s-tag">Star Schema Design</span>
         </div>
-        <ul class="tl-bullets">
-          <li>Built 2 production dashboards in Streamlit (Python, pandas, Plotly) analysing 300+ learning sessions across 5 activity types to surface flow zones and mentor load.</li>
-          <li>Developed Python scripts and SQL queries to extract, clean, and validate REST API and flat-file (JSON, CSV) datasets.</li>
-          <li>Delivered a React-based AI voice interface (Vapi Web SDK) and a computer vision prototype using Git branching and pull request workflows.</li>
-        </ul>
       </div>
 
-      <div class="tl-item">
-        <span class="tl-dot"></span>
-        <div class="tl-header">
-          <div>
-            <div class="tl-role">Data Engineer, AAIE Capstone</div>
-            <div class="tl-org">InnovAIte, Deakin University &bull; Melbourne</div>
-          </div>
-          <span class="tl-meta">Jul 2025 - Oct 2025</span>
+      <div class="skill-row">
+        <div class="skill-domain">Data Engineering &amp; Cloud</div>
+        <div class="skill-tags">
+          <span class="s-tag">AWS</span>
+          <span class="s-tag">Apache Spark</span>
+          <span class="s-tag">Hadoop</span>
+          <span class="s-tag">Kafka</span>
+          <span class="s-tag">Airflow</span>
+          <span class="s-tag">dbt</span>
+          <span class="s-tag">REST APIs</span>
         </div>
-        <ul class="tl-bullets">
-          <li>Built automated Python ETL pipelines processing 200,000+ records with schema validation, achieving 98% data completeness.</li>
-          <li>Configured AWS workflows across S3, EC2, and RDS, reducing manual data transfer time by ~60%.</li>
-        </ul>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">C# &amp; Computer Science</div>
+        <div class="skill-tags">
+          <span class="s-tag">C#</span>
+          <span class="s-tag">Object-Oriented Programming (OOP)</span>
+          <span class="s-tag">Data Structures and Algorithms</span>
+          <span class="s-tag">Advanced Algorithms</span>
+          <span class="s-tag">Data Wrangling</span>
+          <span class="s-tag">Natural Language Processing (NLP)</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">DevOps &amp; IT Operations</div>
+        <div class="skill-tags">
+          <span class="s-tag">Docker</span>
+          <span class="s-tag">Kubernetes</span>
+          <span class="s-tag">GitHub</span>
+          <span class="s-tag">GitLab</span>
+          <span class="s-tag">NVIDIA Spark Servers</span>
+          <span class="s-tag">HubSpot Help Desk</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CREDENTIALS -->
-  <section id="credentials">
+  <!-- EDUCATION AND CERTIFICATIONS -->
+  <section id="education">
     <div class="sec-header">
       <div>
-        <div class="sec-eyebrow">// Qualifications</div>
+        <div class="sec-tag">Academic Qualifications &amp; Licenses</div>
         <h2 class="sec-title">Education &amp; Certifications</h2>
       </div>
     </div>
 
-    <div class="cred-bento">
-      <div class="edu-box">
-        <span class="edu-badge">Graduated with Distinction</span>
-        <div class="edu-uni">Deakin University</div>
-        <div class="edu-deg">Bachelor of Computer Science (Major in Data Science)</div>
-        <div class="edu-time">Conferred Sep 2026 &bull; Melbourne, Victoria</div>
-        <ul class="edu-list">
-          <li><strong>Academic Role:</strong> Peer Tutor for Database Systems &amp; Python Programming</li>
-          <li><strong>Core Focus:</strong> Data Engineering, Relational &amp; Spatial Databases, Algorithms, Software Architecture, Enterprise Governance</li>
-          <li><strong>Work Eligibility:</strong> Subclass 485 Temporary Graduate Visa (Full unrestricted Australian working rights)</li>
+    <div class="edu-cert-split">
+      <div class="box-card">
+        <span class="box-kicker">High Distinction Final-Year Average</span>
+        <h3 class="box-title">Bachelor of Computer Science (Major in Data Science)</h3>
+        <div class="box-sub">Deakin University | Melbourne, VIC</div>
+        <div class="box-period">Jul 2023 to Sep 2026</div>
+        <ul class="bullet-list">
+          <li>Achieved a High Distinction average across all final-year subjects</li>
+          <li><strong>Capstone Project:</strong> Led 17-member data engineering team for a bushfire platform (High Distinction)</li>
+          <li><strong>Research Project:</strong> Benchmarked RoBERTa models for bushfire misinformation tweets (High Distinction)</li>
+          <li><strong>Coursework:</strong> Data Wrangling, Machine Learning, NLP, Advanced Algorithms, and C# (OOP, Data Structures)</li>
+          <li><strong>Extracurricular:</strong> Represented Deakin University in cricket at the 2024 UniSport Nationals tournament</li>
         </ul>
       </div>
 
-      <div class="cert-box">
-        <div class="cert-row">
-          <div><div class="cr-name">Data Engineering Professional Certificate</div><div class="cr-org">Snowflake (In Progress)</div></div>
-          <span class="cr-date">Oct 2026</span>
-        </div>
-        <div class="cert-row">
-          <div><div class="cr-name">Data Engineering Foundations</div><div class="cr-org">LinkedIn Learning</div></div>
-          <span class="cr-date">Jul 2026</span>
-        </div>
-        <div class="cert-row">
-          <div><div class="cr-name">Claude Code 101 &amp; Introduction to Cowork</div><div class="cr-org">Anthropic</div></div>
-          <span class="cr-date">Jul 2026</span>
-        </div>
-        <div class="cert-row">
-          <div><div class="cr-name">Quantium Data Analytics Job Simulation</div><div class="cr-org">Quantium, Forage</div></div>
-          <span class="cr-date">Apr 2026</span>
-        </div>
-        <div class="cert-row">
-          <div><div class="cr-name">Deloitte Australia Data Analytics Job Simulation</div><div class="cr-org">Deloitte Australia, Forage</div></div>
-          <span class="cr-date">Oct 2025</span>
-        </div>
-        <div class="cert-row">
-          <div><div class="cr-name">Introduction to Data Science Job Simulation</div><div class="cr-org">Commonwealth Bank, Forage</div></div>
-          <span class="cr-date">Oct 2025</span>
-        </div>
-        <div class="cert-row">
-          <div><div class="cr-name">Python, Data Cleaning &amp; Visualisation (5 Courses)</div><div class="cr-org">Kaggle</div></div>
-          <span class="cr-date">2024</span>
-        </div>
+      <div class="box-card">
+        <span class="box-kicker">Verified Credentials &amp; IDs</span>
+        <h3 class="box-title" style="margin-bottom:0.75rem;">Certifications &amp; Industry Simulations</h3>
+        <table class="cert-table">
+          <tbody>
+            <tr>
+              <td>
+                <div class="ct-name">Anthropic: Certificate of Completion in Claude Code 101</div>
+                <div class="ct-id">Credential ID: ipd5akt2uc2j</div>
+              </td>
+              <td class="ct-date">Jul 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-name">Anthropic: Introduction to Claude Cowork</div>
+                <div class="ct-id">Credential ID: kouhf8ugmdae</div>
+              </td>
+              <td class="ct-date">Jul 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-name">Quantium Data Analytics Job Simulation</div>
+                <div class="ct-id">Credential ID: YuEYhaTYGvYteqeAt</div>
+              </td>
+              <td class="ct-date">Apr 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-name">Commonwealth Bank Intro to Data Science Job Simulation</div>
+                <div class="ct-id">Credential ID: Rwp63Qm38kGoyavjv</div>
+              </td>
+              <td class="ct-date">Oct 2025</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-name">Deloitte Australia Data Analytics Job Simulation</div>
+                <div class="ct-id">Credential ID: pvLDiTzpYxhymApat</div>
+              </td>
+              <td class="ct-date">Oct 2025</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-name">LinkedIn Data Engineering Foundations &amp; Non-Technical Skills of Effective Data Scientists</div>
+                <div class="ct-id">LinkedIn Learning (Jun 2026 &amp; Jul 2026)</div>
+              </td>
+              <td class="ct-date">Jul 2026</td>
+            </tr>
+            <tr>
+              <td>
+                <div class="ct-name">Kaggle: Python, Data Cleaning &amp; Visualisation</div>
+                <div class="ct-id">5 Courses Completed</div>
+              </td>
+              <td class="ct-date">Completed</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </div>
 
-    <div class="callout-banner">
-      <div class="cb-icon">🏏</div>
+    <div class="extra-strip">
+      <div class="extra-text">
+        <strong>Interests &amp; Extracurriculars:</strong> Cricket (represented Deakin University at the 2024 UniSport Nationals), AI and open-source development.
+      </div>
+      <span class="record-period" style="margin:0;">Deakin Representative Athlete</span>
+    </div>
+  </section>
+
+  <!-- REFERENCES -->
+  <section id="references">
+    <div class="sec-header">
       <div>
-        <div class="cb-title">National-Level University Cricketer</div>
-        <p class="cb-text">Represented Deakin University at the Australian University Nationals Cricket Championships as a middle-order batsman, bringing high-pressure teamwork and discipline to engineering teams.</p>
+        <div class="sec-tag">Verified Referees</div>
+        <h2 class="sec-title">References</h2>
+      </div>
+      <div class="sec-subtitle">Further contact details can be provided upon request.</div>
+    </div>
+
+    <div class="ref-grid">
+      <div class="ref-card">
+        <div class="ref-person">John McGiffin</div>
+        <div class="ref-title">Chief Executive Officer and Co-Founder</div>
+        <div class="ref-org">Natural Velocity | Docklands, Melbourne VIC</div>
+        <div class="ref-email">
+          <a href="mailto:john.mcgiffin@naturalvelocity.ai">john.mcgiffin@naturalvelocity.ai</a>
+        </div>
+      </div>
+
+      <div class="ref-card">
+        <div class="ref-person">Dr Nayyar Zaidi</div>
+        <div class="ref-title">Senior Lecturer, Computer Science</div>
+        <div class="ref-org">Deakin University | Melbourne VIC</div>
+        <div class="ref-email">
+          <a href="mailto:nayyar.zaidi@deakin.edu.au">nayyar.zaidi@deakin.edu.au</a>
+        </div>
+      </div>
+
+      <div class="ref-card">
+        <div class="ref-person">Scott West</div>
+        <div class="ref-title">Mentor, FireFusion Project</div>
+        <div class="ref-org">Deakin University | Melbourne VIC</div>
+        <div class="ref-email">
+          Contact details available upon request
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="contact-card">
-      <div>
-        <div class="sec-eyebrow">// Let's Connect</div>
-        <h2 class="cc-title">Ready to contribute from day one.</h2>
-        <p class="cc-sub">Available for Junior Data / Analytics Engineer, BI &amp; Data Analyst, and Cloud / Systems Support opportunities across Melbourne.</p>
-      </div>
-      <div class="cc-actions">
-        <a href="mailto:youhavereacheddhruv@gmail.com" class="btn btn-primary">Email Dhruv</a>
-        <a href="https://www.linkedin.com/in/dhruv-surti-73b782390/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
-        <a href="https://github.com/dhruv-surti" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
-      </div>
-    </div>
-  </section>
 </main>
 
 <footer>
-  <p>Dhruv Surti &bull; Melbourne, Victoria, Australia &bull; +61 433 953 912 &bull; youhavereacheddhruv@gmail.com</p>
+  <div class="container footer-inner">
+    <span>Dhruv Surti | Melbourne, VIC</span>
+    <span>youhavereacheddhruv@gmail.com | 0433 953 912</span>
+    <span><a href="https://linkedin.com/in/dhruvsurti" target="_blank" rel="noopener">LinkedIn</a> | <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener">GitHub</a></span>
+  </div>
 </footer>
 
-<!-- Lightbox Modal for Inspecting Project Thumbnails -->
+<!-- Fullscreen Image Inspector Modal -->
 <div class="lightbox" id="lightbox" onclick="closeLightbox()">
-  <button class="lb-close" onclick="closeLightbox()">ESC / Close &times;</button>
-  <img id="lightboxImg" src="" alt="Enlarged project preview">
+  <button class="lightbox-close" onclick="closeLightbox()">Close [ESC]</button>
+  <img id="lightboxImg" src="" alt="Full resolution project view">
 </div>
 
 <script>
-  // 1. Dark / Light Theme Switcher
-  const themeBtn = document.getElementById('themeToggle');
-  const rootEl = document.documentElement;
-  themeBtn.addEventListener('click', () => {
-    const next = rootEl.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-    rootEl.setAttribute('data-theme', next);
-    themeBtn.textContent = next === 'dark' ? '☀️' : '🌙';
-  });
-
-  // 2. Copy Email Button
-  const copyBtn = document.getElementById('copyEmailBtn');
-  copyBtn.addEventListener('click', () => {
-    navigator.clipboard.writeText(copyBtn.dataset.email);
-    const orig = copyBtn.textContent;
-    copyBtn.textContent = 'Copied Email!';
-    setTimeout(() => { copyBtn.textContent = orig; }, 2000);
-  });
-
-  // 3. Project Category Filter
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const cards = document.querySelectorAll('.project-card');
-  tabBtns.forEach(btn => {
+  // Copy Buttons for Recruiter Convenience
+  function bindCopyButton(id, label) {
+    const btn = document.getElementById(id);
+    if (!btn) return;
     btn.addEventListener('click', () => {
-      tabBtns.forEach(b => b.classList.remove('active'));
+      navigator.clipboard.writeText(btn.dataset.copy);
+      const original = btn.textContent;
+      btn.textContent = 'Copied ' + label;
+      setTimeout(() => { btn.textContent = original; }, 1800);
+    });
+  }
+  bindCopyButton('copyEmailBtn', 'Email');
+  bindCopyButton('copyPhoneBtn', 'Phone');
+
+  // Interactive Evidence Tabs for Residential Energy Project
+  const evTabs = document.querySelectorAll('.ev-tab');
+  const mainImg = document.getElementById('energyMainImg');
+  const mainCap = document.getElementById('energyMainCap');
+
+  evTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      evTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      const primarySrc = tab.dataset.img;
+      const fallbackSrc = tab.dataset.fallback;
+      mainImg.onerror = function() {
+        this.onerror = null;
+        this.src = fallbackSrc;
+      };
+      mainImg.src = primarySrc;
+      mainCap.textContent = tab.dataset.cap;
+    });
+  });
+
+  // Project Category Filtering
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const projCards = document.querySelectorAll('.proj-card');
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       const filter = btn.dataset.filter;
-      cards.forEach(card => {
+      projCards.forEach(card => {
         if (filter === 'all' || card.dataset.category.includes(filter)) {
           card.classList.remove('hidden');
         } else {
@@ -1011,7 +1859,7 @@ footer {
     });
   });
 
-  // 4. Lightbox Modal for Project Screenshots
+  // Lightbox Zoom
   function openLightbox(src) {
     if (!src) return;
     document.getElementById('lightboxImg').src = src;
@@ -1020,108 +1868,9 @@ footer {
   function closeLightbox() {
     document.getElementById('lightbox').classList.remove('open');
   }
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeLightbox(); });
-
-  // 5. High-Resolution SVG Fallbacks + Automatic GitHub Repo Image Discovery
-  function makeSvgThumb(title, subtitle, metricLeft, metricRight, accent) {
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 475" width="800" height="475">
-      <defs>
-        <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-          <stop offset="0%" stop-color="#0B1120"/>
-          <stop offset="100%" stop-color="#17253B"/>
-        </linearGradient>
-      </defs>
-      <rect width="800" height="475" fill="url(#bg)"/>
-      <g stroke="rgba(148,163,184,0.08)" stroke-width="1">
-        <line x1="0" y1="95" x2="800" y2="95"/><line x1="0" y1="190" x2="800" y2="190"/>
-        <line x1="0" y1="285" x2="800" y2="285"/><line x1="0" y1="380" x2="800" y2="380"/>
-        <line x1="160" y1="0" x2="160" y2="475"/><line x1="320" y1="0" x2="320" y2="475"/>
-        <line x1="480" y1="0" x2="480" y2="475"/><line x1="640" y1="0" x2="640" y2="475"/>
-      </g>
-      <rect x="48" y="45" width="704" height="385" rx="14" fill="rgba(15,23,42,0.85)" stroke="${accent}" stroke-width="1.5"/>
-      <circle cx="80" cy="76" r="6" fill="#EF4444"/><circle cx="100" cy="76" r="6" fill="#F59E0B"/><circle cx="120" cy="76" r="6" fill="#10B981"/>
-      <text x="150" y="81" fill="#94A3B8" font-family="monospace" font-size="14">${subtitle}</text>
-      <line x1="48" y1="104" x2="752" y2="104" stroke="rgba(148,163,184,0.18)"/>
-      <text x="84" y="185" fill="#F8FAFC" font-family="sans-serif" font-weight="bold" font-size="33">${title}</text>
-      <rect x="84" y="235" width="290" height="125" rx="10" fill="rgba(30,41,59,0.75)" stroke="rgba(148,163,184,0.2)"/>
-      <text x="108" y="285" fill="${accent}" font-family="monospace" font-weight="bold" font-size="28">${metricLeft.split('|')[0]}</text>
-      <text x="108" y="322" fill="#94A3B8" font-family="sans-serif" font-size="15">${metricLeft.split('|')[1]}</text>
-      <rect x="405" y="235" width="305" height="125" rx="10" fill="rgba(30,41,59,0.75)" stroke="rgba(148,163,184,0.2)"/>
-      <text x="429" y="285" fill="#10B981" font-family="monospace" font-weight="bold" font-size="28">${metricRight.split('|')[0]}</text>
-      <text x="429" y="322" fill="#94A3B8" font-family="sans-serif" font-size="15">${metricRight.split('|')[1]}</text>
-    </svg>`;
-    return 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
-  }
-
-  // Set initial architectural previews for non-local thumbnails before GitHub API resolves any uploaded screenshots
-  const ffImg = document.getElementById('img-firefusion');
-  if (ffImg) {
-    ffImg.src = makeSvgThumb('FireFusion Spatial ETL', 'postgis // supabase // python', '500,000+ Rows|BOM & NASA APIs Unified', '~40% Faster|Spatial Grid Indexing', '#38BDF8');
-  }
-
-  // Automatically scan dhruv-surti.github.io and each project repository for uploaded image files
-  async function autoLoadRepoThumbnails() {
-    const imgRegex = /\.(png|jpe?g|webp|gif)$/i;
-    const ignoreNames = /^(profile|avatar|icon|logo)/i;
-
-    try {
-      // Check images uploaded inside dhruv-surti.github.io root
-      const rootRes = await fetch('https://api.github.com/repos/dhruv-surti/dhruv-surti.github.io/contents');
-      const rootFiles = rootRes.ok ? await rootRes.json() : [];
-      const rootImages = Array.isArray(rootFiles)
-        ? rootFiles.filter(f => f.type === 'file' && imgRegex.test(f.name) && !ignoreNames.test(f.name))
-        : [];
-
-      const projectCards = document.querySelectorAll('.project-card[data-repo]');
-      for (const card of projectCards) {
-        const repo = card.dataset.repo;
-        const keywords = (card.dataset.keywords || '').split(',').filter(Boolean);
-        const imgEl = card.querySelector('.pc-thumb img');
-        if (!imgEl) continue;
-
-        // Skip overriding if already pointing to an existing local file that loaded
-        const currentSrc = imgEl.getAttribute('src') || '';
-        if ((currentSrc === 'final_dashboard.png' || currentSrc === 'coles_dashboard.png') && imgEl.complete && imgEl.naturalWidth > 0) {
-          continue;
-        }
-
-        // 1. Check if a matching image exists in dhruv-surti.github.io root
-        const matchedLocal = rootImages.find(f => keywords.some(k => f.name.toLowerCase().includes(k)));
-        if (matchedLocal) {
-          imgEl.src = matchedLocal.name;
-          continue;
-        }
-
-        // 2. Check the individual project repo for any uploaded screenshots/images
-        const repoRes = await fetch(`https://api.github.com/repos/dhruv-surti/${repo}/contents`);
-        if (repoRes.ok) {
-          const repoFiles = await repoRes.json();
-          if (Array.isArray(repoFiles)) {
-            const directImg = repoFiles.find(f => f.type === 'file' && imgRegex.test(f.name) && !ignoreNames.test(f.name));
-            if (directImg && directImg.download_url) {
-              imgEl.src = directImg.download_url;
-              continue;
-            }
-            // Check common image subfolders (assets, images, screenshots, output, figures)
-            const imgFolder = repoFiles.find(f => f.type === 'dir' && /^(assets|images|img|screenshots|figures|output|docs)$/i.test(f.name));
-            if (imgFolder) {
-              const subRes = await fetch(imgFolder.url);
-              if (subRes.ok) {
-                const subFiles = await subRes.json();
-                const subImg = Array.isArray(subFiles) && subFiles.find(f => f.type === 'file' && imgRegex.test(f.name));
-                if (subImg && subImg.download_url) {
-                  imgEl.src = subImg.download_url;
-                }
-              }
-            }
-          }
-        }
-      }
-    } catch (err) {
-      // Silently keep default previews if offline or rate-limited
-    }
-  }
-  autoLoadRepoThumbnails();
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') closeLightbox();
+  });
 </script>
 
 </body>
