@@ -3,11 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dhruv Surti | AI, Data and Systems Engineer | Melbourne</title>
-<meta name="description" content="Portfolio and CV of Dhruv Surti, AI and Data Systems Engineer in Melbourne, VIC. Bachelor of Computer Science (Data Science) graduate from Deakin University with a High Distinction final-year average.">
-<meta name="keywords" content="Dhruv Surti, AI and Data Systems Engineer, Data Engineer Melbourne, Python, SQL, PostgreSQL, Supabase, dbt, Power BI, Tableau, RoBERTa, Deakin University, Natural Velocity">
-<meta property="og:title" content="Dhruv Surti | AI, Data and Systems Engineer">
-<meta property="og:description" content="Bachelor of Computer Science (Data Science) graduate from Deakin University. AI and Data Systems Engineer at Natural Velocity in Melbourne.">
+<title>Dhruv Surti | Portfolio</title>
+<meta name="description" content="Portfolio of Dhruv Surti. Bachelor of Computer Science graduate from Deakin University in Melbourne, VIC.">
+<meta name="keywords" content="Dhruv Surti, Computer Science, Software, Data, Cloud, Python, C#, SQL, PostgreSQL, AWS, Docker, Power BI, Tableau, Deakin University">
+<meta property="og:title" content="Dhruv Surti | Portfolio">
+<meta property="og:description" content="Bachelor of Computer Science graduate from Deakin University. Projects, experience, research, and technical skills.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dhruv-surti.github.io/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,6 @@
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Dhruv Surti",
-  "jobTitle": "AI and Data Systems Engineer",
   "email": "mailto:youhavereacheddhruv@gmail.com",
   "telephone": "+61433953912",
   "address": {
@@ -182,7 +181,7 @@ a {
   background: #09355C;
 }
 
-/* Executive Dossier Header */
+/* Header Card */
 .dossier-header {
   padding: 2.75rem 0 2.25rem;
 }
@@ -211,7 +210,7 @@ a {
   gap: 1.35rem;
 }
 
-/* Compact, Sharp Profile Avatar (84px) */
+/* Compact Profile Avatar (84px) */
 .avatar-frame {
   width: 84px;
   height: 84px;
@@ -357,7 +356,7 @@ a {
   color: #FFFFFF;
 }
 
-/* Recruiter Executive Brief Grid */
+/* About Me Section */
 .brief-section {
   padding-top: 1.5rem;
 }
@@ -369,7 +368,14 @@ a {
   text-transform: uppercase;
   letter-spacing: 0.08em;
   color: var(--ink-muted);
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.about-lead {
+  font-size: 0.95rem;
+  color: var(--ink-secondary);
+  margin-bottom: 1.2rem;
+  max-width: 90ch;
 }
 
 .brief-grid {
@@ -419,7 +425,7 @@ a {
   background: var(--accent-blue);
 }
 
-/* Key Metrics Strip */
+/* Key Highlights Strip */
 .kpi-strip {
   margin-top: 1.25rem;
   display: grid;
@@ -494,108 +500,6 @@ section {
 .sec-subtitle {
   font-size: 0.88rem;
   color: var(--ink-muted);
-}
-
-/* Structured Two-Column Experience Layout */
-.record-stack {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.record-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  padding: 1.5rem 1.75rem;
-  box-shadow: var(--shadow-card);
-  display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 2rem;
-  transition: border-color 0.15s ease;
-}
-
-.record-card:hover {
-  border-color: var(--border-strong);
-}
-
-.record-meta {
-  border-right: 1px solid var(--border-light);
-  padding-right: 1.5rem;
-}
-
-.record-period {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  font-weight: 600;
-  color: var(--accent-blue);
-  background: var(--accent-blue-light);
-  display: inline-block;
-  padding: 0.22rem 0.6rem;
-  border-radius: var(--radius-xs);
-  margin-bottom: 0.65rem;
-}
-
-.record-org {
-  font-family: var(--font-heading);
-  font-size: 1.02rem;
-  font-weight: 700;
-  color: var(--ink-primary);
-}
-
-.record-loc {
-  font-size: 0.82rem;
-  color: var(--ink-muted);
-  margin-top: 0.15rem;
-}
-
-.record-badge {
-  margin-top: 0.75rem;
-  display: inline-block;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--accent-teal);
-  background: var(--accent-teal-light);
-  padding: 0.2rem 0.55rem;
-  border-radius: var(--radius-xs);
-}
-
-.record-content h3 {
-  font-family: var(--font-heading);
-  font-size: 1.12rem;
-  font-weight: 700;
-  color: var(--ink-primary);
-  margin-bottom: 0.75rem;
-}
-
-.bullet-list {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 0.48rem;
-}
-
-.bullet-list.two-col {
-  grid-template-columns: repeat(2, 1fr);
-  gap: 0.55rem 1.5rem;
-}
-
-.bullet-list li {
-  font-size: 0.9rem;
-  color: var(--ink-secondary);
-  padding-left: 1rem;
-  position: relative;
-}
-
-.bullet-list li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.58rem;
-  width: 5px;
-  height: 5px;
-  background: var(--accent-blue);
 }
 
 /* Portfolio Projects Showcase */
@@ -836,6 +740,108 @@ section {
 
 .gh-link:hover {
   text-decoration: underline;
+}
+
+/* Structured Two-Column Experience Layout */
+.record-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.record-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+  box-shadow: var(--shadow-card);
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 2rem;
+  transition: border-color 0.15s ease;
+}
+
+.record-card:hover {
+  border-color: var(--border-strong);
+}
+
+.record-meta {
+  border-right: 1px solid var(--border-light);
+  padding-right: 1.5rem;
+}
+
+.record-period {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--accent-blue);
+  background: var(--accent-blue-light);
+  display: inline-block;
+  padding: 0.22rem 0.6rem;
+  border-radius: var(--radius-xs);
+  margin-bottom: 0.65rem;
+}
+
+.record-org {
+  font-family: var(--font-heading);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+}
+
+.record-loc {
+  font-size: 0.82rem;
+  color: var(--ink-muted);
+  margin-top: 0.15rem;
+}
+
+.record-badge {
+  margin-top: 0.75rem;
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-teal);
+  background: var(--accent-teal-light);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-xs);
+}
+
+.record-content h3 {
+  font-family: var(--font-heading);
+  font-size: 1.12rem;
+  font-weight: 700;
+  color: var(--ink-primary);
+  margin-bottom: 0.75rem;
+}
+
+.bullet-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.48rem;
+}
+
+.bullet-list.two-col {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.55rem 1.5rem;
+}
+
+.bullet-list li {
+  font-size: 0.9rem;
+  color: var(--ink-secondary);
+  padding-left: 1rem;
+  position: relative;
+}
+
+.bullet-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.58rem;
+  width: 5px;
+  height: 5px;
+  background: var(--accent-blue);
 }
 
 /* Technical Skills Table Matrix */
@@ -1110,7 +1116,7 @@ footer {
   cursor: pointer;
 }
 
-/* Print Style for HR PDF Saving */
+/* Print Style */
 @media print {
   .topbar, .filter-group, .action-buttons, .evidence-tabs {
     display: none !important;
@@ -1183,12 +1189,12 @@ footer {
       <span class="brand-location">Melbourne, VIC</span>
     </div>
     <ul class="nav-menu">
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#research">Research &amp; Capstone</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#education">Education &amp; Licenses</a></li>
-      <li><a href="#references">References</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#research">Research &amp; Capstone</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="mailto:youhavereacheddhruv@gmail.com" class="nav-btn">Contact</a></li>
     </ul>
   </div>
@@ -1196,8 +1202,8 @@ footer {
 
 <main class="container">
 
-  <!-- EXECUTIVE CANDIDATE DOSSIER HEADER -->
-  <div class="dossier-header">
+  <!-- HEADER & ABOUT ME -->
+  <div class="dossier-header" id="about">
     <div class="dossier-card">
       <div class="identity-row">
         <div class="identity-main">
@@ -1207,13 +1213,13 @@ footer {
           </div>
           <div class="title-group">
             <h1>Dhruv Surti</h1>
-            <div class="role-subtitle">AI and Data Systems Engineer | Data Engineering &amp; Business Intelligence</div>
-            <div class="edu-quick">Bachelor of Computer Science (Major in Data Science), Deakin University (High Distinction Final-Year Average)</div>
+            <div class="role-subtitle">Bachelor of Computer Science</div>
+            <div class="edu-quick">Deakin University</div>
           </div>
         </div>
         <div class="status-tag">
           <span class="status-dot"></span>
-          <span>Melbourne, VIC | Available for Roles</span>
+          <span>Melbourne, Victoria</span>
         </div>
       </div>
 
@@ -1227,75 +1233,403 @@ footer {
         <div class="action-buttons">
           <button class="btn" id="copyEmailBtn" data-copy="youhavereacheddhruv@gmail.com">Copy Email</button>
           <button class="btn" id="copyPhoneBtn" data-copy="0433 953 912">Copy Phone</button>
-          <button class="btn btn-primary" onclick="window.print()">Print / Save CV</button>
+          <button class="btn btn-primary" onclick="window.print()">Print Page</button>
         </div>
       </div>
 
-      <!-- Smartly Grouped Summary for Recruiters -->
       <div class="brief-section">
-        <div class="brief-heading">Candidate Executive Summary</div>
+        <div class="brief-heading">About Me</div>
+        <p class="about-lead">
+          Computer Science graduate from Deakin University with a High Distinction average across all final-year subjects. I enjoy building software, scalable cloud deployments, automated data pipelines, and interactive analytics tools across Python, C#, SQL, and AWS.
+        </p>
         <div class="brief-grid">
           <div class="brief-col">
-            <div class="brief-col-title">Academic &amp; Research Standing</div>
+            <div class="brief-col-title">Software, Cloud &amp; Systems</div>
             <ul class="brief-list">
-              <li>Bachelor of Computer Science graduate from Deakin University majoring in Data Science</li>
-              <li>Achieved a High Distinction average across all final-year university subjects</li>
-              <li>Wrote NLP research paper benchmarking RoBERTa models for bushfire misinformation tweets</li>
+              <li>Managing local NVIDIA Spark LLM servers, cloud platforms, and corporate IT support at Natural Velocity</li>
+              <li>Deployed load-balanced Node.js and Docker containers on AWS EC2 with CloudWatch stress monitoring</li>
+              <li>Built custom C# indexing structures (Skip-Lists, Heaps, Stacks) to optimise query lookups</li>
             </ul>
           </div>
           <div class="brief-col">
-            <div class="brief-col-title">AI Systems &amp; IT Operations</div>
+            <div class="brief-col-title">Data Pipelines &amp; Architecture</div>
             <ul class="brief-list">
-              <li>Part-time AI and Data Systems Engineer at Natural Velocity managing local NVIDIA Spark LLM servers</li>
-              <li>Managing corporate IT support for The District Docklands via HubSpot Help Desk</li>
+              <li>Led a 17-member team for Deakin's Victorian bushfire forecasting platform</li>
+              <li>Designed the Supabase spatial database schema and unified Python pipeline across 78,691 records</li>
+              <li>Engineered an idempotent Python, PostgreSQL, and dbt pipeline for live ClinicalTrials.gov data</li>
             </ul>
           </div>
           <div class="brief-col">
-            <div class="brief-col-title">Data Engineering &amp; BI Delivery</div>
+            <div class="brief-col-title">Research &amp; Analytics</div>
             <ul class="brief-list">
-              <li>Led a 17-member data engineering team for a Victorian bushfire forecasting project at Deakin</li>
-              <li>Designed the Supabase database schema and wrote a unified Python pipeline for bushfire data</li>
-              <li>Developed a Python and PostgreSQL pipeline on GitHub to process live clinical trial data</li>
-              <li>Created Power BI and Tableau dashboards on GitHub analysing retail sales and household energy</li>
+              <li>Authored an ACM-formatted NLP research paper benchmarking RoBERTa models (0.886 F1 score)</li>
+              <li>Created Power BI and Tableau dashboards analysing $28.5M in retail sales and 10,000 household energy accounts</li>
+              <li>Represented Deakin University in cricket at the 2024 UniSport Nationals tournament</li>
             </ul>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Quantified Key Outcomes Strip -->
+    <!-- Key Highlights Strip -->
     <div class="kpi-strip">
       <div class="kpi-card">
         <div class="kpi-value">High Distinction</div>
         <div class="kpi-label">Final-Year Subject Average</div>
-        <div class="kpi-note">Deakin University (2023 to 2026)</div>
+        <div class="kpi-note">B.CompSc, Deakin University</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-value">17-Member Team</div>
-        <div class="kpi-label">Data Engineering Stream Lead</div>
-        <div class="kpi-note">78,691 Records Aligned Across 60 Cells</div>
+        <div class="kpi-value">6 Projects</div>
+        <div class="kpi-label">Software, Cloud, Data &amp; BI</div>
+        <div class="kpi-note">Python, C#, AWS, Docker &amp; SQL</div>
+      </div>
+      <div class="kpi-card">
+        <div class="kpi-value">78,691 Records</div>
+        <div class="kpi-label">Unified Bushfire ETL Pipeline</div>
+        <div class="kpi-note">17-Member Team Lead at Deakin</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-value">0.886 F1 Score</div>
-        <div class="kpi-label">Fine-Tuned RoBERTa Model</div>
-        <div class="kpi-note">Beat 6 Model Families &amp; 1.3B LLM</div>
-      </div>
-      <div class="kpi-card">
-        <div class="kpi-value">$28.5M &amp; 10K</div>
-        <div class="kpi-label">Retail &amp; Utility Data Modelled</div>
-        <div class="kpi-note">Power BI, Tableau, SQL &amp; dbt</div>
+        <div class="kpi-label">Fine-Tuned RoBERTa Research</div>
+        <div class="kpi-note">Benchmarked 6 ML Model Families</div>
       </div>
     </div>
   </div>
 
-  <!-- RELEVANT EXPERIENCE -->
+  <!-- PORTFOLIO PROJECTS -->
+  <section id="projects">
+    <div class="sec-header">
+      <div>
+        <div class="sec-tag">Technical Work</div>
+        <h2 class="sec-title">Projects</h2>
+      </div>
+      <div class="filter-group" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All Projects (6)</button>
+        <button class="filter-btn" data-filter="sw">Software, C# &amp; Cloud</button>
+        <button class="filter-btn" data-filter="de">Data Pipelines</button>
+        <button class="filter-btn" data-filter="bi">Analytics &amp; BI</button>
+      </div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- Project 1: Cloud Scaling, Load Balancing & Docker Deployment -->
+      <article class="proj-card" data-category="sw">
+        <div class="proj-top">
+          <span class="proj-category">AWS (EC2, ELB, CloudWatch) | Docker | Node.js</span>
+          <span class="proj-year">2025</span>
+        </div>
+        <h3 class="proj-title">Cloud Scaling, Load Balancing &amp; Docker Deployment</h3>
+        <ul class="bullet-list">
+          <li>Deployed Node.js web servers on AWS EC2, created custom machine image templates, and set up a Load Balancer to split heavy traffic across multiple server instances</li>
+          <li>Set up AWS CloudWatch to monitor CPU load and network throughput during stress tests, and packaged the application in Docker containers for fast deployment across servers</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">AWS EC2 &amp; ELB</span><span class="ps-lbl">Multi-Instance Scaling</span></div>
+          <div class="ps-item"><span class="ps-val">CloudWatch</span><span class="ps-lbl">CPU &amp; Network Metrics</span></div>
+          <div class="ps-item"><span class="ps-val">Docker</span><span class="ps-lbl">Containerised Rollout</span></div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">AWS EC2</span>
+            <span class="stack-pill">Elastic Load Balancing</span>
+            <span class="stack-pill">CloudWatch</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">Node.js</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project 2: Query Optimization & Data Structures in C# -->
+      <article class="proj-card" data-category="sw">
+        <div class="proj-top">
+          <span class="proj-category">C# | Data Structures &amp; Algorithms</span>
+          <span class="proj-year">2024</span>
+        </div>
+        <h3 class="proj-title">Query Optimization &amp; Data Structures in C#</h3>
+        <ul class="bullet-list">
+          <li>Coded custom indexing and search structures (Skip-Lists, Heaps, and Stacks) in C# to understand how data retrieval scales under the hood</li>
+          <li>Tested different range-query and caching methods to cut slow full-list scans down to fast logarithmic and constant-time lookups</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">C# (.NET)</span><span class="ps-lbl">Custom Structures</span></div>
+          <div class="ps-item"><span class="ps-val">O(log n) &amp; O(1)</span><span class="ps-lbl">Lookup Complexity</span></div>
+          <div class="ps-item"><span class="ps-val">Skip-Lists &amp; Heaps</span><span class="ps-lbl">Indexing &amp; Caching</span></div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">C#</span>
+            <span class="stack-pill">Object-Oriented Programming</span>
+            <span class="stack-pill">Skip-Lists &amp; Heaps</span>
+            <span class="stack-pill">Query Caching</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub</a>
+        </div>
+      </article>
+
+      <!-- Project 3: Residential Energy Analytics with Interactive Viewer -->
+      <article class="proj-card wide" data-category="bi de">
+        <div class="proj-top">
+          <span class="proj-category">MySQL | Excel Financial Model | Tableau</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3 class="proj-title">Residential Energy Analytics &amp; Margin Assurance</h3>
+        <ul class="bullet-list">
+          <li>Modelled grid power consumption and $218K in billings for 10,000 Australian households in MySQL</li>
+          <li>Remediated 150 data quality errors via SQL and built an Excel financial model evaluating tariff margins</li>
+          <li>Published a Tableau dashboard comparing profit margins across EV charging, Solar, and Standard utility plans</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">10,000</span><span class="ps-lbl">Australian Households</span></div>
+          <div class="ps-item"><span class="ps-val">$218K</span><span class="ps-lbl">Billings Evaluated</span></div>
+          <div class="ps-item"><span class="ps-val">150</span><span class="ps-lbl">SQL Quality Fixes</span></div>
+        </div>
+
+        <div class="evidence-panel">
+          <div class="evidence-header">
+            <span class="evidence-title">Project Output Preview (Select view below)</span>
+            <div class="evidence-tabs">
+              <button class="ev-tab active" data-img="final_dashboard.jpg" data-fallback="final_dashboard.png" data-cap="Tableau Dashboard: Energy Commercial Performance">1. Full Dashboard</button>
+              <button class="ev-tab" data-img="distribution_state.jpg" data-fallback="distribution_state.png" data-cap="Geographic Revenue Distribution Across Australian States ($218,498 Total)">2. State Map</button>
+              <button class="ev-tab" data-img="plan_by_state.png" data-fallback="plan_by_state.png" data-cap="Customer Tariff Plan Mix by State (EV Premium, Green Gas, Solar, Standard)">3. Plan Mix</button>
+              <button class="ev-tab" data-img="product_segment.png" data-fallback="product_segment.png" data-cap="Total Revenue Comparison by Product Segment">4. Product Segment</button>
+              <button class="ev-tab" data-img="avg_revenue_per_user.png" data-fallback="avg_revenue_per_user.png" data-cap="Average Revenue Per User (ARPU) Matrix by State and Plan">5. ARPU Matrix</button>
+              <button class="ev-tab" data-img="pivot_table.png" data-fallback="pivot_table.png" data-cap="Excel Financial Model: Revenue and Cleaned kWh Usage Pivot Tables">6. Excel Model</button>
+            </div>
+          </div>
+          <div class="evidence-stage" onclick="openLightbox(document.getElementById('energyMainImg').src)">
+            <img id="energyMainImg" src="final_dashboard.jpg" onerror="this.onerror=null;this.src='final_dashboard.png';" alt="Residential Energy Analytics Preview">
+          </div>
+          <div class="evidence-caption">
+            <span id="energyMainCap">Tableau Dashboard: Energy Commercial Performance</span>
+            <span>Click image to inspect full screen</span>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">MySQL</span>
+            <span class="stack-pill">SQL</span>
+            <span class="stack-pill">Excel Financial Modelling</span>
+            <span class="stack-pill">Tableau</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
+        </div>
+      </article>
+
+      <!-- Project 4: Coles Sales Performance Dashboard -->
+      <article class="proj-card" data-category="bi">
+        <div class="proj-top">
+          <span class="proj-category">Power BI | Star Schema | DAX</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3 class="proj-title">Coles Sales Performance Dashboard</h3>
+        <ul class="bullet-list">
+          <li>Architected a Star Schema dimensional model using Power Query and DAX across 6 Australian states</li>
+          <li>Built an interactive Power BI report analysing $28.5M in aggregate retail revenue over two quarters</li>
+          <li>Visualised team productivity metrics alongside target variance analytics to identify underperforming locations</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">$28.5M</span><span class="ps-lbl">Retail Revenue</span></div>
+          <div class="ps-item"><span class="ps-val">6 States</span><span class="ps-lbl">Star Schema</span></div>
+          <div class="ps-item"><span class="ps-val">2 Quarters</span><span class="ps-lbl">Variance Analytics</span></div>
+        </div>
+
+        <div class="evidence-panel">
+          <div class="evidence-stage compact" onclick="openLightbox(this.querySelector('img').src)">
+            <img src="coles_dashboard.png" alt="Coles Sales Performance Power BI Dashboard">
+          </div>
+          <div class="evidence-caption">
+            <span>Power BI Report: Coles Sales Dashboard</span>
+            <span>Click to zoom</span>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">Power BI</span>
+            <span class="stack-pill">DAX</span>
+            <span class="stack-pill">Power Query</span>
+            <span class="stack-pill">Star Schema</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
+        </div>
+      </article>
+
+      <!-- Project 5: Clinical Trials Idempotent ETL Pipeline -->
+      <article class="proj-card" data-category="de">
+        <div class="proj-top">
+          <span class="proj-category">Python | PostgreSQL | dbt</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3 class="proj-title">Clinical Trials Idempotent ETL Pipeline</h3>
+        <ul class="bullet-list">
+          <li>Engineered Python data ingestion for live clinical trial JSON feeds using ClinicalTrials.gov REST APIs</li>
+          <li>Populated PostgreSQL tables using transactional upsert logic (ON CONFLICT DO UPDATE) for safe pipeline re-runs</li>
+          <li>Constructed dbt staging and mart models with 4 automated test suites for continuous data validation</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">REST API</span><span class="ps-lbl">Live JSON Ingestion</span></div>
+          <div class="ps-item"><span class="ps-val">Idempotent</span><span class="ps-lbl">PostgreSQL Upserts</span></div>
+          <div class="ps-item"><span class="ps-val">4 Suites</span><span class="ps-lbl">dbt Validation Tests</span></div>
+        </div>
+
+        <div class="evidence-panel">
+          <div class="evidence-stage compact" onclick="openLightbox(this.querySelector('img').src)">
+            <img src="cleaned_dataset.jpg" alt="Validated Dataset Output">
+          </div>
+          <div class="evidence-caption">
+            <span>Structured &amp; Validated Data Pipeline Output</span>
+            <span>Click to zoom</span>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">Python</span>
+            <span class="stack-pill">PostgreSQL</span>
+            <span class="stack-pill">dbt</span>
+            <span class="stack-pill">REST APIs</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
+        </div>
+      </article>
+
+      <!-- Project 6: Instant Credential Portal -->
+      <article class="proj-card wide" data-category="sw">
+        <div class="proj-top">
+          <span class="proj-category">Google Apps Script | JavaScript | Web Application</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3 class="proj-title">Instant Credential Portal (NVIDIA Developer Workshop)</h3>
+        <ul class="bullet-list">
+          <li>Deployed a web application using Google Apps Script, JavaScript, and Google Sheets for 40+ attendees</li>
+          <li>Replaced dynamic claims with pre-assigned QR code lookups to eliminate race conditions and downtime</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">40+ Attendees</span><span class="ps-lbl">Live Workshop Scale</span></div>
+          <div class="ps-item"><span class="ps-val">Zero</span><span class="ps-lbl">Race Conditions</span></div>
+          <div class="ps-item"><span class="ps-val">100%</span><span class="ps-lbl">System Availability</span></div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">Google Apps Script</span>
+            <span class="stack-pill">JavaScript</span>
+            <span class="stack-pill">Google Sheets</span>
+            <span class="stack-pill">QR Code Lookup</span>
+          </div>
+          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- TECHNICAL SKILLS -->
+  <section id="skills">
+    <div class="sec-header">
+      <div>
+        <div class="sec-tag">Capabilities</div>
+        <h2 class="sec-title">Technical Skills</h2>
+      </div>
+      <div class="sec-subtitle">Languages, databases, cloud infrastructure, and analytics tools used across my projects.</div>
+    </div>
+
+    <div class="skills-table">
+      <div class="skill-row">
+        <div class="skill-domain">Python &amp; Machine Learning</div>
+        <div class="skill-tags">
+          <span class="s-tag">Python</span>
+          <span class="s-tag">pandas</span>
+          <span class="s-tag">PySpark</span>
+          <span class="s-tag">NumPy</span>
+          <span class="s-tag">PyTorch</span>
+          <span class="s-tag">Hugging Face</span>
+          <span class="s-tag">Plotly</span>
+          <span class="s-tag">Streamlit</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">C# &amp; Software Development</div>
+        <div class="skill-tags">
+          <span class="s-tag">C#</span>
+          <span class="s-tag">Object-Oriented Programming (OOP)</span>
+          <span class="s-tag">Data Structures &amp; Algorithms</span>
+          <span class="s-tag">Skip-Lists, Heaps &amp; Stacks</span>
+          <span class="s-tag">Node.js</span>
+          <span class="s-tag">JavaScript</span>
+          <span class="s-tag">React</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">SQL &amp; Databases</div>
+        <div class="skill-tags">
+          <span class="s-tag">PostgreSQL</span>
+          <span class="s-tag">MySQL</span>
+          <span class="s-tag">Supabase</span>
+          <span class="s-tag">Snowflake</span>
+          <span class="s-tag">Schema Design</span>
+          <span class="s-tag">Transactional Upserts</span>
+          <span class="s-tag">Data Cleaning</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">Cloud, DevOps &amp; Systems</div>
+        <div class="skill-tags">
+          <span class="s-tag">AWS (EC2, ELB, CloudWatch, S3, RDS)</span>
+          <span class="s-tag">Docker</span>
+          <span class="s-tag">Kubernetes</span>
+          <span class="s-tag">GitHub</span>
+          <span class="s-tag">GitLab</span>
+          <span class="s-tag">NVIDIA Spark Servers</span>
+          <span class="s-tag">HubSpot Help Desk</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">Data Pipelines &amp; Distributed Tools</div>
+        <div class="skill-tags">
+          <span class="s-tag">Apache Spark</span>
+          <span class="s-tag">Hadoop</span>
+          <span class="s-tag">Kafka</span>
+          <span class="s-tag">Airflow</span>
+          <span class="s-tag">dbt</span>
+          <span class="s-tag">REST APIs</span>
+        </div>
+      </div>
+
+      <div class="skill-row">
+        <div class="skill-domain">Data Analytics &amp; BI</div>
+        <div class="skill-tags">
+          <span class="s-tag">Power BI (DAX, Power Query)</span>
+          <span class="s-tag">Tableau</span>
+          <span class="s-tag">Excel Financial Modelling</span>
+          <span class="s-tag">Star Schema Design</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK EXPERIENCE -->
   <section id="experience">
     <div class="sec-header">
       <div>
-        <div class="sec-tag">Commercial Track Record</div>
-        <h2 class="sec-title">Relevant Experience</h2>
+        <div class="sec-tag">Industry History</div>
+        <h2 class="sec-title">Experience</h2>
       </div>
-      <div class="sec-subtitle">Production AI infrastructure, local LLM dataset engineering, and SLA-driven corporate IT operations.</div>
     </div>
 
     <div class="record-stack">
@@ -1304,10 +1638,10 @@ footer {
           <span class="record-period">May 2026 to Present</span>
           <div class="record-org">Natural Velocity</div>
           <div class="record-loc">Docklands, Melbourne VIC</div>
-          <span class="record-badge">Part-Time Role</span>
+          <span class="record-badge">Part-Time</span>
         </div>
         <div class="record-content">
-          <h3>AI and Data Systems Engineer (Part-Time)</h3>
+          <h3>AI and Data Systems Engineer</h3>
           <ul class="bullet-list">
             <li>Prepare and feed domain datasets into the internal LLM running locally on NVIDIA Spark servers</li>
             <li>Maintain local server infrastructure and administer cloud platforms for internal and client systems</li>
@@ -1341,10 +1675,9 @@ footer {
   <section id="research">
     <div class="sec-header">
       <div>
-        <div class="sec-tag">Project Leadership &amp; Applied ML</div>
-        <h2 class="sec-title">Research and Capstone Experience</h2>
+        <div class="sec-tag">University Research &amp; Leadership</div>
+        <h2 class="sec-title">Research and Capstone Projects</h2>
       </div>
-      <div class="sec-subtitle">Spatial-temporal data engineering leadership and ACM-formatted NLP benchmarking at Deakin University.</div>
     </div>
 
     <div class="record-stack">
@@ -1391,279 +1724,11 @@ footer {
     </div>
   </section>
 
-  <!-- PORTFOLIO PROJECTS -->
-  <section id="projects">
-    <div class="sec-header">
-      <div>
-        <div class="sec-tag">Verified Technical Work</div>
-        <h2 class="sec-title">Portfolio Projects</h2>
-      </div>
-      <div class="filter-group" role="group" aria-label="Filter projects">
-        <button class="filter-btn active" data-filter="all">All Projects (4)</button>
-        <button class="filter-btn" data-filter="de">Data Engineering &amp; Web</button>
-        <button class="filter-btn" data-filter="bi">Business Intelligence &amp; SQL</button>
-      </div>
-    </div>
-
-    <div class="projects-grid">
-
-      <!-- Project 1: Residential Energy Analytics with Smart Interactive Tabbed Viewer -->
-      <article class="proj-card wide" data-category="bi de">
-        <div class="proj-top">
-          <span class="proj-category">MySQL | Excel Financial Model | Tableau BI</span>
-          <span class="proj-year">2026</span>
-        </div>
-        <h3 class="proj-title">Residential Energy Analytics &amp; Margin Assurance</h3>
-        <ul class="bullet-list">
-          <li>Modelled grid power consumption and $218K in billings for 10,000 Australian households in MySQL</li>
-          <li>Remediated 150 data quality errors via SQL and built an Excel financial model evaluating tariff margins</li>
-          <li>Published a Tableau dashboard comparing profit margins across EV charging, Solar, and Standard utility plans</li>
-        </ul>
-
-        <div class="proj-stats">
-          <div class="ps-item"><span class="ps-val">10,000</span><span class="ps-lbl">Australian Households</span></div>
-          <div class="ps-item"><span class="ps-val">$218K</span><span class="ps-lbl">Billings Evaluated</span></div>
-          <div class="ps-item"><span class="ps-val">150</span><span class="ps-lbl">SQL Quality Fixes</span></div>
-        </div>
-
-        <!-- Smart Interactive Evidence Switcher (keeps page clean while showing all 6 proof images) -->
-        <div class="evidence-panel">
-          <div class="evidence-header">
-            <span class="evidence-title">Interactive Evidence Explorer (Select view below)</span>
-            <div class="evidence-tabs">
-              <button class="ev-tab active" data-img="final_dashboard.jpg" data-fallback="final_dashboard.png" data-cap="Tableau Executive Dashboard: Energy Commercial Performance">1. Full Dashboard</button>
-              <button class="ev-tab" data-img="distribution_state.jpg" data-fallback="distribution_state.png" data-cap="Geographic Revenue Distribution Across Australian States ($218,498 Total)">2. State Map</button>
-              <button class="ev-tab" data-img="plan_by_state.png" data-fallback="plan_by_state.png" data-cap="Customer Tariff Plan Mix by State (EV Premium, Green Gas, Solar, Standard)">3. Plan Mix</button>
-              <button class="ev-tab" data-img="product_segment.png" data-fallback="product_segment.png" data-cap="Total Revenue Comparison by Product Segment">4. Product Segment</button>
-              <button class="ev-tab" data-img="avg_revenue_per_user.png" data-fallback="avg_revenue_per_user.png" data-cap="Average Revenue Per User (ARPU) Matrix by State and Plan">5. ARPU Matrix</button>
-              <button class="ev-tab" data-img="pivot_table.png" data-fallback="pivot_table.png" data-cap="Excel Financial Model: Revenue and Cleaned kWh Usage Pivot Tables">6. Excel Model</button>
-            </div>
-          </div>
-          <div class="evidence-stage" onclick="openLightbox(document.getElementById('energyMainImg').src)">
-            <img id="energyMainImg" src="final_dashboard.jpg" onerror="this.onerror=null;this.src='final_dashboard.png';" alt="Residential Energy Analytics Preview">
-          </div>
-          <div class="evidence-caption">
-            <span id="energyMainCap">Tableau Executive Dashboard: Energy Commercial Performance</span>
-            <span>Click image to inspect full screen</span>
-          </div>
-        </div>
-
-        <div class="proj-footer">
-          <div class="stack-pills">
-            <span class="stack-pill">MySQL</span>
-            <span class="stack-pill">SQL Remediation</span>
-            <span class="stack-pill">Excel Financial Modelling</span>
-            <span class="stack-pill">Tableau</span>
-          </div>
-          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
-        </div>
-      </article>
-
-      <!-- Project 2: Coles Sales Performance Dashboard -->
-      <article class="proj-card" data-category="bi">
-        <div class="proj-top">
-          <span class="proj-category">Power BI | Star Schema | DAX</span>
-          <span class="proj-year">2026</span>
-        </div>
-        <h3 class="proj-title">Coles Sales Performance Dashboard</h3>
-        <ul class="bullet-list">
-          <li>Architected a Star Schema dimensional model using Power Query and DAX across 6 Australian states</li>
-          <li>Built an interactive Power BI report analysing $28.5M in aggregate retail revenue over two quarters</li>
-          <li>Visualised team productivity metrics alongside target variance analytics to identify underperforming locations</li>
-        </ul>
-
-        <div class="proj-stats">
-          <div class="ps-item"><span class="ps-val">$28.5M</span><span class="ps-lbl">Retail Revenue</span></div>
-          <div class="ps-item"><span class="ps-val">6 States</span><span class="ps-lbl">Star Schema</span></div>
-          <div class="ps-item"><span class="ps-val">2 Quarters</span><span class="ps-lbl">Variance Analytics</span></div>
-        </div>
-
-        <div class="evidence-panel">
-          <div class="evidence-stage compact" onclick="openLightbox(this.querySelector('img').src)">
-            <img src="coles_dashboard.png" alt="Coles Sales Performance Power BI Dashboard">
-          </div>
-          <div class="evidence-caption">
-            <span>Power BI Report: Coles Sales Dashboard</span>
-            <span>Click to zoom</span>
-          </div>
-        </div>
-
-        <div class="proj-footer">
-          <div class="stack-pills">
-            <span class="stack-pill">Power BI</span>
-            <span class="stack-pill">DAX</span>
-            <span class="stack-pill">Power Query</span>
-            <span class="stack-pill">Star Schema</span>
-          </div>
-          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
-        </div>
-      </article>
-
-      <!-- Project 3: Clinical Trials Idempotent ETL Pipeline -->
-      <article class="proj-card" data-category="de">
-        <div class="proj-top">
-          <span class="proj-category">Python | PostgreSQL | dbt</span>
-          <span class="proj-year">2026</span>
-        </div>
-        <h3 class="proj-title">Clinical Trials Idempotent ETL Pipeline</h3>
-        <ul class="bullet-list">
-          <li>Engineered Python data ingestion for live clinical trial JSON feeds using ClinicalTrials.gov REST APIs</li>
-          <li>Populated PostgreSQL tables using transactional upsert logic (ON CONFLICT DO UPDATE) for safe pipeline re-runs</li>
-          <li>Constructed dbt staging and mart models with 4 automated test suites for continuous data validation</li>
-        </ul>
-
-        <div class="proj-stats">
-          <div class="ps-item"><span class="ps-val">REST API</span><span class="ps-lbl">Live JSON Ingestion</span></div>
-          <div class="ps-item"><span class="ps-val">Idempotent</span><span class="ps-lbl">PostgreSQL Upserts</span></div>
-          <div class="ps-item"><span class="ps-val">4 Suites</span><span class="ps-lbl">dbt Validation Tests</span></div>
-        </div>
-
-        <div class="evidence-panel">
-          <div class="evidence-stage compact" onclick="openLightbox(this.querySelector('img').src)">
-            <img src="cleaned_dataset.jpg" alt="Validated Dataset Output">
-          </div>
-          <div class="evidence-caption">
-            <span>Structured &amp; Validated Data Pipeline Output</span>
-            <span>Click to zoom</span>
-          </div>
-        </div>
-
-        <div class="proj-footer">
-          <div class="stack-pills">
-            <span class="stack-pill">Python</span>
-            <span class="stack-pill">PostgreSQL</span>
-            <span class="stack-pill">dbt</span>
-            <span class="stack-pill">REST APIs</span>
-          </div>
-          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
-        </div>
-      </article>
-
-      <!-- Project 4: Instant Credential Portal -->
-      <article class="proj-card wide" data-category="de">
-        <div class="proj-top">
-          <span class="proj-category">Google Apps Script | JavaScript | Event Systems</span>
-          <span class="proj-year">2026</span>
-        </div>
-        <h3 class="proj-title">Instant Credential Portal (NVIDIA Developer Workshop)</h3>
-        <ul class="bullet-list">
-          <li>Deployed a web application using Google Apps Script, JavaScript, and Google Sheets for 40+ attendees</li>
-          <li>Replaced dynamic claims with pre-assigned QR code lookups to eliminate race conditions and downtime</li>
-        </ul>
-
-        <div class="proj-stats">
-          <div class="ps-item"><span class="ps-val">40+ Attendees</span><span class="ps-lbl">Live Workshop Scale</span></div>
-          <div class="ps-item"><span class="ps-val">Zero</span><span class="ps-lbl">Race Conditions</span></div>
-          <div class="ps-item"><span class="ps-val">100%</span><span class="ps-lbl">System Availability</span></div>
-        </div>
-
-        <div class="proj-footer">
-          <div class="stack-pills">
-            <span class="stack-pill">Google Apps Script</span>
-            <span class="stack-pill">JavaScript</span>
-            <span class="stack-pill">Google Sheets</span>
-            <span class="stack-pill">QR Code Lookup</span>
-          </div>
-          <a href="https://github.com/dhruvsurti" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
-        </div>
-      </article>
-
-    </div>
-  </section>
-
-  <!-- PROFESSIONAL SKILLS AND LICENSES -->
-  <section id="skills">
-    <div class="sec-header">
-      <div>
-        <div class="sec-tag">Technical Matrix</div>
-        <h2 class="sec-title">Professional Skills</h2>
-      </div>
-      <div class="sec-subtitle">Categorised for rapid technical screening across Data Engineering, BI, AI/ML, and Systems Operations.</div>
-    </div>
-
-    <div class="skills-table">
-      <div class="skill-row">
-        <div class="skill-domain">Python &amp; Machine Learning</div>
-        <div class="skill-tags">
-          <span class="s-tag">Python</span>
-          <span class="s-tag">pandas</span>
-          <span class="s-tag">PySpark</span>
-          <span class="s-tag">NumPy</span>
-          <span class="s-tag">PyTorch</span>
-          <span class="s-tag">Hugging Face</span>
-          <span class="s-tag">Plotly</span>
-          <span class="s-tag">Streamlit</span>
-          <span class="s-tag">ETL, Data Analysis &amp; ML</span>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <div class="skill-domain">SQL &amp; Warehousing</div>
-        <div class="skill-tags">
-          <span class="s-tag">PostgreSQL</span>
-          <span class="s-tag">MySQL</span>
-          <span class="s-tag">Supabase</span>
-          <span class="s-tag">Snowflake</span>
-          <span class="s-tag">Schema Design</span>
-          <span class="s-tag">Transactional Upserts</span>
-          <span class="s-tag">Data Cleaning</span>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <div class="skill-domain">Data Analytics &amp; BI</div>
-        <div class="skill-tags">
-          <span class="s-tag">Power BI (DAX, Power Query)</span>
-          <span class="s-tag">Tableau</span>
-          <span class="s-tag">Excel Financial Modelling</span>
-          <span class="s-tag">Star Schema Design</span>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <div class="skill-domain">Data Engineering &amp; Cloud</div>
-        <div class="skill-tags">
-          <span class="s-tag">AWS</span>
-          <span class="s-tag">Apache Spark</span>
-          <span class="s-tag">Hadoop</span>
-          <span class="s-tag">Kafka</span>
-          <span class="s-tag">Airflow</span>
-          <span class="s-tag">dbt</span>
-          <span class="s-tag">REST APIs</span>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <div class="skill-domain">C# &amp; Computer Science</div>
-        <div class="skill-tags">
-          <span class="s-tag">C#</span>
-          <span class="s-tag">Object-Oriented Programming (OOP)</span>
-          <span class="s-tag">Data Structures and Algorithms</span>
-          <span class="s-tag">Advanced Algorithms</span>
-          <span class="s-tag">Data Wrangling</span>
-          <span class="s-tag">Natural Language Processing (NLP)</span>
-        </div>
-      </div>
-
-      <div class="skill-row">
-        <div class="skill-domain">DevOps &amp; IT Operations</div>
-        <div class="skill-tags">
-          <span class="s-tag">Docker</span>
-          <span class="s-tag">Kubernetes</span>
-          <span class="s-tag">GitHub</span>
-          <span class="s-tag">GitLab</span>
-          <span class="s-tag">NVIDIA Spark Servers</span>
-          <span class="s-tag">HubSpot Help Desk</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- EDUCATION AND CERTIFICATIONS -->
   <section id="education">
     <div class="sec-header">
       <div>
-        <div class="sec-tag">Academic Qualifications &amp; Licenses</div>
+        <div class="sec-tag">Academic Background &amp; Certificates</div>
         <h2 class="sec-title">Education &amp; Certifications</h2>
       </div>
     </div>
@@ -1684,8 +1749,8 @@ footer {
       </div>
 
       <div class="box-card">
-        <span class="box-kicker">Verified Credentials &amp; IDs</span>
-        <h3 class="box-title" style="margin-bottom:0.75rem;">Certifications &amp; Industry Simulations</h3>
+        <span class="box-kicker">Certificates &amp; Training</span>
+        <h3 class="box-title" style="margin-bottom:0.75rem;">Certifications &amp; Simulations</h3>
         <table class="cert-table">
           <tbody>
             <tr>
@@ -1744,9 +1809,9 @@ footer {
 
     <div class="extra-strip">
       <div class="extra-text">
-        <strong>Interests &amp; Extracurriculars:</strong> Cricket (represented Deakin University at the 2024 UniSport Nationals), AI and open-source development.
+        <strong>Interests:</strong> Cricket (represented Deakin University at the 2024 UniSport Nationals), AI and open-source development.
       </div>
-      <span class="record-period" style="margin:0;">Deakin Representative Athlete</span>
+      <span class="record-period" style="margin:0;">2024 UniSport Nationals</span>
     </div>
   </section>
 
@@ -1754,7 +1819,7 @@ footer {
   <section id="references">
     <div class="sec-header">
       <div>
-        <div class="sec-tag">Verified Referees</div>
+        <div class="sec-tag">Contactable Referees</div>
         <h2 class="sec-title">References</h2>
       </div>
       <div class="sec-subtitle">Further contact details can be provided upon request.</div>
@@ -1807,7 +1872,7 @@ footer {
 </div>
 
 <script>
-  // Copy Buttons for Recruiter Convenience
+  // Copy Buttons
   function bindCopyButton(id, label) {
     const btn = document.getElementById(id);
     if (!btn) return;
