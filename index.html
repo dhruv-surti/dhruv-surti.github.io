@@ -1,3 +1,7 @@
+
+
+HTML icon
+index-v5
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Dhruv Surti | Portfolio</title>
 <meta name="description" content="Portfolio of Dhruv Surti. Bachelor of Computer Science graduate from Deakin University in Melbourne, VIC.">
-<meta name="keywords" content="Dhruv Surti, Computer Science, Software, Data, Cloud, Python, C#, SQL, PostgreSQL, Snowflake, Fivetran, AWS, Docker, Power BI, Tableau, Deakin University">
+<meta name="keywords" content="Dhruv Surti, Computer Science, Software, Data, Cloud, Python, C#, SQL, PostgreSQL, Snowflake, BigQuery, Google Cloud, Dataform, dlt, Fivetran, AWS, Docker, Looker Studio, Power BI, Tableau, Deakin University">
 <meta property="og:title" content="Dhruv Surti | Portfolio">
 <meta property="og:description" content="Bachelor of Computer Science graduate from Deakin University. Projects, experience, research, and technical skills.">
 <meta property="og:type" content="website">
@@ -1241,7 +1245,7 @@ footer {
       <div class="brief-section">
         <div class="brief-heading">About Me</div>
         <p class="about-lead">
-          Computer Science graduate from Deakin University with a High Distinction average across all final-year subjects. I build software systems, scalable cloud deployments, automated data pipelines, and interactive analytics tools across Python, C#, SQL, Snowflake, and AWS.
+          Computer Science graduate from Deakin University with a High Distinction average across all final-year subjects. I build software systems, scalable cloud deployments, automated data pipelines, and interactive analytics tools across Python, C#, SQL, Google Cloud (BigQuery, Dataform), Snowflake, and AWS.
         </p>
         <div class="brief-grid">
           <div class="brief-col">
@@ -1257,6 +1261,7 @@ footer {
             <ul class="brief-list">
               <li>Led a 17-member team for Deakin's Victorian bushfire forecasting platform across 78,691 records</li>
               <li>Built an end-to-end AusTender ELT pipeline using Python, Fivetran, and Snowflake Dynamic Tables</li>
+              <li>Built a serverless GCP analytics platform using Python, dlt, Cloud Run, BigQuery, Dataform, and Looker Studio</li>
               <li>Engineered an idempotent Python, PostgreSQL, and dbt pipeline for live ClinicalTrials.gov data</li>
             </ul>
           </div>
@@ -1280,9 +1285,9 @@ footer {
         <div class="kpi-note">B.CompSc, Deakin University</div>
       </div>
       <div class="kpi-card">
-        <div class="kpi-value">7 Projects</div>
+        <div class="kpi-value">8 Projects</div>
         <div class="kpi-label">Software, Cloud, Data &amp; BI</div>
-        <div class="kpi-note">Python, C#, Snowflake, AWS &amp; SQL</div>
+        <div class="kpi-note">Python, C#, GCP, Snowflake, AWS &amp; SQL</div>
       </div>
       <div class="kpi-card">
         <div class="kpi-value">78,691 Records</div>
@@ -1305,7 +1310,7 @@ footer {
         <h2 class="sec-title">Projects</h2>
       </div>
       <div class="filter-group" role="group" aria-label="Filter projects">
-        <button class="filter-btn active" data-filter="all">All Projects (7)</button>
+        <button class="filter-btn active" data-filter="all">All Projects (8)</button>
         <button class="filter-btn" data-filter="de">Data Pipelines</button>
         <button class="filter-btn" data-filter="bi">Analytics &amp; BI</button>
         <button class="filter-btn" data-filter="sw">Software, C# &amp; Cloud</button>
@@ -1313,6 +1318,58 @@ footer {
     </div>
 
     <div class="projects-grid">
+
+      <!-- Project 1: Multi-Clinic Dental Analytics & Revenue Platform (GCP) -->
+      <article class="proj-card wide" data-category="de bi sw">
+        <div class="proj-top">
+          <span class="proj-category">Google Cloud (BigQuery, Dataform, Cloud Run) | Python &amp; dlt | Looker Studio</span>
+          <span class="proj-year">2026</span>
+        </div>
+        <h3 class="proj-title">Multi-Clinic Dental Analytics &amp; Revenue Platform (GCP)</h3>
+        <ul class="bullet-list">
+          <li>Built a serverless cloud analytics platform on GCP (Sydney, australia-southeast1) ingesting practice management and finance feeds via Python, dlt, Docker, Artifact Registry, and Cloud Run Jobs using least-privilege service accounts</li>
+          <li>Structured BigQuery into raw, staging, and mart layers using Google Cloud Dataform (SQLX) with 10 automated data quality assertions covering deduplication, clinic name standardisation, financial reconciliation, and orphaned billings</li>
+          <li>Published an interactive Looker Studio executive dashboard tracking billings vs. collections, 30-day Smile Discovery conversion rates, payment methods, and live billing exceptions across four clinics</li>
+        </ul>
+
+        <div class="proj-stats">
+          <div class="ps-item"><span class="ps-val">Serverless GCP</span><span class="ps-lbl">Cloud Run &amp; BigQuery</span></div>
+          <div class="ps-item"><span class="ps-val">10 Assertions</span><span class="ps-lbl">Dataform SQLX Checks</span></div>
+          <div class="ps-item"><span class="ps-val">australia-southeast1</span><span class="ps-lbl">Sydney Data Residency</span></div>
+        </div>
+
+        <div class="evidence-panel">
+          <div class="evidence-header">
+            <span class="evidence-title">Platform Visuals &amp; Lineage Preview (Select view below)</span>
+            <div class="evidence-tabs">
+              <button class="ev-tab active" data-target-img="dentalMainImg" data-target-cap="dentalMainCap" data-img="https://raw.githubusercontent.com/dhruv-surti/dental-analytics-mvp/main/screenshots/dashboard.png" data-fallback="screenshots/dashboard.png" data-cap="Executive Revenue &amp; Operations Dashboard (Looker Studio): Billings vs. Collections, Conversion Rates, and Data Quality Exceptions">1. Looker Dashboard</button>
+              <button class="ev-tab" data-target-img="dentalMainImg" data-target-cap="dentalMainCap" data-img="https://raw.githubusercontent.com/dhruv-surti/dental-analytics-mvp/main/screenshots/compiled-graph.png" data-fallback="screenshots/compiled-graph.png" data-cap="Google Cloud Dataform Dependency Graph (DAG): End-to-End Lineage from Raw BigQuery Tables to Marts and Assertions">2. Dataform DAG</button>
+              <button class="ev-tab" data-target-img="dentalMainImg" data-target-cap="dentalMainCap" data-img="https://raw.githubusercontent.com/dhruv-surti/dental-analytics-mvp/main/screenshots/dental-ingest-job.png" data-fallback="screenshots/dental-ingest-job.png" data-cap="Serverless Cloud Run Job Execution: Containerised dlt Pipeline Running On-Demand in Sydney with Managed Identity">3. Cloud Run Job</button>
+            </div>
+          </div>
+          <div class="evidence-stage" onclick="openLightbox(document.getElementById('dentalMainImg').src)">
+            <img id="dentalMainImg" src="https://raw.githubusercontent.com/dhruv-surti/dental-analytics-mvp/main/screenshots/dashboard.png" onerror="this.onerror=null;this.src='screenshots/dashboard.png';" alt="Multi-Clinic Dental Analytics Platform Preview">
+          </div>
+          <div class="evidence-caption">
+            <span id="dentalMainCap">Executive Revenue &amp; Operations Dashboard (Looker Studio): Billings vs. Collections, Conversion Rates, and Data Quality Exceptions</span>
+            <span>Click image to inspect full screen</span>
+          </div>
+        </div>
+
+        <div class="proj-footer">
+          <div class="stack-pills">
+            <span class="stack-pill">GCP (BigQuery, Dataform, Cloud Run)</span>
+            <span class="stack-pill">Python &amp; dlt</span>
+            <span class="stack-pill">SQLX</span>
+            <span class="stack-pill">Docker</span>
+            <span class="stack-pill">Looker Studio</span>
+          </div>
+          <div style="display:flex; gap:1rem; align-items:center;">
+            <a href="https://datastudio.google.com/s/tf1qJ4EBEkY" target="_blank" rel="noopener" class="gh-link">Live Dashboard</a>
+            <a href="https://github.com/dhruv-surti/dental-analytics-mvp" target="_blank" rel="noopener" class="gh-link">GitHub Repository</a>
+          </div>
+        </div>
+      </article>
 
       <!-- Project 1: Australian SME Government Contract Pipeline (NEW) -->
       <article class="proj-card wide" data-category="de bi">
@@ -1629,6 +1686,7 @@ footer {
       <div class="skill-row">
         <div class="skill-domain">SQL &amp; Databases</div>
         <div class="skill-tags">
+          <span class="s-tag">Google BigQuery</span>
           <span class="s-tag">Snowflake (Dynamic Tables)</span>
           <span class="s-tag">PostgreSQL</span>
           <span class="s-tag">MySQL</span>
@@ -1642,6 +1700,8 @@ footer {
       <div class="skill-row">
         <div class="skill-domain">Data Pipelines &amp; ELT Tools</div>
         <div class="skill-tags">
+          <span class="s-tag">dlt (Data Load Tool)</span>
+          <span class="s-tag">Google Cloud Dataform (SQLX)</span>
           <span class="s-tag">Fivetran</span>
           <span class="s-tag">dbt</span>
           <span class="s-tag">Apache Spark</span>
@@ -1655,6 +1715,7 @@ footer {
       <div class="skill-row">
         <div class="skill-domain">Cloud, DevOps &amp; Systems</div>
         <div class="skill-tags">
+          <span class="s-tag">GCP (Cloud Run Jobs, Artifact Registry, IAM)</span>
           <span class="s-tag">AWS (EC2, ELB, CloudWatch, S3, RDS)</span>
           <span class="s-tag">Docker</span>
           <span class="s-tag">Kubernetes</span>
@@ -1669,6 +1730,7 @@ footer {
         <div class="skill-domain">Data Analytics &amp; BI</div>
         <div class="skill-tags">
           <span class="s-tag">Power BI (DAX, Power Query)</span>
+          <span class="s-tag">Looker Studio</span>
           <span class="s-tag">Tableau</span>
           <span class="s-tag">Excel Financial Modelling</span>
           <span class="s-tag">Star Schema Design</span>
@@ -2002,3 +2064,4 @@ footer {
 
 </body>
 </html>
+Refining portfolio and repository layout
